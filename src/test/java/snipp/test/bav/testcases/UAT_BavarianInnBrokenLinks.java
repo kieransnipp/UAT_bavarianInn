@@ -6,6 +6,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.AssertJUnit;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static org.testng.Assert.assertTrue;
@@ -358,7 +362,7 @@ public class UAT_BavarianInnBrokenLinks {
 		driver.close();
 		driver.quit();
 		System.out.println("Test completed successfully");
-		extent.flush();
+		//extent.flush();
 
 	}
 }

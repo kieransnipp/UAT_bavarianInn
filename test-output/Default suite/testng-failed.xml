@@ -5,17 +5,17 @@
     <classes>
       <class name="snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks">
         <methods>
+          <include name="loginToSite"/>
           <include name="membersLocations"/>
-          <include name="tearDownTest"/>
           <include name="launchBrowser"/>
           <include name="membersSocial"/>
           <include name="membersOffers"/>
           <include name="beforeTest"/>
-          <include name="titleTest"/>
           <include name="WelcomeMessage"/>
           <include name="login"/>
           <include name="afterTest"/>
           <include name="tearDown"/>
+          <include name="logOutOfSite"/>
         </methods>
       </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks -->
     </classes>

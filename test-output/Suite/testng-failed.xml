@@ -3,53 +3,32 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="snipp.test.bavarianinn.uat.UAT_BavarianInnBrokenLinks2">
+      <class name="snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks">
         <methods>
-          <include name="membersOffers"/>
-          <include name="beforeTest"/>
-          <include name="WelcomeMessage"/>
-          <include name="membersSocial"/>
-          <include name="login"/>
-          <include name="tearDown"/>
-          <include name="logOutOfSite"/>
-          <include name="membersLocations"/>
-          <include name="tearDownTest"/>
-          <include name="loginToSite"/>
-          <include name="titleTest"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- snipp.test.bavarianinn.uat.UAT_BavarianInnBrokenLinks2 -->
-      <class name="snipp.test.bavarianinn.uat.UAT_BavarianInnBrokenLinks3">
-        <methods>
-          <include name="membersOffers"/>
-          <include name="WelcomeMessage"/>
-          <include name="membersSocial"/>
-          <include name="titleTest"/>
-          <include name="tearDown"/>
-          <include name="logOutOfSite"/>
-          <include name="login"/>
-          <include name="launchBrowser"/>
-          <include name="beforeTest"/>
           <include name="loginToSite"/>
           <include name="membersLocations"/>
-          <include name="tearDownTest"/>
-        </methods>
-      </class> <!-- snipp.test.bavarianinn.uat.UAT_BavarianInnBrokenLinks3 -->
-      <class name="snipp.test.bavarianinn.uat.UAT_BavarianInnBrokenLinks">
-        <methods>
-          <include name="titleTest"/>
           <include name="launchBrowser"/>
-          <include name="membersLocations"/>
-          <include name="tearDownTest"/>
-          <include name="WelcomeMessage"/>
           <include name="membersSocial"/>
+          <include name="membersOffers"/>
+          <include name="beforeTest"/>
+          <include name="titleTest"/>
+          <include name="WelcomeMessage"/>
           <include name="login"/>
-          <include name="tearDown"/>
           <include name="afterTest"/>
-          <include name="membersOffers"/>
-          <include name="beforeTest"/>
+          <include name="tearDown"/>
+          <include name="logOutOfSite"/>
         </methods>
-      </class> <!-- snipp.test.bavarianinn.uat.UAT_BavarianInnBrokenLinks -->
+      </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks -->
+      <class name="snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens">
+        <methods>
+          <include name="enterDetails"/>
+          <include name="beforeMethod"/>
+          <include name="launchBrowser"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
