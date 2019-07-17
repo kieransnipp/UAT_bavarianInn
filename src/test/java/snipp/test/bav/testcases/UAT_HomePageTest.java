@@ -225,7 +225,7 @@ public class UAT_HomePageTest {
 		driver.findElement(By.xpath("//a[contains(text(),'Twitter')]")).click();
 
 		String title = driver.getTitle();
-		AssertJUnit.assertEquals(title, "Bavarian Inn (@Bavarian_Inn) on Twitter");
+		AssertJUnit.assertEquals(title, "Bavarian Inn (@Bavarian_Inn) | Twitter");
 	
 		driver.navigate().back();
 
