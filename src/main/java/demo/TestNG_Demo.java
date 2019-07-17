@@ -4,6 +4,9 @@ package demo;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+
+import java.io.IOException;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.message.LoggerNameAwareMessage;
@@ -63,6 +66,9 @@ public class TestNG_Demo {
 		}
 		String title = driver.getTitle();
 		
+		String url = PropertiesFile.url;
+		System.out.println("The properties URL is "+url);
+		
 		AssertJUnit.assertEquals("Google", title, "Google");
 		System.out.println("TestNG_Demo Test Passed");
 		driver.findElement(By.name("q")).sendKeys("Automation steps");
@@ -83,6 +89,13 @@ public class TestNG_Demo {
 	public void tearDown() {
 		driver.close();
 		driver.quit();
+		System.out.println("Test has run successfully");
+		try {
+			PropertiesFile.setProperties();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 }

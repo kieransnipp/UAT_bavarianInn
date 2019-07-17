@@ -44,7 +44,8 @@ public class PropertiesFile {
 	public static void setProperties() throws IOException {
 		try {
 			OutputStream output = new FileOutputStream(projectPath + "/src/main/java/com/bav/config/config.properties");
-			prop.setProperty("browser", "chrome");
+			prop.setProperty("result", "pass");
+			//prop.setProperty("browser", "chrome");
 			prop.store(output, "A comment");
 			
 			String browser = prop.getProperty("browser");
