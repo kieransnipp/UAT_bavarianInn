@@ -1,73 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10172" started-at="2019-07-17T07:57:42Z" finished-at="2019-07-17T07:57:52Z">
+  <suite name="Default suite" duration-ms="20" started-at="2019-07-17T08:34:20Z" finished-at="2019-07-17T08:34:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10172" started-at="2019-07-17T07:57:42Z" finished-at="2019-07-17T07:57:52Z">
-      <class name="snipp.test.bav.testcases.UAT_RegisterPageTestCanada">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@3f5156a6]" name="launchBrowser" is-config="true" duration-ms="5550" started-at="2019-07-17T08:57:36Z" finished-at="2019-07-17T08:57:42Z">
+    <test name="Default test" duration-ms="20" started-at="2019-07-17T08:34:20Z" finished-at="2019-07-17T08:34:20Z">
+      <class name="snipp.test.bav.testcases.IEdesiredCapabilities">
+        <test-method status="FAIL" signature="launchBrowser()[pri:0, instance:snipp.test.bav.testcases.IEdesiredCapabilities@5ed828d]" name="launchBrowser" is-config="true" duration-ms="0" started-at="2019-07-17T09:34:00Z" finished-at="2019-07-17T09:34:00Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Timed out waiting for driver server to start.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-G1T6KU3', ip: '192.168.1.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: driver.version: InternetExplorerDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-G1T6KU3', ip: '192.168.1.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: driver.version: InternetExplorerDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:221)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:213)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:158)
+	at snipp.test.bav.testcases.IEdesiredCapabilities.launchBrowser(IEdesiredCapabilities.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:9814/status] to be available after 20004 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
+	... 27 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@3f5156a6]" name="setUp" is-config="true" duration-ms="86" started-at="2019-07-17T08:57:42Z" finished-at="2019-07-17T08:57:42Z">
+        <test-method status="SKIP" signature="beforeTest()[pri:0, instance:snipp.test.bav.testcases.IEdesiredCapabilities@5ed828d]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-07-17T09:34:20Z" finished-at="2019-07-17T09:34:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@3f5156a6]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-17T08:57:42Z" finished-at="2019-07-17T08:57:42Z">
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:snipp.test.bav.testcases.IEdesiredCapabilities@5ed828d]" name="login" is-config="true" duration-ms="0" started-at="2019-07-17T09:34:20Z" finished-at="2019-07-17T09:34:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@3f5156a6]" name="setUp" is-config="true" duration-ms="2" started-at="2019-07-17T08:57:42Z" finished-at="2019-07-17T08:57:42Z">
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="titleTest()[pri:1, instance:snipp.test.bav.testcases.IEdesiredCapabilities@5ed828d]" name="titleTest" duration-ms="0" started-at="2019-07-17T09:34:20Z" finished-at="2019-07-17T09:34:20Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Timed out waiting for driver server to start.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-G1T6KU3', ip: '192.168.1.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: driver.version: InternetExplorerDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-G1T6KU3', ip: '192.168.1.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: driver.version: InternetExplorerDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:221)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:213)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:158)
+	at snipp.test.bav.testcases.IEdesiredCapabilities.launchBrowser(IEdesiredCapabilities.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:9814/status] to be available after 20004 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
+	... 27 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginToSite()[pri:1, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@3f5156a6]" name="loginToSite" duration-ms="47" started-at="2019-07-17T08:57:42Z" finished-at="2019-07-17T08:57:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToSite -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@3f5156a6]" name="tearDown" is-config="true" duration-ms="266" started-at="2019-07-17T08:57:42Z" finished-at="2019-07-17T08:57:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@3f5156a6]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-17T08:57:42Z" finished-at="2019-07-17T08:57:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@3f5156a6]" name="setUp" is-config="true" duration-ms="1" started-at="2019-07-17T08:57:42Z" finished-at="2019-07-17T08:57:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="enterDetails()[pri:2, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@3f5156a6]" name="enterDetails" duration-ms="1664" started-at="2019-07-17T08:57:42Z" finished-at="2019-07-17T08:57:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterDetails -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@3f5156a6]" name="tearDown" is-config="true" duration-ms="44" started-at="2019-07-17T08:57:44Z" finished-at="2019-07-17T08:57:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@3f5156a6]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-17T08:57:44Z" finished-at="2019-07-17T08:57:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@3f5156a6]" name="setUp" is-config="true" duration-ms="2" started-at="2019-07-17T08:57:44Z" finished-at="2019-07-17T08:57:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="enterForm()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@3f5156a6]" name="enterForm" duration-ms="7988" started-at="2019-07-17T08:57:44Z" depends-on-methods="snipp.test.bav.testcases.UAT_RegisterPageTestCanada.enterDetails" finished-at="2019-07-17T08:57:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterForm -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@3f5156a6]" name="tearDown" is-config="true" duration-ms="52" started-at="2019-07-17T08:57:52Z" finished-at="2019-07-17T08:57:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@3f5156a6]" name="tearDown" is-config="true" duration-ms="74" started-at="2019-07-17T08:57:52Z" finished-at="2019-07-17T08:57:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- snipp.test.bav.testcases.UAT_RegisterPageTestCanada -->
+        </test-method> <!-- titleTest -->
+      </class> <!-- snipp.test.bav.testcases.IEdesiredCapabilities -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -107,8 +107,8 @@ public class IEdesiredCapabilities {
 			} else if (browserName.equals("ie")) {
 				System.out.println("Launching Internet Explorer");
 				System.setProperty("webdriver.ie.driver", "drivers/IEDriverServer.exe");
-
-				driver = new InternetExplorerDriver(capabilities);
+				driver = new InternetExplorerDriver();
+				//driver = new InternetExplorerDriver(capabilities);
 				
 
 			} else if (browserName.equals("opera")) {
