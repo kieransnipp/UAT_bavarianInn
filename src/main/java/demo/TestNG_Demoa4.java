@@ -22,10 +22,10 @@ import org.testng.annotations.Test;
 
 import com.codeborne.selenide.WebDriverRunner;
 
-public class TestNG_Demoa {
+public class TestNG_Demoa4 {
 
 	WebDriver driver = null;
-	static private Logger logger = LogManager.getLogger(TestNG_Demoa.class);
+	static private Logger logger = LogManager.getLogger(TestNG_Demoa4.class);
 	public static String browserName = null;
 
 	@BeforeTest
@@ -64,7 +64,7 @@ public class TestNG_Demoa {
 		String title = driver.getTitle();
 		
 		AssertJUnit.assertEquals("Google", title, "Google");
-		System.out.println("TestNG_Demoa Test Passed");
+		System.out.println("TestNG_Demo4 Test Passed");
 		driver.findElement(By.name("q")).sendKeys("Automation steps");
 		driver.findElement(By.name("btnK")).click();
 	}

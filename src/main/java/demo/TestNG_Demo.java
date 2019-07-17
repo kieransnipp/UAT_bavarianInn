@@ -1,3 +1,4 @@
+//Accesing the data VIA a static way
 package demo;
 
 import org.testng.annotations.AfterMethod;
@@ -29,14 +30,15 @@ public class TestNG_Demo {
 
 	@BeforeTest
 	public void setUpTest() {
+		System.out.println("Second test running");
 		String projectPath = System.getProperty("user.dir");
 		PropertiesFile.getProperties();  //Sets the browserName for this class
 		
-		if (browserName.equalsIgnoreCase("chrome")) {
+		if (PropertiesFile.browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", projectPath + "/drivers/chromedriver.exe");
 			driver = new ChromeDriver();
 		} else {
-			if (browserName.equalsIgnoreCase("firefox")) {
+			if (PropertiesFile.browser.equalsIgnoreCase("firefox")) {
 				System.out.println("Launching firefox");
 				// browserName = ((Object) driver).Firefox("drivers/geckodriver.exe");
 				System.setProperty("webdriver.gecko.driver", projectPath + "/drivers/geckodriver.exe");

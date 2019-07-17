@@ -352,10 +352,6 @@ public class UAT_BavarianInnBrokenLinks {
 		System.out.println("This is the after method bit");
 	}
 
-//	@AfterTest
-//	public void tearDownTest() {
-//		
-//	}
 
 	@AfterSuite // Exent 5
 	public void tearDown() {

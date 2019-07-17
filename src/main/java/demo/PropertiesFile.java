@@ -11,6 +11,8 @@ import java.util.Properties;
 
 public class PropertiesFile {
 
+	public static String browser = null;
+	public static String url = null;
 	static Properties prop = new Properties();
 	static String projectPath = System.getProperty("user.dir");
 
@@ -19,23 +21,23 @@ public class PropertiesFile {
 		setProperties();
 	}
 
-	public static String getProperties() {
+	public static void getProperties() {
 		try {
 			InputStream input = new FileInputStream(projectPath + "/src/main/java/com/bav/config/config.properties");
 			prop.load(input);
-			String browser = prop.getProperty("browser");
+			browser = prop.getProperty("browser");
+			url = prop.getProperty("url");
 			System.out.println("Browser is = " + browser);
-			TestNG_Demo.browserName = browser;
-			TestNG_Demoa.browserName = browser;
-			TestNG_Demoab.browserName = browser;
-			
+			//TestNG_Demo.browserName = browser;
+//			TestNG_Demoa.browserName = browser;
+//			TestNG_Demoab.browserName = browser;	
 
 		} catch (Exception e) {
 			System.out.println("getMessage =" + e.getMessage());
 			System.out.println("getCause = " + e.getCause());
 
 		}
-		return projectPath;
+		
 
 	} // End getProperties
 

@@ -3,21 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks">
+      <class name="sandpit.XX_UAT_BavarianInnBrokenLinks">
         <methods>
-          <include name="loginToSite"/>
-          <include name="membersLocations"/>
-          <include name="launchBrowser"/>
-          <include name="membersSocial"/>
-          <include name="membersOffers"/>
-          <include name="beforeTest"/>
+          <include name="logOutOfSite"/>
           <include name="WelcomeMessage"/>
           <include name="login"/>
-          <include name="afterTest"/>
-          <include name="tearDown"/>
-          <include name="logOutOfSite"/>
+          <include name="titleTest"/>
+          <include name="membersOffers"/>
+          <include name="beforeTest"/>
+          <include name="membersSocial"/>
+          <include name="setUpTest"/>
+          <include name="loginToSite"/>
+          <include name="membersLocations"/>
         </methods>
-      </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks -->
+      </class> <!-- sandpit.XX_UAT_BavarianInnBrokenLinks -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

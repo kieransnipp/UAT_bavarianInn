@@ -1,3 +1,4 @@
+//Accesing the data VIA a static way
 package demo;
 
 import org.testng.annotations.AfterMethod;
@@ -21,10 +22,10 @@ import org.testng.annotations.Test;
 
 import com.codeborne.selenide.WebDriverRunner;
 
-public class TestNG_Demoab {
+public class TestNG_Demoa3 {
 
 	WebDriver driver = null;
-	static private Logger logger = LogManager.getLogger(TestNG_Demoa.class);
+	static private Logger logger = LogManager.getLogger(TestNG_Demoa3.class);
 	public static String browserName = null;
 
 	@BeforeTest
@@ -33,11 +34,11 @@ public class TestNG_Demoab {
 		String projectPath = System.getProperty("user.dir");
 		PropertiesFile.getProperties();  //Sets the browserName for this class
 		
-		if (browserName.equalsIgnoreCase("chrome")) {
+		if (PropertiesFile.browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", projectPath + "/drivers/chromedriver.exe");
 			driver = new ChromeDriver();
 		} else {
-			if (browserName.equalsIgnoreCase("firefox")) {
+			if (PropertiesFile.browser.equalsIgnoreCase("firefox")) {
 				System.out.println("Launching firefox");
 				// browserName = ((Object) driver).Firefox("drivers/geckodriver.exe");
 				System.setProperty("webdriver.gecko.driver", projectPath + "/drivers/geckodriver.exe");
@@ -63,7 +64,7 @@ public class TestNG_Demoab {
 		String title = driver.getTitle();
 		
 		AssertJUnit.assertEquals("Google", title, "Google");
-		System.out.println("TestNG_Demoab Test Passed");
+		System.out.println("TestNG_Demo3 Test Passed");
 		driver.findElement(By.name("q")).sendKeys("Automation steps");
 		driver.findElement(By.name("btnK")).click();
 	}

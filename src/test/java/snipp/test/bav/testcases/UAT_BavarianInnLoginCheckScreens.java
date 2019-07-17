@@ -226,7 +226,7 @@ public class UAT_BavarianInnLoginCheckScreens {
 	// Post conditions starting with @After
 	@AfterMethod // 10
 	public void afterMethod() {
-		extent.flush();
+		//extent.flush();
 		System.out.println("After Method bit");
 	}
 
