@@ -245,7 +245,7 @@ public class UAT_HomePageTest {
 	@AfterSuite // Exent 5
 	public void tearDown() {
 
-		extent.flush();
+		//extent.flush();
 
 	}
 

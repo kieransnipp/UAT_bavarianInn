@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 48.762 s <<< FAILURE! - in TestSuite
-checkTwitter(snipp.test.bav.testcases.UAT_HomePageTest)  Time elapsed: 2.741 s  <<< FAILURE!
-java.lang.AssertionError: expected:<Bavarian Inn (@Bavarian_Inn) | Twitter> but was:<Bavarian Inn (@Bavarian_Inn) on Twitter>
-	at snipp.test.bav.testcases.UAT_HomePageTest.checkTwitter(UAT_HomePageTest.java:228)
-
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.497 s - in TestSuite

@@ -3,14 +3,21 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="snipp.test.bav.testcases.IEdesiredCapabilities">
+      <class name="snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks">
         <methods>
-          <include name="titleTest"/>
-          <include name="beforeTest"/>
-          <include name="login"/>
+          <include name="membersLocations"/>
+          <include name="tearDownTest"/>
           <include name="launchBrowser"/>
+          <include name="membersSocial"/>
+          <include name="membersOffers"/>
+          <include name="beforeTest"/>
+          <include name="titleTest"/>
+          <include name="WelcomeMessage"/>
+          <include name="login"/>
+          <include name="afterTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- snipp.test.bav.testcases.IEdesiredCapabilities -->
+      </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

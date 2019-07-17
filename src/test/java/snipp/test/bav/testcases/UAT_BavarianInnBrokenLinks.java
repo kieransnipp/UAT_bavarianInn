@@ -348,17 +348,16 @@ public class UAT_BavarianInnBrokenLinks {
 		System.out.println("This is the after method bit");
 	}
 
-	@AfterTest
-	public void tearDownTest() {
+//	@AfterTest
+//	public void tearDownTest() {
+//		
+//	}
+
+	@AfterSuite // Exent 5
+	public void tearDown() {
 		driver.close();
 		driver.quit();
 		System.out.println("Test completed successfully");
-	}
-
-	@AfterMethod
-	@AfterSuite // Exent 5
-	public void tearDown() {
-
 		extent.flush();
 
 	}
