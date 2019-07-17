@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <test name="Test1(failed)">
+    <classes>
+      <class name="snipp.test.bavarianinn.uat.UAT_BavarianInnBrokenLinks3">
+        <methods>
+          <include name="membersOffers"/>
+          <include name="WelcomeMessage"/>
+          <include name="membersSocial"/>
+          <include name="titleTest"/>
+          <include name="tearDown"/>
+          <include name="logOutOfSite"/>
+          <include name="login"/>
+          <include name="launchBrowser"/>
+          <include name="beforeTest"/>
+          <include name="loginToSite"/>
+          <include name="membersLocations"/>
+          <include name="tearDownTest"/>
+        </methods>
+      </class> <!-- snipp.test.bavarianinn.uat.UAT_BavarianInnBrokenLinks3 -->
+      <class name="snipp.test.bavarianinn.uat.UAT_BavarianInnBrokenLinks2">
+        <methods>
+          <include name="membersOffers"/>
+          <include name="beforeTest"/>
+          <include name="WelcomeMessage"/>
+          <include name="membersSocial"/>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="logOutOfSite"/>
+          <include name="membersLocations"/>
+          <include name="tearDownTest"/>
+          <include name="loginToSite"/>
+          <include name="titleTest"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- snipp.test.bavarianinn.uat.UAT_BavarianInnBrokenLinks2 -->
+      <class name="snipp.test.bavarianinn.uat.UAT_BavarianInnBrokenLinks">
+        <methods>
+          <include name="titleTest"/>
+          <include name="launchBrowser"/>
+          <include name="membersLocations"/>
+          <include name="tearDownTest"/>
+          <include name="WelcomeMessage"/>
+          <include name="membersSocial"/>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="afterTest"/>
+          <include name="membersOffers"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- snipp.test.bavarianinn.uat.UAT_BavarianInnBrokenLinks -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

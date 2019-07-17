@@ -1,0 +1,11 @@
+snipp\test\bav\testcases\UAT_BavarianInnLoginCheckScreens.class
+snipp\test\bav\testcases\ExcelUtils.class
+snipp\test\bav\testcases\IEdesiredCapabilities.class
+snipp\test\bav\testcases\UAT_BavarianInnLoginUploadReciepts.class
+snipp\test\bav\testcases\UAT_HomePageTest.class
+snipp\test\bav\testcases\OLD_UAT_ExcelDataProviderFull.class
+snipp\test\bav\testcases\UAT_ExcelDataProviderFull_POM.class
+snipp\test\bav\testcases\BrowserTest.class
+snipp\test\bav\testcases\OLD_UATBavarianInnCreateUser.class
+snipp\test\bav\testcases\UAT_BavarianInnBrokenLinks.class
+snipp\test\bav\testcases\UAT_RegisterPageTestCanada.class
