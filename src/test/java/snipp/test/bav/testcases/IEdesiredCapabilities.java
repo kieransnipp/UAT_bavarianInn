@@ -66,7 +66,6 @@ public class IEdesiredCapabilities {
 
 	}
 
-	
 	// Pre conditions @Before
 		@SuppressWarnings("deprecation")
 		@BeforeSuite // 1
@@ -108,11 +107,9 @@ public class IEdesiredCapabilities {
 				System.out.println("Launching Internet Explorer");
 				System.setProperty("webdriver.ie.driver", "drivers/IEDriverServer.exe");
 				driver = new InternetExplorerDriver();
-				//driver = new InternetExplorerDriver(capabilities);
-				
+				//driver = new InternetExplorerDriver(capabilities);			
 
 			} else if (browserName.equals("opera")) {
-
 				System.out.println("Launching opera");
 				System.setProperty("webdriver.opera.driver", "drivers/operadriver.exe");
 				driver = new OperaDriver();

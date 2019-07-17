@@ -6,6 +6,8 @@
       <class name="snipp.test.bav.testcases.IEdesiredCapabilities">
         <methods>
           <include name="titleTest"/>
+          <include name="beforeTest"/>
+          <include name="login"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- snipp.test.bav.testcases.IEdesiredCapabilities -->
