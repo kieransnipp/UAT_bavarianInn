@@ -298,6 +298,9 @@ public class UAT_RegisterPageTestCanada {
 		RegisterPage.registerYes(driver).click();
 		// driver.findElement(By.xpath("//*[@type='submit']")).click();
 		test.log(Status.INFO, "Rego completed");
+		
+		//To do
+				Assert.fail("This dont work yet");
 	}
 
 	@AfterTest

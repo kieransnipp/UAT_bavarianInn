@@ -221,14 +221,11 @@ public class UAT_BavarianInnLoginUploadReciepts {
 				.contains("Please allow up to 48 hours for processing and verification.");
 		System.out.println("Document upload successful = " + uploadSuccessful);
 
-		if (uploadSuccessful == false) {
-			Assert.fail("This dont work???");
-		} else {
-			test.pass("Upload working????");
-		}
-
-		AssertJUnit
-				.assertTrue(confirmationPage.contains("Please allow up to 48 hours for processing and verification."));
+		
+			Assert.fail("This dont work yet");
+		
+		//AssertJUnit
+				//.assertTrue(confirmationPage.contains("Please allow up to 48 hours for processing and verification."));
 
 	}
 

@@ -243,7 +243,9 @@ public class UAT_ExcelDataProviderFull_POM {
 		RegisterPage.registerYes(driver).click();
 		// driver.findElement(By.xpath("//*[@type='submit']")).click();
 
-		test.pass("Passed");
+		
+		//To do
+		Assert.fail("This dont work yet");
 
 	} // End method
 

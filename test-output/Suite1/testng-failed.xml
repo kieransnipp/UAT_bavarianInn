@@ -1,55 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
-  <test name="Test1(failed)">
+  <test name="UAT_BavarianInnBrokenLinks(failed)">
     <classes>
-      <class name="snipp.test.bavarianinn.uat.UAT_BavarianInnBrokenLinks3">
+      <class name="snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens">
         <methods>
-          <include name="membersOffers"/>
-          <include name="WelcomeMessage"/>
-          <include name="membersSocial"/>
-          <include name="titleTest"/>
-          <include name="tearDown"/>
-          <include name="logOutOfSite"/>
-          <include name="login"/>
+          <include name="beforeMethod"/>
           <include name="launchBrowser"/>
-          <include name="beforeTest"/>
-          <include name="loginToSite"/>
-          <include name="membersLocations"/>
-          <include name="tearDownTest"/>
-        </methods>
-      </class> <!-- snipp.test.bavarianinn.uat.UAT_BavarianInnBrokenLinks3 -->
-      <class name="snipp.test.bavarianinn.uat.UAT_BavarianInnBrokenLinks2">
-        <methods>
-          <include name="membersOffers"/>
-          <include name="beforeTest"/>
-          <include name="WelcomeMessage"/>
-          <include name="membersSocial"/>
-          <include name="login"/>
-          <include name="tearDown"/>
-          <include name="logOutOfSite"/>
-          <include name="membersLocations"/>
-          <include name="tearDownTest"/>
-          <include name="loginToSite"/>
-          <include name="titleTest"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- snipp.test.bavarianinn.uat.UAT_BavarianInnBrokenLinks2 -->
-      <class name="snipp.test.bavarianinn.uat.UAT_BavarianInnBrokenLinks">
-        <methods>
-          <include name="titleTest"/>
-          <include name="launchBrowser"/>
-          <include name="membersLocations"/>
-          <include name="tearDownTest"/>
-          <include name="WelcomeMessage"/>
-          <include name="membersSocial"/>
-          <include name="login"/>
-          <include name="tearDown"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="generateTestNG"/>
           <include name="afterTest"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens -->
+      <class name="snipp.test.bav.testcases.UAT_HomePageTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="tearDownTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_HomePageTest -->
+      <class name="snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM -->
+      <class name="snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts">
+        <methods>
+          <include name="tearDownTest"/>
+          <include name="beforeTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts -->
+      <class name="snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks">
+        <methods>
+          <include name="membersLocations"/>
+          <include name="launchBrowser"/>
+          <include name="membersSocial"/>
           <include name="membersOffers"/>
           <include name="beforeTest"/>
+          <include name="titleTest"/>
+          <include name="WelcomeMessage"/>
+          <include name="login"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- snipp.test.bavarianinn.uat.UAT_BavarianInnBrokenLinks -->
+      </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks -->
+      <class name="snipp.test.bav.testcases.UAT_RegisterPageTestCanada">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="setUp"/>
+          <include name="tearDownTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_RegisterPageTestCanada -->
     </classes>
-  </test> <!-- Test1(failed) -->
+  </test> <!-- UAT_BavarianInnBrokenLinks(failed) -->
+  <test name="UAT_BavarianInnLoginCheckScreens(failed)">
+    <classes>
+      <class name="snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens">
+        <methods>
+          <include name="membersLocations"/>
+          <include name="beforeMethod"/>
+          <include name="launchBrowser"/>
+          <include name="membersSocial"/>
+          <include name="membersOffers"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="loginTitleTest"/>
+          <include name="generateTestNG"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens -->
+      <class name="snipp.test.bav.testcases.UAT_HomePageTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="tearDownTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_HomePageTest -->
+      <class name="snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM -->
+      <class name="snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts">
+        <methods>
+          <include name="tearDownTest"/>
+          <include name="beforeTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts -->
+      <class name="snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="beforeTest"/>
+          <include name="login"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks -->
+      <class name="snipp.test.bav.testcases.UAT_RegisterPageTestCanada">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="setUp"/>
+          <include name="tearDownTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_RegisterPageTestCanada -->
+    </classes>
+  </test> <!-- UAT_BavarianInnLoginCheckScreens(failed) -->
+  <test name="UAT_BavarianInnLoginUploadReciepts(failed)">
+    <classes>
+      <class name="snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="launchBrowser"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="generateTestNG"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens -->
+      <class name="snipp.test.bav.testcases.UAT_HomePageTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="tearDownTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_HomePageTest -->
+      <class name="snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM -->
+      <class name="snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts">
+        <methods>
+          <include name="tearDownTest"/>
+          <include name="uploadButtomSelection"/>
+          <include name="viewReciept"/>
+          <include name="beforeTest"/>
+          <include name="setUp"/>
+          <include name="verifyUploadQUEUEDStatus"/>
+          <include name="WelcomeMessage"/>
+          <include name="tearDown"/>
+          <include name="verifyUploadWorked"/>
+          <include name="uploadReciept"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts -->
+      <class name="snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="beforeTest"/>
+          <include name="login"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks -->
+      <class name="snipp.test.bav.testcases.UAT_RegisterPageTestCanada">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="setUp"/>
+          <include name="tearDownTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_RegisterPageTestCanada -->
+    </classes>
+  </test> <!-- UAT_BavarianInnLoginUploadReciepts(failed) -->
 </suite> <!-- Failed suite [Suite1] -->
