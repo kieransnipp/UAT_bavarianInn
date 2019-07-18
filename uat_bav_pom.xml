@@ -238,6 +238,8 @@
                 <phase>process-classes</phase>
                 <configuration>
                   <proc>only</proc>
+                  <source>1.8</source>
+                <target>1.8</target>
                  
                 </configuration>
               </execution>
