@@ -277,7 +277,7 @@
             <!--<suiteXmlFile>testng_arn.xml</suiteXmlFile>-->
 
             <!--Test location Full path  -->
-            <suiteXmlFile>suiteFile\uat\uat_testng_bav.xml</suiteXmlFile>
+            <suiteXmlFile>/suiteFile/uat/uat_testng_bav.xml</suiteXmlFile>
 
             
             
