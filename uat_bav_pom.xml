@@ -218,15 +218,6 @@
 
   </dependencies>
 
-<resources>
-    <resource>
-    <directory>src</directory>
-    <includes>
-    <include>**/*.java</include>
-    </includes>
-    </resource>
-</resources>
-
   <build>
 
     <plugins>
