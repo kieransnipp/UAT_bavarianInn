@@ -33,6 +33,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -58,7 +59,7 @@ import com.bav.pages.RegisterPage;
 
 public class UAT_RegisterPageTestCanada {
 	public static Properties prop;
-
+	private static WebDriver driver = null;
 
 	// Exent 1
 	ExtentHtmlReporter htmlReporter;
@@ -86,8 +87,6 @@ public class UAT_RegisterPageTestCanada {
 	String referralLocation = address.getCity();
 	String postCode = address.getPostalCode();
 	DateTime dateOfBirth = adultMale.getDateOfBirth();
-
-	public static WebDriver driver = null;
 
 	public UAT_RegisterPageTestCanada() {
 
@@ -126,10 +125,8 @@ public class UAT_RegisterPageTestCanada {
 
 		} else if (browserName.equals("opera")) {
 
-			
-
-		 System.setProperty("webdriver.opera.driver", "drivers/operadriver.exe");
-		 driver = new OperaDriver();
+			System.setProperty("webdriver.opera.driver", "drivers/operadriver.exe");
+			driver = new OperaDriver();
 
 		}
 		System.out.println("Maximize window, delete cookies");
@@ -144,7 +141,6 @@ public class UAT_RegisterPageTestCanada {
 
 	}
 
-	@BeforeMethod
 	@BeforeClass
 	public void setUp() {// Exent 2
 		htmlReporter = new ExtentHtmlReporter("UAT_RegisterPageTestCanada.html");
@@ -152,11 +148,11 @@ public class UAT_RegisterPageTestCanada {
 		extent.attachReporter(htmlReporter);
 	}
 
-	@BeforeMethod // 4
-	public void beforeMethod() {
-		System.out.println("@Before method bit");
-
-	}
+//	@BeforeMethod // 4
+//	public void beforeMethod() {
+//		System.out.println("@Before method bit");
+//
+//	}
 
 	// test cases, starting with @Test
 	@Test(priority = 1)
@@ -304,7 +300,13 @@ public class UAT_RegisterPageTestCanada {
 		test.log(Status.INFO, "Rego completed");
 	}
 
-	@AfterMethod
+	@AfterTest
+	public void tearDownTest() {
+		// driver.close();
+		driver.quit();
+		System.out.println("Test completed successfully");
+	}
+
 	@AfterSuite // Exent 5
 	public void tearDown() {
 

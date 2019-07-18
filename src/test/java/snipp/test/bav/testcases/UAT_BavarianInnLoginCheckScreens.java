@@ -46,11 +46,10 @@ import org.testng.Assert;
 public class UAT_BavarianInnLoginCheckScreens {
 
 	// Exent 1
-	 ExtentHtmlReporter htmlReporter;
-	 ExtentReports extent = new ExtentReports();
+	ExtentHtmlReporter htmlReporter;
+	ExtentReports extent = new ExtentReports();
 	ExtentTest test;
 	Exception exception = null;
-
 
 	public static Properties prop;
 
@@ -106,7 +105,7 @@ public class UAT_BavarianInnLoginCheckScreens {
 		driver.get(prop.getProperty("url"));
 		System.out.println("After url");
 
-		WebDriverRunner.setWebDriver(driver);	
+		WebDriverRunner.setWebDriver(driver);
 
 	}
 
@@ -133,7 +132,7 @@ public class UAT_BavarianInnLoginCheckScreens {
 		System.out.println("Verify the title of the login page");
 		String pageTitle = driver.getTitle();
 		System.out.println("Title of the page is " + pageTitle);
-	
+
 		AssertJUnit.assertEquals(driver.getTitle().contentEquals("Home"), true);
 		test.pass("Passed - Home page displayed");
 	}
@@ -163,7 +162,7 @@ public class UAT_BavarianInnLoginCheckScreens {
 		String loginTitle = driver.getTitle();
 		System.out.println("Title displayed is " + loginTitle);
 		Thread.sleep(3000);
-		
+
 		AssertJUnit.assertEquals(driver.getTitle().contentEquals("Details"), true);
 
 		System.out.println("Title is correct and this line is printed");
@@ -176,7 +175,7 @@ public class UAT_BavarianInnLoginCheckScreens {
 		System.out.println("Check welcome message");
 		String Hi = driver.findElement(By.xpath("//*[contains(text(), 'Michael')]")).toString();
 		System.out.println(Hi + " is displayed");
-		
+
 		AssertJUnit.assertTrue(Hi.contains("Michael"));
 		System.out.println("Welcome message is displayed correctly");
 		test.pass("Welcome displayed");
@@ -185,7 +184,7 @@ public class UAT_BavarianInnLoginCheckScreens {
 	@Test(priority = 8)
 	public void membersOffers() {
 		ExtentTest test = extent.createTest("membersOffers", "Check Offer links");
-	
+
 		driver.findElement(By.xpath("//*[contains(text(), 'Member Offers')]")).click();
 		String title = driver.getTitle();
 		test.pass("Offer lnks correct");
@@ -226,7 +225,7 @@ public class UAT_BavarianInnLoginCheckScreens {
 	// Post conditions starting with @After
 	@AfterMethod // 10
 	public void afterMethod() {
-		//extent.flush();
+		 extent.flush();
 		System.out.println("After Method bit");
 	}
 

@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="sandpit.XX_OLD_UATBavarianInnCreateUser">
+      <class name="snipp.test.bav.testcases.UAT_HomePageTest">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="createReport"/>
-          <include name="enterDetails"/>
           <include name="launchBrowser"/>
-          <include name="enterForm"/>
+          <include name="tearDownTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="checkTwitter"/>
         </methods>
-      </class> <!-- sandpit.XX_OLD_UATBavarianInnCreateUser -->
+      </class> <!-- snipp.test.bav.testcases.UAT_HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

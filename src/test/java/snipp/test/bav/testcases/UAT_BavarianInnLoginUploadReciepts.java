@@ -49,10 +49,10 @@ import org.testng.Assert;
 public class UAT_BavarianInnLoginUploadReciepts {
 
 	public static Properties prop;
-	
+
 	// Exent 1
-	 ExtentHtmlReporter htmlReporter;
-	 ExtentReports extent = new ExtentReports();
+	ExtentHtmlReporter htmlReporter;
+	ExtentReports extent = new ExtentReports();
 	ExtentTest test;
 	Exception exception = null;
 
@@ -109,8 +109,6 @@ public class UAT_BavarianInnLoginUploadReciepts {
 
 		// Manage Window and cookies
 	}
-	
-
 
 	@BeforeTest // 2
 	public void beforeTest() {
@@ -118,7 +116,6 @@ public class UAT_BavarianInnLoginUploadReciepts {
 
 	}
 
-	
 	@BeforeClass
 	public void setUp() {// Exent 2
 
@@ -127,12 +124,11 @@ public class UAT_BavarianInnLoginUploadReciepts {
 		extent.attachReporter(htmlReporter);
 	}
 
-
-	@BeforeMethod // 4
-	public void beforeMethod() {
-		System.out.println("@Before method bit");
-
-	}
+//	@BeforeMethod // 4
+//	public void beforeMethod() {
+//		System.out.println("@Before method bit");
+//
+//	}
 
 	// test cases, starting with @Test
 	@Test(priority = 1) // 5
@@ -150,7 +146,7 @@ public class UAT_BavarianInnLoginUploadReciepts {
 	public void enterDetails() {
 		System.out.println("Login to site");
 		ExtentTest test = extent.createTest("enterDetails", "Upload reciept");
-		
+
 		$(By.xpath("//*[@id=\"loginContainer\"]/*/*/input")).setValue("Michael.Ledwith@snipp.com");
 		$(By.xpath("//*[@id=\"loginContainer\"]/form/div[2]/input")).setValue("Snipp123!");
 		$(By.name("loginButton")).click();
@@ -221,18 +217,18 @@ public class UAT_BavarianInnLoginUploadReciepts {
 
 		// Confirm upload
 		String confirmationPage = driver.getPageSource();
-		 Boolean uploadSuccessful = confirmationPage
-		 .contains("Please allow up to 48 hours for processing and verification.");
-		 System.out.println("Document upload successful = " + uploadSuccessful);
-		 
-		 if (uploadSuccessful == false) {
-			 Assert.fail("This dont work???");
-		 }else {
-			 test.pass("Upload working????");
-		 }
-		
-		 AssertJUnit.assertTrue(confirmationPage.contains("Please allow up to 48 hours for processing and verification."));
-		
+		Boolean uploadSuccessful = confirmationPage
+				.contains("Please allow up to 48 hours for processing and verification.");
+		System.out.println("Document upload successful = " + uploadSuccessful);
+
+		if (uploadSuccessful == false) {
+			Assert.fail("This dont work???");
+		} else {
+			test.pass("Upload working????");
+		}
+
+		AssertJUnit
+				.assertTrue(confirmationPage.contains("Please allow up to 48 hours for processing and verification."));
 
 	}
 
@@ -268,10 +264,10 @@ public class UAT_BavarianInnLoginUploadReciepts {
 
 		System.out.println("Upload is QUEUED");
 		test.pass("QUEUED is displayed");
-		
+
 	}
 
-	//To be completed
+	// To be completed
 	@Test(priority = 9)
 	// @Test(dependsOnMethods = "verifyUploadStatus")
 	public void viewReciept() throws InterruptedException {
@@ -293,13 +289,14 @@ public class UAT_BavarianInnLoginUploadReciepts {
 
 		// Switch back to original browser (first window)
 		// driver.switchTo().window(winHandleBefore);
-		//assertTrue(pageSourcePopUp
-				//.contains("Your receipt is queued for processing, this area will be updated once it gets processed"));
-		//Thread.sleep(1000);
-		//System.out.println("Reciept upload confirmed");
+		// assertTrue(pageSourcePopUp
+		// .contains("Your receipt is queued for processing, this area will be updated
+		// once it gets processed"));
+		// Thread.sleep(1000);
+		// System.out.println("Reciept upload confirmed");
 		Assert.fail("Failed viewReciept does not work????");
-		
-	} //End viewReciept
+
+	} // End viewReciept
 
 	@Test(priority = 10)
 	public void logOutOfSite() throws InterruptedException {
@@ -310,7 +307,6 @@ public class UAT_BavarianInnLoginUploadReciepts {
 
 	}
 
-	
 	@AfterTest
 	public void tearDownTest() {
 		driver.close();
@@ -318,7 +314,7 @@ public class UAT_BavarianInnLoginUploadReciepts {
 		System.out.println("Test completed successfully");
 	}
 
-	@AfterMethod
+	
 	@AfterSuite // Exent 5
 	public void tearDown() {
 		extent.flush();

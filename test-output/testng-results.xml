@@ -2,44 +2,40 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7244" started-at="2019-07-17T15:55:35Z" finished-at="2019-07-17T15:55:43Z">
+  <suite name="Default suite" duration-ms="11760" started-at="2019-07-18T09:50:25Z" finished-at="2019-07-18T09:50:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7244" started-at="2019-07-17T15:55:35Z" finished-at="2019-07-17T15:55:43Z">
-      <class name="sandpit.XX_OLD_UATBavarianInnCreateUser">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:sandpit.XX_OLD_UATBavarianInnCreateUser@38b8b6c0]" name="launchBrowser" is-config="true" duration-ms="5485" started-at="2019-07-17T16:55:30Z" finished-at="2019-07-17T16:55:35Z">
+    <test name="Default test" duration-ms="11760" started-at="2019-07-18T09:50:25Z" finished-at="2019-07-18T09:50:36Z">
+      <class name="snipp.test.bav.testcases.UAT_RegisterPageTestCanada">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@79d82f66]" name="launchBrowser" is-config="true" duration-ms="9343" started-at="2019-07-18T10:50:15Z" finished-at="2019-07-18T10:50:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:sandpit.XX_OLD_UATBavarianInnCreateUser@38b8b6c0]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-07-17T16:55:35Z" finished-at="2019-07-17T16:55:35Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@79d82f66]" name="setUp" is-config="true" duration-ms="180" started-at="2019-07-18T10:50:25Z" finished-at="2019-07-18T10:50:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginToSite()[pri:1, instance:sandpit.XX_OLD_UATBavarianInnCreateUser@38b8b6c0]" name="loginToSite" duration-ms="87" started-at="2019-07-17T16:55:35Z" finished-at="2019-07-17T16:55:36Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginToSite()[pri:1, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@79d82f66]" name="loginToSite" duration-ms="36" started-at="2019-07-18T10:50:25Z" finished-at="2019-07-18T10:50:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToSite -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:sandpit.XX_OLD_UATBavarianInnCreateUser@38b8b6c0]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-17T16:55:36Z" finished-at="2019-07-17T16:55:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="enterDetails()[pri:2, instance:sandpit.XX_OLD_UATBavarianInnCreateUser@38b8b6c0]" name="enterDetails" duration-ms="810" started-at="2019-07-17T16:55:36Z" finished-at="2019-07-17T16:55:36Z">
+        <test-method status="PASS" signature="enterDetails()[pri:2, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@79d82f66]" name="enterDetails" duration-ms="1657" started-at="2019-07-18T10:50:25Z" finished-at="2019-07-18T10:50:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterDetails -->
-        <test-method status="PASS" signature="enterForm()[pri:0, instance:sandpit.XX_OLD_UATBavarianInnCreateUser@38b8b6c0]" name="enterForm" duration-ms="5988" started-at="2019-07-17T16:55:36Z" depends-on-methods="sandpit.XX_OLD_UATBavarianInnCreateUser.enterDetails" finished-at="2019-07-17T16:55:42Z">
+        <test-method status="PASS" signature="enterForm()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@79d82f66]" name="enterForm" duration-ms="9029" started-at="2019-07-18T10:50:27Z" depends-on-methods="snipp.test.bav.testcases.UAT_RegisterPageTestCanada.enterDetails" finished-at="2019-07-18T10:50:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterForm -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:sandpit.XX_OLD_UATBavarianInnCreateUser@38b8b6c0]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-17T16:55:36Z" finished-at="2019-07-17T16:55:36Z">
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@79d82f66]" name="tearDownTest" is-config="true" duration-ms="825" started-at="2019-07-18T10:50:36Z" finished-at="2019-07-18T10:50:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="createReport()[pri:0, instance:sandpit.XX_OLD_UATBavarianInnCreateUser@38b8b6c0]" name="createReport" is-config="true" duration-ms="339" started-at="2019-07-17T16:55:42Z" finished-at="2019-07-17T16:55:43Z">
+        </test-method> <!-- tearDownTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@79d82f66]" name="tearDown" is-config="true" duration-ms="432" started-at="2019-07-18T10:50:36Z" finished-at="2019-07-18T10:50:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createReport -->
-      </class> <!-- sandpit.XX_OLD_UATBavarianInnCreateUser -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- snipp.test.bav.testcases.UAT_RegisterPageTestCanada -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,6 +3,8 @@
 package snipp.test.bav.testcases;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.AssertJUnit;
 import static com.codeborne.selenide.Selenide.$;
@@ -41,7 +43,7 @@ public class IEdesiredCapabilities {
 	ExtentReports extent = new ExtentReports();
 	ExtentTest test;
 
-	public static WebDriver driver;
+	private static WebDriver driver;
 	public static Properties prop;
 	Exception exception = null;
 	
@@ -189,6 +191,15 @@ public class IEdesiredCapabilities {
 
 			
 			//test.pass("Check links - Passed");
+		}
+		
+		@AfterSuite // Exent 5
+		public void tearDown() {
+			driver.close();
+			driver.quit();
+			System.out.println("Test completed successfully");
+			extent.flush();
+
 		}
 
 }

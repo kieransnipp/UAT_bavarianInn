@@ -56,7 +56,7 @@ public class UAT_BavarianInnBrokenLinks {
 	ExtentReports extent = new ExtentReports();
 	ExtentTest test;
 
-	public static WebDriver driver;
+	private static WebDriver driver = null;
 	public static Properties prop;
 	Exception exception = null;
 
@@ -347,10 +347,10 @@ public class UAT_BavarianInnBrokenLinks {
 		return true;
 	}
 
-	@AfterMethod
-	public void afterTest() {
-		System.out.println("This is the after method bit");
-	}
+//	@AfterMethod
+//	public void afterTest() {
+//		System.out.println("This is the after method bit");
+//	}
 
 
 	@AfterSuite // Exent 5
@@ -358,7 +358,7 @@ public class UAT_BavarianInnBrokenLinks {
 		driver.close();
 		driver.quit();
 		System.out.println("Test completed successfully");
-		//extent.flush();
+		extent.flush();
 
 	}
 }

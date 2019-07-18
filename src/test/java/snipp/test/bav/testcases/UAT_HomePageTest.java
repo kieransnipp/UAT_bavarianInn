@@ -129,11 +129,11 @@ public class UAT_HomePageTest {
 		extent.attachReporter(htmlReporter);
 	}
 
-	@BeforeMethod // 4
-	public void beforeMethod() {
-		System.out.println("@Before method bit");
-
-	}
+//	@BeforeMethod // 4
+//	public void beforeMethod() {
+//		System.out.println("@Before method bit");
+//
+//	}
 
 	// test cases, starting with @Test
 	@Test(priority = 1)
@@ -225,7 +225,7 @@ public class UAT_HomePageTest {
 		driver.findElement(By.xpath("//a[contains(text(),'Twitter')]")).click();
 
 		String title = driver.getTitle();
-		AssertJUnit.assertEquals(title, "Bavarian Inn (@Bavarian_Inn) | Twitter");
+		AssertJUnit.assertEquals("Bavarian Inn (@Bavarian_Inn) on Twitter",title);
 	
 		driver.navigate().back();
 
@@ -245,7 +245,7 @@ public class UAT_HomePageTest {
 	@AfterSuite // Exent 5
 	public void tearDown() {
 
-		//extent.flush();
+		extent.flush();
 
 	}
 

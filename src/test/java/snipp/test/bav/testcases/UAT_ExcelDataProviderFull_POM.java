@@ -283,7 +283,7 @@ public class UAT_ExcelDataProviderFull_POM {
 		return data;
 	}// End testData
 
-	@AfterMethod
+	
 	@AfterSuite // Exent 5
 	public void tearDown() {
 		extent.flush();

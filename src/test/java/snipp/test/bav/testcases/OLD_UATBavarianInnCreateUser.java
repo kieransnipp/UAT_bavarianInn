@@ -248,6 +248,9 @@ public class OLD_UATBavarianInnCreateUser {
 
 	}
 	
+	//Registration is broken
+	//Test needs to be completed from here
+	
 	@AfterClass
 	public void createReport() {
 		test.info("Create the report");
