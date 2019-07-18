@@ -1,4 +1,5 @@
-//Demo this one
+//Demo this one 
+//Thursday 4.30pm
 
 package snipp.test.bav.testcases;
 
