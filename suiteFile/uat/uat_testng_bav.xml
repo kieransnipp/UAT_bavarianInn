@@ -1,6 +1,6 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Proof of concept of TestNG">
+<suite name="BavarianInnTests" verbose="1" preserve-order="true">
 
 <parameter name="userName" value="Michael.Ledwith@snipp.com" />
 <parameter name="passWord" value="Snipp123!"/>
@@ -17,9 +17,8 @@
     </classes>
   </test>-->
   
-   
-   <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Suite1" verbose="1" preserve-order="true">
+  
+
     
     <test name="UAT_BavarianInnBrokenLinks">
         <classes>
