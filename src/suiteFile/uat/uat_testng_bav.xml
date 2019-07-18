@@ -19,12 +19,12 @@
             <class name="snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens"/>   
         </classes>
          </test> 
-<!-- 
+
            <test name="UAT_HomePageTest">
         <classes>
             <class name="snipp.test.bav.testcases.UAT_HomePageTest"/>   
         </classes>
-         </test> -->
+         </test>
         
         <test name="UAT_BavarianInnLoginUploadReciepts_Broken">
         <classes>
