@@ -303,11 +303,13 @@ public class UAT_RegisterPageTestCanada {
 		test.fail("This part needs to be fixed before the test completed assertion can be completed");
 	}
 
-	@AfterTest
-	public void tearDownTest() {
-		// driver.close();
+	@AfterTest // 12
+	public void afterTest() {
+		System.out.println("After Test bit");
+		System.out.println("Close browser");
+		driver.close();
 		driver.quit();
-		System.out.println("Test completed successfully");
+
 	}
 
 	@AfterSuite // Exent 5

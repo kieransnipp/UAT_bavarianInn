@@ -28,6 +28,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
@@ -284,6 +285,15 @@ public class UAT_ExcelDataProviderFull_POM {
 		}
 		return data;
 	}// End testData
+	
+	@AfterTest // 12
+	public void afterTest() {
+		System.out.println("After Test bit");
+		System.out.println("Close browser");
+		driver.close();
+		driver.quit();
+
+	}
 
 	
 	@AfterSuite // Exent 5
