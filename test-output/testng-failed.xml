@@ -32,9 +32,9 @@
       </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks -->
       <class name="snipp.test.bav.testcases.UAT_RegisterPageTestCanada">
         <methods>
+          <include name="afterTest"/>
           <include name="launchBrowser"/>
           <include name="setUp"/>
-          <include name="tearDownTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- snipp.test.bav.testcases.UAT_RegisterPageTestCanada -->
@@ -49,6 +49,7 @@
       <class name="snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM">
         <methods>
           <include name="launchBrowser"/>
+          <include name="afterTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
@@ -80,6 +81,14 @@
           <include name="afterTest"/>
         </methods>
       </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens -->
+      <class name="snipp.test.bav.testcases.UAT_RegisterPageTestCanada">
+        <methods>
+          <include name="afterTest"/>
+          <include name="launchBrowser"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_RegisterPageTestCanada -->
       <class name="snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks">
         <methods>
           <include name="launchBrowser"/>
@@ -88,14 +97,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks -->
-      <class name="snipp.test.bav.testcases.UAT_RegisterPageTestCanada">
-        <methods>
-          <include name="launchBrowser"/>
-          <include name="setUp"/>
-          <include name="tearDownTest"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- snipp.test.bav.testcases.UAT_RegisterPageTestCanada -->
       <class name="snipp.test.bav.testcases.UAT_HomePageTest">
         <methods>
           <include name="launchBrowser"/>
@@ -107,6 +108,7 @@
       <class name="snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM">
         <methods>
           <include name="launchBrowser"/>
+          <include name="afterTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
@@ -134,6 +136,14 @@
           <include name="afterTest"/>
         </methods>
       </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens -->
+      <class name="snipp.test.bav.testcases.UAT_RegisterPageTestCanada">
+        <methods>
+          <include name="afterTest"/>
+          <include name="launchBrowser"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_RegisterPageTestCanada -->
       <class name="snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks">
         <methods>
           <include name="launchBrowser"/>
@@ -142,14 +152,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks -->
-      <class name="snipp.test.bav.testcases.UAT_RegisterPageTestCanada">
-        <methods>
-          <include name="launchBrowser"/>
-          <include name="setUp"/>
-          <include name="tearDownTest"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- snipp.test.bav.testcases.UAT_RegisterPageTestCanada -->
       <class name="snipp.test.bav.testcases.UAT_HomePageTest">
         <methods>
           <include name="launchBrowser"/>
@@ -161,6 +163,7 @@
       <class name="snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM">
         <methods>
           <include name="launchBrowser"/>
+          <include name="afterTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>

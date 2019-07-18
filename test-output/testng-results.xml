@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="15" ignored="0" total="39" passed="24">
   <reporter-output>
   </reporter-output>
-  <suite name="BavarianInnTests" duration-ms="123231" started-at="2019-07-18T11:17:31Z" finished-at="2019-07-18T11:19:34Z">
+  <suite name="BavarianInnTests" duration-ms="130810" started-at="2019-07-18T11:44:47Z" finished-at="2019-07-18T11:46:58Z">
     <groups>
     </groups>
-    <test name="UAT_BavarianInnBrokenLinks" duration-ms="10534" started-at="2019-07-18T11:17:31Z" finished-at="2019-07-18T11:17:41Z">
+    <test name="UAT_BavarianInnBrokenLinks" duration-ms="10875" started-at="2019-07-18T11:44:47Z" finished-at="2019-07-18T11:44:58Z">
       <class name="snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-07-18T12:17:31Z" finished-at="2019-07-18T12:17:31Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-07-18T12:44:47Z" finished-at="2019-07-18T12:44:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="login()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="login" is-config="true" duration-ms="1441" started-at="2019-07-18T12:17:31Z" finished-at="2019-07-18T12:17:32Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="login" is-config="true" duration-ms="2069" started-at="2019-07-18T12:44:47Z" finished-at="2019-07-18T12:44:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="FAIL" signature="titleTest()[pri:1, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="titleTest" duration-ms="3025" started-at="2019-07-18T12:17:32Z" finished-at="2019-07-18T12:17:35Z">
+        <test-method status="FAIL" signature="titleTest()[pri:1, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="titleTest" duration-ms="3029" started-at="2019-07-18T12:44:49Z" finished-at="2019-07-18T12:44:52Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<false> but was:<true>]]>
@@ -59,11 +59,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleTest -->
-        <test-method status="PASS" signature="loginToSite()[pri:2, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="loginToSite" duration-ms="1418" started-at="2019-07-18T12:17:35Z" finished-at="2019-07-18T12:17:36Z">
+        <test-method status="PASS" signature="loginToSite()[pri:2, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="loginToSite" duration-ms="1160" started-at="2019-07-18T12:44:52Z" finished-at="2019-07-18T12:44:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToSite -->
-        <test-method status="FAIL" signature="WelcomeMessage()[pri:4, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="WelcomeMessage" duration-ms="58" started-at="2019-07-18T12:17:36Z" finished-at="2019-07-18T12:17:36Z">
+        <test-method status="FAIL" signature="WelcomeMessage()[pri:4, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="WelcomeMessage" duration-ms="85" started-at="2019-07-18T12:44:54Z" finished-at="2019-07-18T12:44:54Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Hi Michael')]"}
@@ -72,8 +72,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57555}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c9d05e1b734156c72f6e9167c3791
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ba3fed42748a5cbd22a2c6ce30c4ebee
 *** Element info: {Using=xpath, value=//*[contains(text(), 'Hi Michael')]}]]>
             </message>
             <full-stacktrace>
@@ -83,8 +83,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57555}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c9d05e1b734156c72f6e9167c3791
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ba3fed42748a5cbd22a2c6ce30c4ebee
 *** Element info: {Using=xpath, value=//*[contains(text(), 'Hi Michael')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -132,7 +132,7 @@ Session ID: c88c9d05e1b734156c72f6e9167c3791
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WelcomeMessage -->
-        <test-method status="FAIL" signature="membersOffers()[pri:8, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="membersOffers" duration-ms="44" started-at="2019-07-18T12:17:36Z" finished-at="2019-07-18T12:17:37Z">
+        <test-method status="FAIL" signature="membersOffers()[pri:8, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="membersOffers" duration-ms="44" started-at="2019-07-18T12:44:54Z" finished-at="2019-07-18T12:44:54Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Member Offers')]"}
@@ -141,8 +141,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57555}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c9d05e1b734156c72f6e9167c3791
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ba3fed42748a5cbd22a2c6ce30c4ebee
 *** Element info: {Using=xpath, value=//*[contains(text(), 'Member Offers')]}]]>
             </message>
             <full-stacktrace>
@@ -152,8 +152,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57555}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c9d05e1b734156c72f6e9167c3791
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ba3fed42748a5cbd22a2c6ce30c4ebee
 *** Element info: {Using=xpath, value=//*[contains(text(), 'Member Offers')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -201,7 +201,7 @@ Session ID: c88c9d05e1b734156c72f6e9167c3791
           <reporter-output>
           </reporter-output>
         </test-method> <!-- membersOffers -->
-        <test-method status="FAIL" signature="membersLocations()[pri:9, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="membersLocations" duration-ms="53" started-at="2019-07-18T12:17:37Z" finished-at="2019-07-18T12:17:37Z">
+        <test-method status="FAIL" signature="membersLocations()[pri:9, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="membersLocations" duration-ms="35" started-at="2019-07-18T12:44:54Z" finished-at="2019-07-18T12:44:54Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Locations')]"}
@@ -210,8 +210,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57555}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c9d05e1b734156c72f6e9167c3791
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ba3fed42748a5cbd22a2c6ce30c4ebee
 *** Element info: {Using=xpath, value=//*[contains(text(), 'Locations')]}]]>
             </message>
             <full-stacktrace>
@@ -221,8 +221,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57555}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c9d05e1b734156c72f6e9167c3791
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ba3fed42748a5cbd22a2c6ce30c4ebee
 *** Element info: {Using=xpath, value=//*[contains(text(), 'Locations')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -270,7 +270,7 @@ Session ID: c88c9d05e1b734156c72f6e9167c3791
           <reporter-output>
           </reporter-output>
         </test-method> <!-- membersLocations -->
-        <test-method status="FAIL" signature="membersSocial()[pri:10, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="membersSocial" duration-ms="41" started-at="2019-07-18T12:17:37Z" finished-at="2019-07-18T12:17:37Z">
+        <test-method status="FAIL" signature="membersSocial()[pri:10, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="membersSocial" duration-ms="37" started-at="2019-07-18T12:44:54Z" finished-at="2019-07-18T12:44:54Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Social')]"}
@@ -279,8 +279,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57555}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c9d05e1b734156c72f6e9167c3791
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ba3fed42748a5cbd22a2c6ce30c4ebee
 *** Element info: {Using=xpath, value=//*[contains(text(), 'Social')]}]]>
             </message>
             <full-stacktrace>
@@ -290,8 +290,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57555}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c88c9d05e1b734156c72f6e9167c3791
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ba3fed42748a5cbd22a2c6ce30c4ebee
 *** Element info: {Using=xpath, value=//*[contains(text(), 'Social')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -339,43 +339,43 @@ Session ID: c88c9d05e1b734156c72f6e9167c3791
           <reporter-output>
           </reporter-output>
         </test-method> <!-- membersSocial -->
-        <test-method status="PASS" signature="logOutOfSite()[pri:11, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="logOutOfSite" duration-ms="4413" started-at="2019-07-18T12:17:37Z" finished-at="2019-07-18T12:17:41Z">
+        <test-method status="PASS" signature="logOutOfSite()[pri:11, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="logOutOfSite" duration-ms="4361" started-at="2019-07-18T12:44:54Z" finished-at="2019-07-18T12:44:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutOfSite -->
       </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks -->
     </test> <!-- UAT_BavarianInnBrokenLinks -->
-    <test name="UAT_BavarianInnLoginCheckScreens" duration-ms="12189" started-at="2019-07-18T11:17:41Z" finished-at="2019-07-18T11:17:53Z">
+    <test name="UAT_BavarianInnLoginCheckScreens" duration-ms="14332" started-at="2019-07-18T11:44:58Z" finished-at="2019-07-18T11:45:13Z">
       <class name="snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="setUp" is-config="true" duration-ms="7" started-at="2019-07-18T12:17:41Z" finished-at="2019-07-18T12:17:41Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="setUp" is-config="true" duration-ms="5" started-at="2019-07-18T12:44:58Z" finished-at="2019-07-18T12:44:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginToSite()[pri:1, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="loginToSite" duration-ms="13" started-at="2019-07-18T12:17:41Z" finished-at="2019-07-18T12:17:41Z">
+        <test-method status="PASS" signature="loginToSite()[pri:1, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="loginToSite" duration-ms="28" started-at="2019-07-18T12:44:58Z" finished-at="2019-07-18T12:44:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToSite -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-18T12:17:41Z" finished-at="2019-07-18T12:17:41Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-18T12:44:58Z" finished-at="2019-07-18T12:44:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="afterMethod" is-config="true" duration-ms="656" started-at="2019-07-18T12:17:41Z" finished-at="2019-07-18T12:17:42Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="afterMethod" is-config="true" duration-ms="1030" started-at="2019-07-18T12:44:58Z" finished-at="2019-07-18T12:44:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="enterDetails()[pri:2, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="enterDetails" duration-ms="3124" started-at="2019-07-18T12:17:42Z" finished-at="2019-07-18T12:17:45Z">
+        <test-method status="PASS" signature="enterDetails()[pri:2, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="enterDetails" duration-ms="4870" started-at="2019-07-18T12:44:59Z" finished-at="2019-07-18T12:45:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterDetails -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-18T12:17:42Z" finished-at="2019-07-18T12:17:42Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-18T12:44:59Z" finished-at="2019-07-18T12:44:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="afterMethod" is-config="true" duration-ms="98" started-at="2019-07-18T12:17:45Z" finished-at="2019-07-18T12:17:45Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="afterMethod" is-config="true" duration-ms="276" started-at="2019-07-18T12:45:04Z" finished-at="2019-07-18T12:45:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="FAIL" signature="loginTitleTest()[pri:3, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="loginTitleTest" duration-ms="3039" started-at="2019-07-18T12:17:45Z" finished-at="2019-07-18T12:17:48Z">
+        <test-method status="FAIL" signature="loginTitleTest()[pri:3, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="loginTitleTest" duration-ms="3041" started-at="2019-07-18T12:45:04Z" finished-at="2019-07-18T12:45:08Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<false> but was:<true>]]>
@@ -419,27 +419,31 @@ Session ID: c88c9d05e1b734156c72f6e9167c3791
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTitleTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-18T12:17:45Z" finished-at="2019-07-18T12:17:45Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-18T12:45:04Z" finished-at="2019-07-18T12:45:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="afterMethod" is-config="true" duration-ms="101" started-at="2019-07-18T12:17:48Z" finished-at="2019-07-18T12:17:48Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="afterMethod" is-config="true" duration-ms="100" started-at="2019-07-18T12:45:08Z" finished-at="2019-07-18T12:45:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="WelcomeMessage()[pri:4, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="WelcomeMessage" duration-ms="21" started-at="2019-07-18T12:17:48Z" finished-at="2019-07-18T12:17:48Z">
+        <test-method status="PASS" signature="WelcomeMessage()[pri:4, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="WelcomeMessage" duration-ms="36" started-at="2019-07-18T12:45:08Z" finished-at="2019-07-18T12:45:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WelcomeMessage -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-18T12:17:48Z" finished-at="2019-07-18T12:17:48Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-18T12:45:08Z" finished-at="2019-07-18T12:45:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="afterMethod" is-config="true" duration-ms="146" started-at="2019-07-18T12:17:48Z" finished-at="2019-07-18T12:17:48Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="afterMethod" is-config="true" duration-ms="121" started-at="2019-07-18T12:45:08Z" finished-at="2019-07-18T12:45:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="FAIL" signature="membersOffers()[pri:8, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="membersOffers" duration-ms="33" started-at="2019-07-18T12:17:48Z" finished-at="2019-07-18T12:17:48Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-07-18T12:45:08Z" finished-at="2019-07-18T12:45:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="membersOffers()[pri:8, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="membersOffers" duration-ms="33" started-at="2019-07-18T12:45:08Z" finished-at="2019-07-18T12:45:08Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Member Offers')]"}
@@ -448,8 +452,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57642}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 70fddeac28bc1ff419deedf0824e5cad
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61172}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 50dfb9434563c10a90d9495748e736bc
 *** Element info: {Using=xpath, value=//*[contains(text(), 'Member Offers')]}]]>
             </message>
             <full-stacktrace>
@@ -459,8 +463,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57642}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 70fddeac28bc1ff419deedf0824e5cad
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61172}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 50dfb9434563c10a90d9495748e736bc
 *** Element info: {Using=xpath, value=//*[contains(text(), 'Member Offers')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -508,15 +512,11 @@ Session ID: 70fddeac28bc1ff419deedf0824e5cad
           <reporter-output>
           </reporter-output>
         </test-method> <!-- membersOffers -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-18T12:17:48Z" finished-at="2019-07-18T12:17:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="afterMethod" is-config="true" duration-ms="131" started-at="2019-07-18T12:17:48Z" finished-at="2019-07-18T12:17:48Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="afterMethod" is-config="true" duration-ms="81" started-at="2019-07-18T12:45:08Z" finished-at="2019-07-18T12:45:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="FAIL" signature="membersLocations()[pri:9, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="membersLocations" duration-ms="32" started-at="2019-07-18T12:17:48Z" finished-at="2019-07-18T12:17:49Z">
+        <test-method status="FAIL" signature="membersLocations()[pri:9, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="membersLocations" duration-ms="48" started-at="2019-07-18T12:45:08Z" finished-at="2019-07-18T12:45:08Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Locations')]"}
@@ -525,8 +525,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57642}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 70fddeac28bc1ff419deedf0824e5cad
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61172}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 50dfb9434563c10a90d9495748e736bc
 *** Element info: {Using=xpath, value=//*[contains(text(), 'Locations')]}]]>
             </message>
             <full-stacktrace>
@@ -536,8 +536,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57642}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 70fddeac28bc1ff419deedf0824e5cad
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61172}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 50dfb9434563c10a90d9495748e736bc
 *** Element info: {Using=xpath, value=//*[contains(text(), 'Locations')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -585,19 +585,19 @@ Session ID: 70fddeac28bc1ff419deedf0824e5cad
           <reporter-output>
           </reporter-output>
         </test-method> <!-- membersLocations -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-18T12:17:48Z" finished-at="2019-07-18T12:17:48Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-18T12:45:08Z" finished-at="2019-07-18T12:45:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="afterMethod" is-config="true" duration-ms="62" started-at="2019-07-18T12:17:49Z" finished-at="2019-07-18T12:17:49Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="afterMethod" is-config="true" duration-ms="102" started-at="2019-07-18T12:45:08Z" finished-at="2019-07-18T12:45:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-18T12:17:49Z" finished-at="2019-07-18T12:17:49Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-07-18T12:45:08Z" finished-at="2019-07-18T12:45:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="membersSocial()[pri:10, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="membersSocial" duration-ms="49" started-at="2019-07-18T12:17:49Z" finished-at="2019-07-18T12:17:49Z">
+        <test-method status="FAIL" signature="membersSocial()[pri:10, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="membersSocial" duration-ms="51" started-at="2019-07-18T12:45:08Z" finished-at="2019-07-18T12:45:08Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Social')]"}
@@ -606,8 +606,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57642}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 70fddeac28bc1ff419deedf0824e5cad
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61172}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 50dfb9434563c10a90d9495748e736bc
 *** Element info: {Using=xpath, value=//*[contains(text(), 'Social')]}]]>
             </message>
             <full-stacktrace>
@@ -617,8 +617,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57642}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 70fddeac28bc1ff419deedf0824e5cad
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61172}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 50dfb9434563c10a90d9495748e736bc
 *** Element info: {Using=xpath, value=//*[contains(text(), 'Social')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -666,95 +666,95 @@ Session ID: 70fddeac28bc1ff419deedf0824e5cad
           <reporter-output>
           </reporter-output>
         </test-method> <!-- membersSocial -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="afterMethod" is-config="true" duration-ms="70" started-at="2019-07-18T12:17:49Z" finished-at="2019-07-18T12:17:49Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="afterMethod" is-config="true" duration-ms="133" started-at="2019-07-18T12:45:08Z" finished-at="2019-07-18T12:45:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-07-18T12:17:49Z" finished-at="2019-07-18T12:17:49Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-18T12:45:08Z" finished-at="2019-07-18T12:45:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="logOutOfSite()[pri:11, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="logOutOfSite" duration-ms="1863" started-at="2019-07-18T12:17:49Z" finished-at="2019-07-18T12:17:51Z">
+        <test-method status="PASS" signature="logOutOfSite()[pri:11, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="logOutOfSite" duration-ms="1379" started-at="2019-07-18T12:45:08Z" finished-at="2019-07-18T12:45:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutOfSite -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="afterMethod" is-config="true" duration-ms="56" started-at="2019-07-18T12:17:51Z" finished-at="2019-07-18T12:17:51Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="afterMethod" is-config="true" duration-ms="110" started-at="2019-07-18T12:45:10Z" finished-at="2019-07-18T12:45:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="afterTest" is-config="true" duration-ms="2671" started-at="2019-07-18T12:17:51Z" finished-at="2019-07-18T12:17:53Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="afterTest" is-config="true" duration-ms="2867" started-at="2019-07-18T12:45:10Z" finished-at="2019-07-18T12:45:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens -->
     </test> <!-- UAT_BavarianInnLoginCheckScreens -->
-    <test name="UAT_HomePageTest" duration-ms="36803" started-at="2019-07-18T11:17:53Z" finished-at="2019-07-18T11:18:30Z">
+    <test name="UAT_HomePageTest" duration-ms="39781" started-at="2019-07-18T11:45:13Z" finished-at="2019-07-18T11:45:52Z">
       <class name="snipp.test.bav.testcases.UAT_HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="setUp" is-config="true" duration-ms="3" started-at="2019-07-18T12:17:53Z" finished-at="2019-07-18T12:17:53Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="setUp" is-config="true" duration-ms="4" started-at="2019-07-18T12:45:13Z" finished-at="2019-07-18T12:45:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginToSite()[pri:1, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="loginToSite" duration-ms="92" started-at="2019-07-18T12:17:53Z" finished-at="2019-07-18T12:17:53Z">
+        <test-method status="PASS" signature="loginToSite()[pri:1, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="loginToSite" duration-ms="21" started-at="2019-07-18T12:45:13Z" finished-at="2019-07-18T12:45:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToSite -->
-        <test-method status="PASS" signature="howItWorks()[pri:2, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="howItWorks" duration-ms="1250" started-at="2019-07-18T12:17:53Z" finished-at="2019-07-18T12:17:55Z">
+        <test-method status="PASS" signature="howItWorks()[pri:2, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="howItWorks" duration-ms="1556" started-at="2019-07-18T12:45:13Z" finished-at="2019-07-18T12:45:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- howItWorks -->
-        <test-method status="PASS" signature="register()[pri:3, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="register" duration-ms="1637" started-at="2019-07-18T12:17:55Z" finished-at="2019-07-18T12:17:56Z">
+        <test-method status="PASS" signature="register()[pri:3, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="register" duration-ms="2367" started-at="2019-07-18T12:45:14Z" finished-at="2019-07-18T12:45:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="PASS" signature="faq()[pri:4, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="faq" duration-ms="1162" started-at="2019-07-18T12:17:56Z" finished-at="2019-07-18T12:17:57Z">
+        <test-method status="PASS" signature="faq()[pri:4, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="faq" duration-ms="1611" started-at="2019-07-18T12:45:17Z" finished-at="2019-07-18T12:45:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- faq -->
-        <test-method status="PASS" signature="checkFacebook()[pri:5, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="checkFacebook" duration-ms="7972" started-at="2019-07-18T12:17:57Z" finished-at="2019-07-18T12:18:05Z">
+        <test-method status="PASS" signature="checkFacebook()[pri:5, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="checkFacebook" duration-ms="8802" started-at="2019-07-18T12:45:18Z" finished-at="2019-07-18T12:45:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFacebook -->
-        <test-method status="PASS" signature="checkYoutube()[pri:6, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="checkYoutube" duration-ms="5749" started-at="2019-07-18T12:18:05Z" finished-at="2019-07-18T12:18:11Z">
+        <test-method status="PASS" signature="checkYoutube()[pri:6, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="checkYoutube" duration-ms="4715" started-at="2019-07-18T12:45:27Z" finished-at="2019-07-18T12:45:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkYoutube -->
-        <test-method status="PASS" signature="checkYelp()[pri:7, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="checkYelp" duration-ms="13325" started-at="2019-07-18T12:18:11Z" finished-at="2019-07-18T12:18:25Z">
+        <test-method status="PASS" signature="checkYelp()[pri:7, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="checkYelp" duration-ms="14675" started-at="2019-07-18T12:45:32Z" finished-at="2019-07-18T12:45:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkYelp -->
-        <test-method status="PASS" signature="checkTwitter()[pri:8, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="checkTwitter" duration-ms="4702" started-at="2019-07-18T12:18:25Z" finished-at="2019-07-18T12:18:29Z">
+        <test-method status="PASS" signature="checkTwitter()[pri:8, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="checkTwitter" duration-ms="5143" started-at="2019-07-18T12:45:46Z" finished-at="2019-07-18T12:45:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTwitter -->
-        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="tearDownTest" is-config="true" duration-ms="898" started-at="2019-07-18T12:18:29Z" finished-at="2019-07-18T12:18:30Z">
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="tearDownTest" is-config="true" duration-ms="868" started-at="2019-07-18T12:45:52Z" finished-at="2019-07-18T12:45:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
       </class> <!-- snipp.test.bav.testcases.UAT_HomePageTest -->
     </test> <!-- UAT_HomePageTest -->
-    <test name="UAT_BavarianInnLoginUploadReciepts_Broken" duration-ms="41569" started-at="2019-07-18T11:18:30Z" finished-at="2019-07-18T11:19:12Z">
+    <test name="UAT_BavarianInnLoginUploadReciepts_Broken" duration-ms="43026" started-at="2019-07-18T11:45:52Z" finished-at="2019-07-18T11:46:35Z">
       <class name="snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-07-18T12:18:30Z" finished-at="2019-07-18T12:18:30Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-07-18T12:45:52Z" finished-at="2019-07-18T12:45:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="setUp" is-config="true" duration-ms="5" started-at="2019-07-18T12:18:30Z" finished-at="2019-07-18T12:18:30Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="setUp" is-config="true" duration-ms="11" started-at="2019-07-18T12:45:52Z" finished-at="2019-07-18T12:45:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginToSite()[pri:1, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="loginToSite" duration-ms="17" started-at="2019-07-18T12:18:30Z" finished-at="2019-07-18T12:18:30Z">
+        <test-method status="PASS" signature="loginToSite()[pri:1, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="loginToSite" duration-ms="20" started-at="2019-07-18T12:45:52Z" finished-at="2019-07-18T12:45:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToSite -->
-        <test-method status="PASS" signature="enterDetails()[pri:2, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="enterDetails" duration-ms="791" started-at="2019-07-18T12:18:30Z" finished-at="2019-07-18T12:18:31Z">
+        <test-method status="PASS" signature="enterDetails()[pri:2, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="enterDetails" duration-ms="925" started-at="2019-07-18T12:45:52Z" finished-at="2019-07-18T12:45:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterDetails -->
-        <test-method status="PASS" signature="loginTitleTest()[pri:3, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="loginTitleTest" duration-ms="3011" started-at="2019-07-18T12:18:31Z" finished-at="2019-07-18T12:18:34Z">
+        <test-method status="PASS" signature="loginTitleTest()[pri:3, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="loginTitleTest" duration-ms="3029" started-at="2019-07-18T12:45:53Z" finished-at="2019-07-18T12:45:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTitleTest -->
-        <test-method status="FAIL" signature="WelcomeMessage()[pri:4, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="WelcomeMessage" duration-ms="20" started-at="2019-07-18T12:18:34Z" finished-at="2019-07-18T12:18:34Z">
+        <test-method status="FAIL" signature="WelcomeMessage()[pri:4, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="WelcomeMessage" duration-ms="21" started-at="2019-07-18T12:45:56Z" finished-at="2019-07-18T12:45:56Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Hi Michael')]"}
@@ -763,8 +763,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57811}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 58c21d9b4eb4b8edad68e25ab7870b9a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61354}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f59b127b3fcc6deb4ec78b0969576832
 *** Element info: {Using=xpath, value=//*[contains(text(), 'Hi Michael')]}]]>
             </message>
             <full-stacktrace>
@@ -774,8 +774,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57811}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 58c21d9b4eb4b8edad68e25ab7870b9a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61354}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f59b127b3fcc6deb4ec78b0969576832
 *** Element info: {Using=xpath, value=//*[contains(text(), 'Hi Michael')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -823,7 +823,7 @@ Session ID: 58c21d9b4eb4b8edad68e25ab7870b9a
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WelcomeMessage -->
-        <test-method status="FAIL" signature="uploadReciept()[pri:5, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="uploadReciept" duration-ms="2058" started-at="2019-07-18T12:18:34Z" finished-at="2019-07-18T12:18:36Z">
+        <test-method status="FAIL" signature="uploadReciept()[pri:5, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="uploadReciept" duration-ms="2035" started-at="2019-07-18T12:45:56Z" finished-at="2019-07-18T12:45:58Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Upload Receipt')]"}
@@ -832,8 +832,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57811}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 58c21d9b4eb4b8edad68e25ab7870b9a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61354}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f59b127b3fcc6deb4ec78b0969576832
 *** Element info: {Using=xpath, value=//*[contains(text(), 'Upload Receipt')]}]]>
             </message>
             <full-stacktrace>
@@ -843,8 +843,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57811}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 58c21d9b4eb4b8edad68e25ab7870b9a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61354}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f59b127b3fcc6deb4ec78b0969576832
 *** Element info: {Using=xpath, value=//*[contains(text(), 'Upload Receipt')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -892,7 +892,7 @@ Session ID: 58c21d9b4eb4b8edad68e25ab7870b9a
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadReciept -->
-        <test-method status="FAIL" signature="uploadButtomSelection()[pri:6, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="uploadButtomSelection" duration-ms="2031" started-at="2019-07-18T12:18:36Z" finished-at="2019-07-18T12:18:38Z">
+        <test-method status="FAIL" signature="uploadButtomSelection()[pri:6, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="uploadButtomSelection" duration-ms="2026" started-at="2019-07-18T12:45:58Z" finished-at="2019-07-18T12:46:00Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='file']"}
@@ -901,8 +901,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57811}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 58c21d9b4eb4b8edad68e25ab7870b9a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61354}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f59b127b3fcc6deb4ec78b0969576832
 *** Element info: {Using=xpath, value=//input[@type='file']}]]>
             </message>
             <full-stacktrace>
@@ -912,8 +912,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57811}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 58c21d9b4eb4b8edad68e25ab7870b9a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61354}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f59b127b3fcc6deb4ec78b0969576832
 *** Element info: {Using=xpath, value=//input[@type='file']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -961,7 +961,7 @@ Session ID: 58c21d9b4eb4b8edad68e25ab7870b9a
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadButtomSelection -->
-        <test-method status="FAIL" signature="verifyUploadWorked()[pri:7, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="verifyUploadWorked" duration-ms="20918" started-at="2019-07-18T12:18:38Z" finished-at="2019-07-18T12:18:59Z">
+        <test-method status="FAIL" signature="verifyUploadWorked()[pri:7, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="verifyUploadWorked" duration-ms="20872" started-at="2019-07-18T12:46:00Z" finished-at="2019-07-18T12:46:21Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="receiptPage"]/div/div/div[4]/div/div/div/div/div/div/table/tbody/tr[1]/td[1]/span"}
@@ -970,8 +970,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57811}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 58c21d9b4eb4b8edad68e25ab7870b9a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61354}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f59b127b3fcc6deb4ec78b0969576832
 *** Element info: {Using=xpath, value=//*[@id="receiptPage"]/div/div/div[4]/div/div/div/div/div/div/table/tbody/tr[1]/td[1]/span}]]>
             </message>
             <full-stacktrace>
@@ -981,8 +981,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57811}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 58c21d9b4eb4b8edad68e25ab7870b9a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61354}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f59b127b3fcc6deb4ec78b0969576832
 *** Element info: {Using=xpath, value=//*[@id="receiptPage"]/div/div/div[4]/div/div/div/div/div/div/table/tbody/tr[1]/td[1]/span}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -1030,7 +1030,7 @@ Session ID: 58c21d9b4eb4b8edad68e25ab7870b9a
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUploadWorked -->
-        <test-method status="FAIL" signature="verifyUploadQUEUEDStatus()[pri:8, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="verifyUploadQUEUEDStatus" duration-ms="10020" started-at="2019-07-18T12:18:59Z" finished-at="2019-07-18T12:19:09Z">
+        <test-method status="FAIL" signature="verifyUploadQUEUEDStatus()[pri:8, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="verifyUploadQUEUEDStatus" duration-ms="10100" started-at="2019-07-18T12:46:21Z" finished-at="2019-07-18T12:46:31Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="receiptPage"]/div/div/div[4]/div/div/div/div/div/div/table/tbody/tr[1]/td[2]/span[1]"}
@@ -1039,8 +1039,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57811}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 58c21d9b4eb4b8edad68e25ab7870b9a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61354}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f59b127b3fcc6deb4ec78b0969576832
 *** Element info: {Using=xpath, value=//*[@id="receiptPage"]/div/div/div[4]/div/div/div/div/div/div/table/tbody/tr[1]/td[2]/span[1]}]]>
             </message>
             <full-stacktrace>
@@ -1050,8 +1050,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57811}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 58c21d9b4eb4b8edad68e25ab7870b9a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61354}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f59b127b3fcc6deb4ec78b0969576832
 *** Element info: {Using=xpath, value=//*[@id="receiptPage"]/div/div/div[4]/div/div/div/div/div/div/table/tbody/tr[1]/td[2]/span[1]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -1099,7 +1099,7 @@ Session ID: 58c21d9b4eb4b8edad68e25ab7870b9a
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUploadQUEUEDStatus -->
-        <test-method status="FAIL" signature="viewReciept()[pri:9, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="viewReciept" duration-ms="57" started-at="2019-07-18T12:19:09Z" finished-at="2019-07-18T12:19:09Z">
+        <test-method status="FAIL" signature="viewReciept()[pri:9, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="viewReciept" duration-ms="75" started-at="2019-07-18T12:46:31Z" finished-at="2019-07-18T12:46:32Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Failed viewReciept does not work????]]>
@@ -1139,31 +1139,31 @@ Session ID: 58c21d9b4eb4b8edad68e25ab7870b9a
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewReciept -->
-        <test-method status="PASS" signature="logOutOfSite()[pri:10, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="logOutOfSite" duration-ms="1890" started-at="2019-07-18T12:19:09Z" finished-at="2019-07-18T12:19:11Z">
+        <test-method status="PASS" signature="logOutOfSite()[pri:10, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="logOutOfSite" duration-ms="1186" started-at="2019-07-18T12:46:32Z" finished-at="2019-07-18T12:46:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutOfSite -->
-        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="tearDownTest" is-config="true" duration-ms="735" started-at="2019-07-18T12:19:11Z" finished-at="2019-07-18T12:19:12Z">
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="tearDownTest" is-config="true" duration-ms="2710" started-at="2019-07-18T12:46:33Z" finished-at="2019-07-18T12:46:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
       </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts -->
     </test> <!-- UAT_BavarianInnLoginUploadReciepts_Broken -->
-    <test name="UAT_ExcelDataProviderFull_POM_Broken" duration-ms="11184" started-at="2019-07-18T11:19:12Z" finished-at="2019-07-18T11:19:23Z">
+    <test name="UAT_ExcelDataProviderFull_POM_Broken" duration-ms="12479" started-at="2019-07-18T11:46:35Z" finished-at="2019-07-18T11:46:48Z">
       <class name="snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM@18bf3d14]" name="setUp" is-config="true" duration-ms="5" started-at="2019-07-18T12:19:12Z" finished-at="2019-07-18T12:19:12Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM@18bf3d14]" name="setUp" is-config="true" duration-ms="3" started-at="2019-07-18T12:46:35Z" finished-at="2019-07-18T12:46:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginToSite()[pri:1, instance:snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM@18bf3d14]" name="loginToSite" duration-ms="15" started-at="2019-07-18T12:19:12Z" finished-at="2019-07-18T12:19:12Z">
+        <test-method status="PASS" signature="loginToSite()[pri:1, instance:snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM@18bf3d14]" name="loginToSite" duration-ms="21" started-at="2019-07-18T12:46:35Z" finished-at="2019-07-18T12:46:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToSite -->
-        <test-method status="PASS" signature="enterDetails()[pri:2, instance:snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM@18bf3d14]" name="enterDetails" duration-ms="1479" started-at="2019-07-18T12:19:12Z" finished-at="2019-07-18T12:19:13Z">
+        <test-method status="PASS" signature="enterDetails()[pri:2, instance:snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM@18bf3d14]" name="enterDetails" duration-ms="1351" started-at="2019-07-18T12:46:35Z" finished-at="2019-07-18T12:46:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterDetails -->
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM@18bf3d14]" name="test1" duration-ms="8744" started-at="2019-07-18T12:19:14Z" data-provider="test1data" finished-at="2019-07-18T12:19:23Z">
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM@18bf3d14]" name="test1" duration-ms="9146" started-at="2019-07-18T12:46:38Z" data-provider="test1data" finished-at="2019-07-18T12:46:47Z">
           <params>
             <param index="0">
               <value>
@@ -1244,77 +1244,81 @@ Session ID: 58c21d9b4eb4b8edad68e25ab7870b9a
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM@18bf3d14]" name="afterTest" is-config="true" duration-ms="803" started-at="2019-07-18T12:46:47Z" finished-at="2019-07-18T12:46:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM -->
     </test> <!-- UAT_ExcelDataProviderFull_POM_Broken -->
-    <test name="UAT_RegisterPageTestCanada_Broken" duration-ms="10812" started-at="2019-07-18T11:19:23Z" finished-at="2019-07-18T11:19:34Z">
+    <test name="UAT_RegisterPageTestCanada_Broken" duration-ms="10169" started-at="2019-07-18T11:46:48Z" finished-at="2019-07-18T11:46:58Z">
       <class name="snipp.test.bav.testcases.UAT_RegisterPageTestCanada">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@9301672]" name="setUp" is-config="true" duration-ms="4" started-at="2019-07-18T12:19:23Z" finished-at="2019-07-18T12:19:23Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@9301672]" name="setUp" is-config="true" duration-ms="8" started-at="2019-07-18T12:46:48Z" finished-at="2019-07-18T12:46:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginToSite()[pri:1, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@9301672]" name="loginToSite" duration-ms="21" started-at="2019-07-18T12:19:23Z" finished-at="2019-07-18T12:19:23Z">
+        <test-method status="PASS" signature="loginToSite()[pri:1, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@9301672]" name="loginToSite" duration-ms="16" started-at="2019-07-18T12:46:48Z" finished-at="2019-07-18T12:46:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToSite -->
-        <test-method status="PASS" signature="enterDetails()[pri:2, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@9301672]" name="enterDetails" duration-ms="1642" started-at="2019-07-18T12:19:23Z" finished-at="2019-07-18T12:19:25Z">
+        <test-method status="PASS" signature="enterDetails()[pri:2, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@9301672]" name="enterDetails" duration-ms="1058" started-at="2019-07-18T12:46:48Z" finished-at="2019-07-18T12:46:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterDetails -->
-        <test-method status="PASS" signature="enterForm()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@9301672]" name="enterForm" duration-ms="8425" started-at="2019-07-18T12:19:25Z" depends-on-methods="snipp.test.bav.testcases.UAT_RegisterPageTestCanada.enterDetails" finished-at="2019-07-18T12:19:33Z">
+        <test-method status="PASS" signature="enterForm()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@9301672]" name="enterForm" duration-ms="8317" started-at="2019-07-18T12:46:49Z" depends-on-methods="snipp.test.bav.testcases.UAT_RegisterPageTestCanada.enterDetails" finished-at="2019-07-18T12:46:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterForm -->
-        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@9301672]" name="tearDownTest" is-config="true" duration-ms="714" started-at="2019-07-18T12:19:33Z" finished-at="2019-07-18T12:19:34Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@9301672]" name="afterTest" is-config="true" duration-ms="764" started-at="2019-07-18T12:46:57Z" finished-at="2019-07-18T12:46:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownTest -->
+        </test-method> <!-- afterTest -->
       </class> <!-- snipp.test.bav.testcases.UAT_RegisterPageTestCanada -->
       <class name="snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="launchBrowser" is-config="true" duration-ms="9650" started-at="2019-07-18T12:16:32Z" finished-at="2019-07-18T12:16:41Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="launchBrowser" is-config="true" duration-ms="9559" started-at="2019-07-18T12:43:51Z" finished-at="2019-07-18T12:44:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="launchBrowser" is-config="true" duration-ms="7506" started-at="2019-07-18T12:16:41Z" finished-at="2019-07-18T12:16:49Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="launchBrowser" is-config="true" duration-ms="14884" started-at="2019-07-18T12:44:00Z" finished-at="2019-07-18T12:44:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="launchBrowser" is-config="true" duration-ms="8383" started-at="2019-07-18T12:16:49Z" finished-at="2019-07-18T12:16:57Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="launchBrowser" is-config="true" duration-ms="8405" started-at="2019-07-18T12:44:15Z" finished-at="2019-07-18T12:44:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="launchBrowser" is-config="true" duration-ms="15876" started-at="2019-07-18T12:16:57Z" finished-at="2019-07-18T12:17:13Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="launchBrowser" is-config="true" duration-ms="7547" started-at="2019-07-18T12:44:24Z" finished-at="2019-07-18T12:44:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM@18bf3d14]" name="launchBrowser" is-config="true" duration-ms="9510" started-at="2019-07-18T12:17:13Z" finished-at="2019-07-18T12:17:23Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM@18bf3d14]" name="launchBrowser" is-config="true" duration-ms="7181" started-at="2019-07-18T12:44:31Z" finished-at="2019-07-18T12:44:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@9301672]" name="launchBrowser" is-config="true" duration-ms="7755" started-at="2019-07-18T12:17:23Z" finished-at="2019-07-18T12:17:31Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@9301672]" name="launchBrowser" is-config="true" duration-ms="9014" started-at="2019-07-18T12:44:38Z" finished-at="2019-07-18T12:44:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="tearDown" is-config="true" duration-ms="3059" started-at="2019-07-18T12:19:34Z" finished-at="2019-07-18T12:19:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@612fc6eb]" name="tearDown" is-config="true" duration-ms="2742" started-at="2019-07-18T12:46:58Z" finished-at="2019-07-18T12:47:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="generateTestNG()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="generateTestNG" is-config="true" duration-ms="0" started-at="2019-07-18T12:19:37Z" finished-at="2019-07-18T12:19:37Z">
+        <test-method status="PASS" signature="generateTestNG()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens@74a10858]" name="generateTestNG" is-config="true" duration-ms="1" started-at="2019-07-18T12:47:01Z" finished-at="2019-07-18T12:47:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateTestNG -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="tearDown" is-config="true" duration-ms="118" started-at="2019-07-18T12:19:37Z" finished-at="2019-07-18T12:19:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:snipp.test.bav.testcases.UAT_HomePageTest@51c8530f]" name="tearDown" is-config="true" duration-ms="99" started-at="2019-07-18T12:47:01Z" finished-at="2019-07-18T12:47:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="tearDown" is-config="true" duration-ms="267" started-at="2019-07-18T12:19:37Z" finished-at="2019-07-18T12:19:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts@22eeefeb]" name="tearDown" is-config="true" duration-ms="108" started-at="2019-07-18T12:47:01Z" finished-at="2019-07-18T12:47:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM@18bf3d14]" name="tearDown" is-config="true" duration-ms="65" started-at="2019-07-18T12:19:37Z" finished-at="2019-07-18T12:19:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM@18bf3d14]" name="tearDown" is-config="true" duration-ms="242" started-at="2019-07-18T12:47:01Z" finished-at="2019-07-18T12:47:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@9301672]" name="tearDown" is-config="true" duration-ms="69" started-at="2019-07-18T12:19:37Z" finished-at="2019-07-18T12:19:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:snipp.test.bav.testcases.UAT_RegisterPageTestCanada@9301672]" name="tearDown" is-config="true" duration-ms="74" started-at="2019-07-18T12:47:01Z" finished-at="2019-07-18T12:47:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

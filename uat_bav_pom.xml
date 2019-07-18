@@ -227,7 +227,7 @@
               <execution>
                 <id>log4j-plugin-processor</id>
                 <goals>
-                  <goal>compile</goal>
+                  <goal>install</goal>
                 </goals>
                 <phase>process-classes</phase>
                 <configuration>
