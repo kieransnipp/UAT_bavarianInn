@@ -1,57 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="200844" started-at="2019-07-18T15:24:29Z" finished-at="2019-07-18T15:27:49Z">
+  <suite name="BavarianInnTests" duration-ms="80859" started-at="2019-07-18T15:51:49Z" finished-at="2019-07-18T15:53:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="200844" started-at="2019-07-18T15:24:29Z" finished-at="2019-07-18T15:27:49Z">
-      <class name="snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@4eb7f003]" name="launchBrowser" is-config="true" duration-ms="24221" started-at="2019-07-18T16:24:04Z" finished-at="2019-07-18T16:24:29Z">
+    <test name="UAT_HomePageTest" duration-ms="80859" started-at="2019-07-18T15:51:49Z" finished-at="2019-07-18T15:53:10Z">
+      <class name="snipp.test.bav.testcases.UAT_HomePageTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:snipp.test.bav.testcases.UAT_HomePageTest@1060b431]" name="launchBrowser" is-config="true" duration-ms="20380" started-at="2019-07-18T16:51:29Z" finished-at="2019-07-18T16:51:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@4eb7f003]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-07-18T16:24:29Z" finished-at="2019-07-18T16:24:29Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:snipp.test.bav.testcases.UAT_HomePageTest@1060b431]" name="setUp" is-config="true" duration-ms="235" started-at="2019-07-18T16:51:50Z" finished-at="2019-07-18T16:51:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="login()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@4eb7f003]" name="login" is-config="true" duration-ms="1370" started-at="2019-07-18T16:24:29Z" finished-at="2019-07-18T16:24:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="titleTest()[pri:1, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@4eb7f003]" name="titleTest" duration-ms="61680" started-at="2019-07-18T16:24:30Z" finished-at="2019-07-18T16:25:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- titleTest -->
-        <test-method status="PASS" signature="loginToSite()[pri:2, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@4eb7f003]" name="loginToSite" duration-ms="42007" started-at="2019-07-18T16:25:32Z" finished-at="2019-07-18T16:26:14Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginToSite()[pri:1, instance:snipp.test.bav.testcases.UAT_HomePageTest@1060b431]" name="loginToSite" duration-ms="36" started-at="2019-07-18T16:51:50Z" finished-at="2019-07-18T16:51:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToSite -->
-        <test-method status="PASS" signature="WelcomeMessage()[pri:4, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@4eb7f003]" name="WelcomeMessage" duration-ms="25639" started-at="2019-07-18T16:26:14Z" finished-at="2019-07-18T16:26:39Z">
+        <test-method status="PASS" signature="howItWorks()[pri:2, instance:snipp.test.bav.testcases.UAT_HomePageTest@1060b431]" name="howItWorks" duration-ms="2601" started-at="2019-07-18T16:51:50Z" finished-at="2019-07-18T16:51:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- WelcomeMessage -->
-        <test-method status="PASS" signature="membersOffers()[pri:8, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@4eb7f003]" name="membersOffers" duration-ms="21737" started-at="2019-07-18T16:26:39Z" finished-at="2019-07-18T16:27:01Z">
+        </test-method> <!-- howItWorks -->
+        <test-method status="PASS" signature="register()[pri:3, instance:snipp.test.bav.testcases.UAT_HomePageTest@1060b431]" name="register" duration-ms="4591" started-at="2019-07-18T16:51:52Z" finished-at="2019-07-18T16:51:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- membersOffers -->
-        <test-method status="PASS" signature="membersLocations()[pri:9, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@4eb7f003]" name="membersLocations" duration-ms="28061" started-at="2019-07-18T16:27:01Z" finished-at="2019-07-18T16:27:29Z">
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="faq()[pri:4, instance:snipp.test.bav.testcases.UAT_HomePageTest@1060b431]" name="faq" duration-ms="3513" started-at="2019-07-18T16:51:57Z" finished-at="2019-07-18T16:52:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- membersLocations -->
-        <test-method status="PASS" signature="membersSocial()[pri:10, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@4eb7f003]" name="membersSocial" duration-ms="15383" started-at="2019-07-18T16:27:29Z" finished-at="2019-07-18T16:27:44Z">
+        </test-method> <!-- faq -->
+        <test-method status="PASS" signature="checkFacebook()[pri:5, instance:snipp.test.bav.testcases.UAT_HomePageTest@1060b431]" name="checkFacebook" duration-ms="16452" started-at="2019-07-18T16:52:01Z" finished-at="2019-07-18T16:52:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- membersSocial -->
-        <test-method status="PASS" signature="logOutOfSite()[pri:11, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@4eb7f003]" name="logOutOfSite" duration-ms="4917" started-at="2019-07-18T16:27:44Z" finished-at="2019-07-18T16:27:49Z">
+        </test-method> <!-- checkFacebook -->
+        <test-method status="PASS" signature="checkYoutube()[pri:6, instance:snipp.test.bav.testcases.UAT_HomePageTest@1060b431]" name="checkYoutube" duration-ms="7184" started-at="2019-07-18T16:52:17Z" finished-at="2019-07-18T16:52:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logOutOfSite -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks@4eb7f003]" name="tearDown" is-config="true" duration-ms="1397" started-at="2019-07-18T16:27:49Z" finished-at="2019-07-18T16:27:51Z">
+        </test-method> <!-- checkYoutube -->
+        <test-method status="PASS" signature="checkYelp()[pri:7, instance:snipp.test.bav.testcases.UAT_HomePageTest@1060b431]" name="checkYelp" duration-ms="34116" started-at="2019-07-18T16:52:24Z" finished-at="2019-07-18T16:52:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkYelp -->
+        <test-method status="PASS" signature="checkTwitter()[pri:8, instance:snipp.test.bav.testcases.UAT_HomePageTest@1060b431]" name="checkTwitter" duration-ms="11169" started-at="2019-07-18T16:52:58Z" finished-at="2019-07-18T16:53:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTwitter -->
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:snipp.test.bav.testcases.UAT_HomePageTest@1060b431]" name="tearDownTest" is-config="true" duration-ms="917" started-at="2019-07-18T16:53:09Z" finished-at="2019-07-18T16:53:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:snipp.test.bav.testcases.UAT_HomePageTest@1060b431]" name="tearDown" is-config="true" duration-ms="811" started-at="2019-07-18T16:53:10Z" finished-at="2019-07-18T16:53:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- snipp.test.bav.testcases.UAT_HomePageTest -->
+    </test> <!-- UAT_HomePageTest -->
+  </suite> <!-- BavarianInnTests -->
 </testng-results>

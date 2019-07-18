@@ -31,6 +31,7 @@
   </repositories>
 
 
+
   <dependencies>
 
  
@@ -259,6 +260,15 @@
 
 
     </plugins>
+
+    <resources>
+    <resource>
+    <directory>src</directory>
+    <includes>
+    <include>**/*.java</include>
+    </includes>
+    </resource>
+</resources>
   </build>
 
 </project>

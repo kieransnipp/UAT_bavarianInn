@@ -8,25 +8,25 @@
 
 <parameter name="browser" value="chrome"/>
     
-    <!-- <test name="UAT_BavarianInnBrokenLinks">
+     <test name="UAT_BavarianInnBrokenLinks">
         <classes>
             <class name="snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks"/>
         </classes>
-         </test> -->
+         </test> 
          
-        <!--  <test name="UAT_BavarianInnLoginCheckScreens">
+          <test name="UAT_BavarianInnLoginCheckScreens">
         <classes>
             <class name="snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens"/>   
         </classes>
-         </test> -->
-
+         </test> 
+<!-- 
            <test name="UAT_HomePageTest">
         <classes>
             <class name="snipp.test.bav.testcases.UAT_HomePageTest"/>   
         </classes>
-         </test>
-
-         <!--   <test name="UAT_BavarianInnLoginUploadReciepts_Broken">
+         </test> -->
+        
+        <test name="UAT_BavarianInnLoginUploadReciepts_Broken">
         <classes>
             <class name="snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts"/>   
         </classes>
@@ -42,7 +42,7 @@
         <classes>
             <class name="snipp.test.bav.testcases.UAT_RegisterPageTestCanada"/>   
         </classes>
-         </test> -->
+         </test>
 
          
 </suite>
