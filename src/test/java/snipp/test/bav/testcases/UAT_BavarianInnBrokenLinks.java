@@ -5,11 +5,11 @@ package snipp.test.bav.testcases;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
-import org.testng.AssertJUnit;
+//import org.testng.AssertJUnit;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
-import org.testng.AssertJUnit;
+
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static org.testng.Assert.assertTrue;
@@ -23,7 +23,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-import org.testng.AssertJUnit;
+//import org.testng.AssertJUnit;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -138,7 +138,7 @@ public class UAT_BavarianInnBrokenLinks {
 		$(By.xpath("//*[@id=\"loginContainer\"]/form/div[2]/input")).setValue("Snipp123!");
 		$(By.name("loginButton")).click();
 		String LoginpageTitle = driver.getTitle();
-		AssertJUnit.assertEquals(driver.getTitle().contentEquals(LoginpageTitle), true);
+		Assert.assertEquals(driver.getTitle().contentEquals(LoginpageTitle), true);
 		
 		htmlReporter = new ExtentHtmlReporter("UAT_BavarianInnBrokenLinks.html");
 		extent = new ExtentReports();
@@ -168,8 +168,10 @@ public class UAT_BavarianInnBrokenLinks {
 		System.out.println("Title displayed is " + loginTitle);
 		Thread.sleep(3000);
 
-		AssertJUnit.assertEquals(driver.getTitle().contentEquals("Details"), true);
+		//AssertJUnit.assertEquals(driver.getTitle().contentEquals("Details"), true);
 		// Assert.assertEquals(pageTitle, "MemberSearch");
+		Assert.assertEquals(driver.getTitle().contentEquals("Details"), true);
+		
 		System.out.println(" ***  Check links for Page =" + loginTitle);
 
 		Boolean checkedOk = checkLinks();
@@ -199,7 +201,8 @@ public class UAT_BavarianInnBrokenLinks {
 		String Hi = driver.findElement(By.xpath("//*[contains(text(), 'Hi Michael')]")).toString();
 		System.out.println(Hi + " is displayed");
 
-		AssertJUnit.assertTrue(Hi.contains("Hi Michael"));
+		//AssertJUnit.assertTrue(Hi.contains("Hi Michael"));
+		assertTrue(Hi.contains("Hi Michael"));
 		System.out.println("Welcome message is displayed correctly");
 		System.out.println(" ***  Check links for Page =" + pageTitle);
 
@@ -242,7 +245,8 @@ public class UAT_BavarianInnBrokenLinks {
 		ExtentTest test = extent.createTest("membersOffers", "Check links");
 		driver.findElement(By.xpath("//*[contains(text(), 'Member Offers')]")).click();
 		String title = driver.getTitle();
-		AssertJUnit.assertEquals(title, "Offers");
+		//AssertJUnit.assertEquals(title, "Offers");
+		Assert.assertEquals(title, "Offers");
 		System.out.println(" ***  Check links for Page =" + title);
 
 		Boolean checkedOk = checkLinks();
@@ -255,7 +259,8 @@ public class UAT_BavarianInnBrokenLinks {
 		ExtentTest test = extent.createTest("membersLocations", "Check links");
 		driver.findElement(By.xpath("//*[contains(text(), 'Locations')]")).click();
 		String title = driver.getTitle();
-		AssertJUnit.assertEquals(title, "Stores");
+		Assert.assertEquals(title, "Stores");
+		//AssertJUnit.assertEquals(title, "Stores");
 		System.out.println(" ***  Check links for Page =" + title);
 
 		Boolean checkedOk = checkLinks();
@@ -268,7 +273,8 @@ public class UAT_BavarianInnBrokenLinks {
 		ExtentTest test = extent.createTest("membersSocial", "Check links");
 		driver.findElement(By.xpath("//*[contains(text(), 'Social')]")).click();
 		String title = driver.getTitle();
-		AssertJUnit.assertEquals(title, "Earn Points");
+		Assert.assertEquals(title, "Earn Points");
+		//AssertJUnit.assertEquals(title, "Earn Points");
 		System.out.println(" ***  Check links for Page =" + title);
 		Boolean checkedOk = checkLinks();
 		assertTrue(checkedOk);
