@@ -253,6 +253,7 @@
             
             <suiteXmlFile>src\suiteFile\prod\prod_testng_arn.xml</suiteXmlFile>
             -->
+            <suiteXmlFile>src/suiteFile/uat/uat_testng_bav.xml</suiteXmlFile>
             
           </suiteXmlFiles>
         </configuration>
