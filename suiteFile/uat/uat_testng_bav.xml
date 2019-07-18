@@ -11,20 +11,11 @@
     <test name="UAT_BavarianInnBrokenLinks">
         <classes>
             <class name="snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks"/>
-            <class name="snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens"/>   
-            <class name="snipp.test.bav.testcases.UAT_HomePageTest"/>  
-             <class name="snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts"/> 
-             <class name="snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM"/>  
-             <class name="snipp.test.bav.testcases.UAT_RegisterPageTestCanada"/>  
+            
         </classes>
          </test>
          
-        
-
-         
-</suite>
-<!-- 
-<test name="UAT_BavarianInnLoginCheckScreens">
+         <test name="UAT_BavarianInnLoginCheckScreens">
         <classes>
             <class name="snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens"/>   
         </classes>
@@ -52,11 +43,12 @@
         <classes>
             <class name="snipp.test.bav.testcases.UAT_RegisterPageTestCanada"/>   
         </classes>
-         </test> -->
+         </test>
+
+         
+</suite>
 
  <!-- This is how you run tests in paralell -->
-
-
    <!--<test name="Test-class test" >
     <classes>
       <class name="com.howtodoinjava.parallelism.ParallelClassesTestOne" />
