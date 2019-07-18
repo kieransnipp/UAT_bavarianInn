@@ -38,7 +38,6 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.codeborne.selenide.WebDriverRunner;
 import org.testng.Assert;
 
-
 public class UAT_BavarianInnLoginUploadReciepts {
 
 	public static Properties prop;
@@ -129,9 +128,10 @@ public class UAT_BavarianInnLoginUploadReciepts {
 		// Exent 3
 		ExtentTest test = extent.createTest("loginToSite", "Upload reciept");
 		System.out.println("Verify the title of the login page");
-		String pageTitle = driver.getTitle();
-		System.out.println("Title of the page is " + pageTitle);
-		Assert.assertEquals(driver.getTitle().contentEquals("Home"), true);
+		String title = driver.getTitle();
+		System.out.println("Title of the page is " + title);
+
+		Assert.assertEquals(title, "Home");
 		test.pass("Passed");
 	}
 
@@ -158,7 +158,6 @@ public class UAT_BavarianInnLoginUploadReciepts {
 		System.out.println("Title displayed is " + loginTitle);
 		Thread.sleep(3000);
 
-		// AssertJUnit.assertEquals(driver.getTitle().contentEquals("Details"), true);
 		Assert.assertEquals(loginTitle, "Home");
 		System.out.println("Title is correct and this line is printed");
 		test.pass("Passed");
@@ -173,7 +172,7 @@ public class UAT_BavarianInnLoginUploadReciepts {
 		String title = driver.getTitle();
 		System.out.println("Title displayed is " + title);
 		System.out.println("Welcome message is displayed correctly");
-		
+
 		Assert.assertEquals(title, "Details");
 		test.pass("Passed");
 	}
@@ -285,7 +284,7 @@ public class UAT_BavarianInnLoginUploadReciepts {
 		// once it gets processed"));
 		// Thread.sleep(1000);
 		// System.out.println("Reciept upload confirmed");
-		
+
 		// To do
 		test.fail("This part needs to be fixed before the test completed assertion can be completed");
 		Assert.fail("Failed viewReciept does not work????");

@@ -131,14 +131,14 @@ public class UAT_BavarianInnBrokenLinks {
 		System.out.println("Verify the title of the login page");
 		String pageTitle = driver.getTitle();
 		System.out.println("Title of the page is " + pageTitle);
-
-		System.out.println("@Before method bit");
+		String title = driver.getTitle();
+		Assert.assertEquals(title, "Home");
+		
 		System.out.println("Login to site");
 		$(By.xpath("//*[@id=\"loginContainer\"]/*/*/input")).setValue("Michael.Ledwith@snipp.com");
 		$(By.xpath("//*[@id=\"loginContainer\"]/form/div[2]/input")).setValue("Snipp123!");
 		$(By.name("loginButton")).click();
 		String LoginpageTitle = driver.getTitle();
-		Assert.assertEquals(driver.getTitle().contentEquals(LoginpageTitle), true);
 		
 		htmlReporter = new ExtentHtmlReporter("UAT_BavarianInnBrokenLinks.html");
 		extent = new ExtentReports();
@@ -167,11 +167,11 @@ public class UAT_BavarianInnBrokenLinks {
 		String loginTitle = driver.getTitle();
 		System.out.println("Title displayed is " + loginTitle);
 		Thread.sleep(3000);
-
+		String title = driver.getTitle();
 		//AssertJUnit.assertEquals(driver.getTitle().contentEquals("Details"), true);
 		// Assert.assertEquals(pageTitle, "MemberSearch");
-		Assert.assertEquals(driver.getTitle().contentEquals("Details"), true);
-		
+		//Assert.assertEquals(driver.getTitle().contentEquals("Details"), true);
+		Assert.assertEquals(title, "Details");
 		System.out.println(" ***  Check links for Page =" + loginTitle);
 
 		Boolean checkedOk = checkLinks();
@@ -201,6 +201,7 @@ public class UAT_BavarianInnBrokenLinks {
 		String Hi = driver.findElement(By.xpath("//*[contains(text(), 'Hi Michael')]")).toString();
 		System.out.println(Hi + " is displayed");
 
+		System.out.println("Hi Michael should be = "+Hi);
 		//AssertJUnit.assertTrue(Hi.contains("Hi Michael"));
 		assertTrue(Hi.contains("Hi Michael"));
 		System.out.println("Welcome message is displayed correctly");

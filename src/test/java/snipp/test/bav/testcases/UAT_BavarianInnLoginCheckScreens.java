@@ -4,14 +4,7 @@ package snipp.test.bav.testcases;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
-import org.testng.AssertJUnit;
-import org.testng.AssertJUnit;
-import org.testng.AssertJUnit;
-import org.testng.AssertJUnit;
-import org.testng.AssertJUnit;
-import org.testng.AssertJUnit;
 import org.testng.annotations.*;
-
 import org.testng.asserts.Assertion;
 
 //import org.testng.AssertJUnit;
@@ -40,8 +33,6 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.codeborne.selenide.WebDriverRunner;
 import org.testng.Assert;
-//import org.testng.AssertJUnit;
-//import org.testng.annotations.Test;
 
 public class UAT_BavarianInnLoginCheckScreens {
 
@@ -133,7 +124,9 @@ public class UAT_BavarianInnLoginCheckScreens {
 		String pageTitle = driver.getTitle();
 		System.out.println("Title of the page is " + pageTitle);
 
-		AssertJUnit.assertEquals(driver.getTitle().contentEquals("Home"), true);
+		String title = driver.getTitle();
+
+		Assert.assertEquals(title, "Home");
 		test.pass("Passed - Home page displayed");
 	}
 
@@ -149,7 +142,8 @@ public class UAT_BavarianInnLoginCheckScreens {
 		Thread.sleep(2000);
 
 		test.log(Status.INFO, "Passed before");
-		AssertJUnit.assertEquals(title, "Home");
+
+		Assert.assertEquals(title, "Home");
 		test.pass("Passed login after assert");
 	}
 
@@ -159,11 +153,11 @@ public class UAT_BavarianInnLoginCheckScreens {
 		System.out.println("");
 		System.out.println("**************** Start of testing ****************");
 
-		String loginTitle = driver.getTitle();
-		System.out.println("Title displayed is " + loginTitle);
+		String title = driver.getTitle();
+		System.out.println("Title displayed is " + title);
 		Thread.sleep(3000);
 
-		AssertJUnit.assertEquals(driver.getTitle().contentEquals("Details"), true);
+		Assert.assertEquals(title, "Details");
 
 		System.out.println("Title is correct and this line is printed");
 		test.pass("Login title displayed");
@@ -176,7 +170,7 @@ public class UAT_BavarianInnLoginCheckScreens {
 		String Hi = driver.findElement(By.xpath("//*[contains(text(), 'Michael')]")).toString();
 		System.out.println(Hi + " is displayed");
 
-		AssertJUnit.assertTrue(Hi.contains("Michael"));
+		Assert.assertTrue(Hi.contains("Michael"));
 		System.out.println("Welcome message is displayed correctly");
 		test.pass("Welcome displayed");
 	}
@@ -188,7 +182,7 @@ public class UAT_BavarianInnLoginCheckScreens {
 		driver.findElement(By.xpath("//*[contains(text(), 'Member Offers')]")).click();
 		String title = driver.getTitle();
 		test.pass("Offer lnks correct");
-		AssertJUnit.assertEquals(title, "Offers");
+		Assert.assertEquals(title, "Offers");
 
 	}
 
@@ -200,7 +194,7 @@ public class UAT_BavarianInnLoginCheckScreens {
 		driver.findElement(By.xpath("//*[contains(text(), 'Locations')]")).click();
 		String title = driver.getTitle();
 		test.pass("Members locations displayed");
-		AssertJUnit.assertEquals(title, "Stores");
+		Assert.assertEquals(title, "Stores");
 
 	}
 
@@ -210,7 +204,7 @@ public class UAT_BavarianInnLoginCheckScreens {
 		driver.findElement(By.xpath("//*[contains(text(), 'Social')]")).click();
 		String title = driver.getTitle();
 		test.pass("Logout is correct");
-		AssertJUnit.assertEquals(title, "Earn Points");
+		Assert.assertEquals(title, "Earn Points");
 	}
 
 	@Test(priority = 11)

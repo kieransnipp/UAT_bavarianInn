@@ -7,9 +7,8 @@ package snipp.test.bav.testcases;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
-import org.testng.AssertJUnit;
+
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
@@ -31,7 +30,6 @@ import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.opera.OperaDriverService;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-import org.testng.AssertJUnit;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -159,9 +157,11 @@ public class UAT_RegisterPageTestCanada {
 	public void loginToSite() {
 		ExtentTest test = extent.createTest("loginToSite", "Registraton of Canadian user");
 		System.out.println("Verify the title of the login page");
-		String pageTitle = driver.getTitle();
-		System.out.println("Title of the page is " + pageTitle);
-		AssertJUnit.assertEquals(driver.getTitle().contentEquals("Home"), true);
+		String title = driver.getTitle();
+		System.out.println("Title of the page is " + title);
+
+		Assert.assertEquals(title, "Details");
+
 		test.pass("Passed");
 	}
 
@@ -173,7 +173,7 @@ public class UAT_RegisterPageTestCanada {
 
 		// driver.findElement(By.xpath("//*[contains(text(), 'Register')]")).click();
 		String titleRego = driver.getTitle();
-		AssertJUnit.assertEquals(titleRego, "Register");
+		Assert.assertEquals(titleRego, "Register");
 		test.pass("Passed");
 	}
 
@@ -182,7 +182,7 @@ public class UAT_RegisterPageTestCanada {
 		ExtentTest test = extent.createTest("enterForm", "Registraton of Canadian user");
 
 		String title = driver.getTitle();
-		AssertJUnit.assertEquals(title, "Register");
+		Assert.assertEquals(title, "Register");
 
 		// ------------------
 
@@ -298,8 +298,8 @@ public class UAT_RegisterPageTestCanada {
 		RegisterPage.registerYes(driver).click();
 		// driver.findElement(By.xpath("//*[@type='submit']")).click();
 		test.log(Status.INFO, "Rego completed");
-		
-		//To do
+
+		// To do
 		test.fail("This part needs to be fixed before the test completed assertion can be completed");
 	}
 

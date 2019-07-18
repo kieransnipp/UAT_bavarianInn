@@ -9,7 +9,6 @@ package snipp.test.bav.testcases;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
-import org.testng.AssertJUnit;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -26,7 +25,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-import org.testng.AssertJUnit;
+//import org.testng.AssertJUnit;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -46,7 +45,6 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.codeborne.selenide.WebDriverRunner;
 import ch.qos.logback.core.net.SyslogOutputStream;
-
 
 import com.bav.pages.HomePage;
 import com.bav.pages.RegisterPage;
@@ -116,7 +114,6 @@ public class UAT_ExcelDataProviderFull_POM {
 
 	}
 
-	
 	@BeforeClass
 	public void setUp() {// Exent 2
 		htmlReporter = new ExtentHtmlReporter("UAT_ExcelDataProviderFull_POM.html");
@@ -130,9 +127,10 @@ public class UAT_ExcelDataProviderFull_POM {
 		// Exent 3
 		ExtentTest test = extent.createTest("loginToSite ", "Bavarian inn");
 		System.out.println("Verify the title of the login page");
-		String pageTitle = driver.getTitle();
-		System.out.println("Title of the page is " + pageTitle);
-		AssertJUnit.assertEquals(driver.getTitle().contentEquals("Home"), true);
+		String title = driver.getTitle();
+		System.out.println("Title of the page is " + title);
+
+		Assert.assertEquals(title, "Home");
 		test.pass("Passed");
 	}
 
@@ -142,7 +140,7 @@ public class UAT_ExcelDataProviderFull_POM {
 		System.out.println("Login to site");
 		driver.findElement(By.xpath("//*[contains(text(), 'Register')]")).click();
 		String titleRego = driver.getTitle();
-		AssertJUnit.assertEquals(titleRego, "Register");
+		Assert.assertEquals(titleRego, "Register");
 		test.pass("Passed");
 	}
 
@@ -154,7 +152,7 @@ public class UAT_ExcelDataProviderFull_POM {
 		ExtentTest test = extent.createTest("Reading from Excel", "Register user");
 
 		String title = driver.getTitle();
-		AssertJUnit.assertEquals(title, "Register");
+		Assert.assertEquals(title, "Register");
 
 		// ------------------
 
@@ -244,9 +242,8 @@ public class UAT_ExcelDataProviderFull_POM {
 		RegisterPage.registerYes(driver).click();
 		// driver.findElement(By.xpath("//*[@type='submit']")).click();
 
-		
-		//To do
-				test.fail("This part needs to be fixed before the test completed assertion can be completed");
+		// To do
+		test.fail("This part needs to be fixed before the test completed assertion can be completed");
 
 	} // End method
 
@@ -285,7 +282,7 @@ public class UAT_ExcelDataProviderFull_POM {
 		}
 		return data;
 	}// End testData
-	
+
 	@AfterTest // 12
 	public void afterTest() {
 		System.out.println("After Test bit");
@@ -295,7 +292,6 @@ public class UAT_ExcelDataProviderFull_POM {
 
 	}
 
-	
 	@AfterSuite // Exent 5
 	public void tearDown() {
 		extent.flush();

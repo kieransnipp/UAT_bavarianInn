@@ -5,15 +5,15 @@ package snipp.test.bav.testcases;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
-import org.testng.AssertJUnit;
+//import org.testng.AssertJUnit;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
-import org.testng.AssertJUnit;
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
-import org.testng.AssertJUnit;
+
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
@@ -32,7 +32,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-import org.testng.AssertJUnit;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -120,7 +119,6 @@ public class UAT_HomePageTest {
 
 	}
 
-
 	@BeforeClass
 	public void setUp() {// Exent 2
 
@@ -140,31 +138,32 @@ public class UAT_HomePageTest {
 	public void loginToSite() {
 		ExtentTest test = extent.createTest("loginToSite", "Home page test");
 		System.out.println("Verify the title of the login page");
-		String pageTitle = driver.getTitle();
-		System.out.println("Title of the page is " + pageTitle);
-		AssertJUnit.assertEquals(driver.getTitle().contentEquals("Home"), true);
+		String title = driver.getTitle();
+		System.out.println("Title of the page is " + title);
+
+		Assert.assertEquals(title, "Home");
 		test.pass("Passed");
 	}
 
-	 @Test(priority = 2)
-	 public void howItWorks() {
-	 ExtentTest test = extent.createTest("howItWorks", "Home assert test");
-	 HomePage.howItWorks(driver).click();
-	 String title = driver.getTitle();
-	 AssertJUnit.assertEquals(title, "Home");
-	 test.pass("Passed");
-	 }
+	@Test(priority = 2)
+	public void howItWorks() {
+		ExtentTest test = extent.createTest("howItWorks", "Home assert test");
+		HomePage.howItWorks(driver).click();
+		String title = driver.getTitle();
+		Assert.assertEquals(title, "Home");
+		test.pass("Passed");
+	}
 
 	@Test(priority = 3)
 	public void register() {
 		ExtentTest test = extent.createTest("register", "register assert test");
 		HomePage.selectRegister(driver).click();
 		String titleR = driver.getTitle();
-		AssertJUnit.assertEquals(titleR, "Register");
+		Assert.assertEquals(titleR, "Register");
 
 		driver.navigate().back();
 		String title = driver.getTitle();
-		AssertJUnit.assertEquals(title, "Home");
+		Assert.assertEquals(title, "Home");
 
 		test.pass("Passed");
 
@@ -175,7 +174,7 @@ public class UAT_HomePageTest {
 		ExtentTest test = extent.createTest("FAQ", "Homepage assert test");
 		HomePage.faq(driver).click();
 		String title = driver.getTitle();
-		AssertJUnit.assertEquals(title, "FAQ");
+		Assert.assertEquals(title, "FAQ");
 		driver.navigate().back();
 		test.pass("Passed");
 	}
@@ -188,7 +187,7 @@ public class UAT_HomePageTest {
 		driver.findElement(By.xpath("//a[contains(text(),'Face')]")).click();
 
 		String title = driver.getTitle();
-		AssertJUnit.assertEquals(title, "Frankenmuth Bavarian Inn Lodge - Home | Facebook");
+		Assert.assertEquals(title, "Frankenmuth Bavarian Inn Lodge - Home | Facebook");
 		test.pass("Passed");
 		driver.navigate().back();
 	}
@@ -200,7 +199,7 @@ public class UAT_HomePageTest {
 		driver.findElement(By.xpath("//a[contains(text(),'Youtube')]")).click();
 
 		String title = driver.getTitle();
-		AssertJUnit.assertEquals(title, "Bavarian Inn Lodge - YouTube");
+		Assert.assertEquals(title, "Bavarian Inn Lodge - YouTube");
 		test.pass("Passed");
 		driver.navigate().back();
 	}
@@ -212,7 +211,7 @@ public class UAT_HomePageTest {
 		driver.findElement(By.xpath("//a[contains(text(),'Trip Advisor')]")).click();
 
 		String title = driver.getTitle();
-		AssertJUnit.assertEquals(title, "Bavarian Inn Lodge - Frankenmuth - TripAdvisor");
+		Assert.assertEquals(title, "Bavarian Inn Lodge - Frankenmuth - TripAdvisor");
 		test.pass("Passed");
 		driver.navigate().back();
 	}
@@ -225,22 +224,21 @@ public class UAT_HomePageTest {
 		driver.findElement(By.xpath("//a[contains(text(),'Twitter')]")).click();
 
 		String title = driver.getTitle();
-		AssertJUnit.assertEquals("Bavarian Inn (@Bavarian_Inn) on Twitter",title);
-	
+		Assert.assertEquals("Bavarian Inn (@Bavarian_Inn) on Twitter", title);
+
 		driver.navigate().back();
 
 		String homeTitle = driver.getTitle();
-		AssertJUnit.assertEquals(homeTitle, "Home");
+		Assert.assertEquals(homeTitle, "Home");
 		test.pass("Passed");
 	}
 
 	@AfterTest
 	public void tearDownTest() {
-		//driver.close();
+		// driver.close();
 		driver.quit();
 		System.out.println("Test completed successfully");
 	}
-
 
 	@AfterSuite // Exent 5
 	public void tearDown() {
