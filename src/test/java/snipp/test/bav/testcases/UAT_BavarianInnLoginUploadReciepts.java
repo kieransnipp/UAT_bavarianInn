@@ -6,16 +6,12 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.Assert;
-import org.testng.AssertJUnit;
-import org.testng.AssertJUnit;
-import org.testng.AssertJUnit;
-import org.testng.AssertJUnit;
-import org.testng.AssertJUnit;
+//import org.testng.AssertJUnit;
+
 import org.testng.annotations.*;
 
 import org.testng.asserts.Assertion;
 
-//import org.testng.AssertJUnit;
 import static com.codeborne.selenide.Selenide.*;
 import static org.testng.Assert.assertTrue;
 
@@ -27,9 +23,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.Alert;
-//import org.junit.Test;  
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -43,8 +37,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.codeborne.selenide.WebDriverRunner;
 import org.testng.Assert;
-//import org.testng.AssertJUnit;
-//import org.testng.annotations.Test;
+
 
 public class UAT_BavarianInnLoginUploadReciepts {
 
@@ -138,7 +131,7 @@ public class UAT_BavarianInnLoginUploadReciepts {
 		System.out.println("Verify the title of the login page");
 		String pageTitle = driver.getTitle();
 		System.out.println("Title of the page is " + pageTitle);
-		AssertJUnit.assertEquals(driver.getTitle().contentEquals("Home"), true);
+		Assert.assertEquals(driver.getTitle().contentEquals("Home"), true);
 		test.pass("Passed");
 	}
 
@@ -151,7 +144,7 @@ public class UAT_BavarianInnLoginUploadReciepts {
 		$(By.xpath("//*[@id=\"loginContainer\"]/form/div[2]/input")).setValue("Snipp123!");
 		$(By.name("loginButton")).click();
 		String title = driver.getTitle();
-		AssertJUnit.assertEquals(title, "Home");
+		Assert.assertEquals(title, "Home");
 		test.pass("Passed");
 	}
 
@@ -166,7 +159,7 @@ public class UAT_BavarianInnLoginUploadReciepts {
 		Thread.sleep(3000);
 
 		// AssertJUnit.assertEquals(driver.getTitle().contentEquals("Details"), true);
-		AssertJUnit.assertEquals(loginTitle, "Home");
+		Assert.assertEquals(loginTitle, "Home");
 		System.out.println("Title is correct and this line is printed");
 		test.pass("Passed");
 	}
@@ -180,7 +173,8 @@ public class UAT_BavarianInnLoginUploadReciepts {
 		String title = driver.getTitle();
 		System.out.println("Title displayed is " + title);
 		System.out.println("Welcome message is displayed correctly");
-		AssertJUnit.assertEquals(title, "Details");
+		
+		Assert.assertEquals(title, "Details");
 		test.pass("Passed");
 	}
 
@@ -199,7 +193,7 @@ public class UAT_BavarianInnLoginUploadReciepts {
 		String title = driver.getTitle();
 		System.out.println("Title displayed is " + title);
 
-		AssertJUnit.assertEquals(title, "Upload Receipt");
+		Assert.assertEquals(title, "Upload Receipt");
 		test.pass("Passed");
 	}
 
@@ -244,7 +238,7 @@ public class UAT_BavarianInnLoginUploadReciepts {
 				.findElement(By.xpath(
 						"//*[@id=\"receiptPage\"]/div/div/div[4]/div/div/div/div/div/div/table/tbody/tr[1]/td[1]/span"))
 				.getText();
-		AssertJUnit.assertTrue(timeUploaded.contains(timeStamp));
+		Assert.assertTrue(timeUploaded.contains(timeStamp));
 
 		System.out.println("Upload is working today");
 		Assert.fail("Fail");
@@ -257,7 +251,7 @@ public class UAT_BavarianInnLoginUploadReciepts {
 		String timeUploaded = driver.findElement(By.xpath(
 				"//*[@id=\"receiptPage\"]/div/div/div[4]/div/div/div/div/div/div/table/tbody/tr[1]/td[2]/span[1]"))
 				.getText();
-		AssertJUnit.assertTrue(timeUploaded.contentEquals("QUEUED"));
+		Assert.assertTrue(timeUploaded.contentEquals("QUEUED"));
 
 		System.out.println("Upload is QUEUED");
 		test.pass("QUEUED is displayed");
