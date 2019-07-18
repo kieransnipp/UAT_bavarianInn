@@ -164,15 +164,14 @@ public class UAT_BavarianInnBrokenLinks {
 		System.out.println("");
 		System.out.println("**************** Start of testing ****************");
 
-		String loginTitle = driver.getTitle();
-		System.out.println("Title displayed is " + loginTitle);
-		Thread.sleep(3000);
 		String title = driver.getTitle();
-		//AssertJUnit.assertEquals(driver.getTitle().contentEquals("Details"), true);
-		// Assert.assertEquals(pageTitle, "MemberSearch");
-		//Assert.assertEquals(driver.getTitle().contentEquals("Details"), true);
+		System.out.println("Title displayed is " + title);
+		Thread.sleep(3000);
+		
+		System.out.println("Title is "+title);
+		
 		Assert.assertEquals(title, "Details");
-		System.out.println(" ***  Check links for Page =" + loginTitle);
+		System.out.println(" ***  Check links for Page =" + title);
 
 		Boolean checkedOk = checkLinks();
 		assertTrue(checkedOk);
