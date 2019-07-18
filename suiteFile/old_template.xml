@@ -1,0 +1,48 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Proof of concept of TestNG">
+
+  <test name="Test1">
+    <classes>
+      <class name="testng.arnotts.ExceptionTimeOutTest"/>
+    </classes>
+    </test>
+    
+     <test name="TestingGoogle2">
+    <classes>
+    <class name="testng.arnotts.GoogleTest"/>
+    </classes>
+    </test>
+    
+     <test name="TestingGoogle3">
+    <classes>
+     <class name="testng.arnotts.GoogleTitleTest"/>
+    </classes>
+    </test>
+    
+     <test name="TestingGoogle4">
+    <classes>
+      <class name="testng.arnotts.InvocationCountTest"/>
+    </classes>
+    </test>
+    
+     <test name="TestingGoogle5">
+    <classes>
+       <class name="testng.arnotts.TestNgBasics"/>
+    </classes>
+    </test>
+    
+     <test name="TestingGoogle6">
+    <classes>
+       <class name="testng.arnotts.TestNgFeatures"/>
+    </classes>  
+   </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+     
+      
+     
+      
+      

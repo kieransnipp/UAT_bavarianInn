@@ -3,15 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="snipp.test.bav.testcases.UAT_HomePageTest">
+      <class name="snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts">
         <methods>
-          <include name="launchBrowser"/>
           <include name="tearDownTest"/>
+          <include name="uploadButtomSelection"/>
+          <include name="viewReciept"/>
+          <include name="beforeTest"/>
           <include name="setUp"/>
+          <include name="verifyUploadQUEUEDStatus"/>
           <include name="tearDown"/>
-          <include name="checkTwitter"/>
+          <include name="verifyUploadWorked"/>
+          <include name="launchBrowser"/>
         </methods>
-      </class> <!-- snipp.test.bav.testcases.UAT_HomePageTest -->
+      </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

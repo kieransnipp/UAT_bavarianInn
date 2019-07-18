@@ -205,6 +205,10 @@ public class OLD_UAT_ExcelDataProviderFull {
 		//
 		// // Select Register
 		 driver.findElement(By.xpath("//*[@type='submit']")).click();
+		 
+		 
+		 //To do
+		//Rego part needs to be fixed before the test completed assertion can be completed
 
 	} // End method
 

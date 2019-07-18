@@ -13,14 +13,6 @@
           <include name="afterTest"/>
         </methods>
       </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens -->
-      <class name="snipp.test.bav.testcases.UAT_HomePageTest">
-        <methods>
-          <include name="launchBrowser"/>
-          <include name="tearDownTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- snipp.test.bav.testcases.UAT_HomePageTest -->
       <class name="snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM">
         <methods>
           <include name="launchBrowser"/>
@@ -37,6 +29,14 @@
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts -->
+      <class name="snipp.test.bav.testcases.UAT_HomePageTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="tearDownTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_HomePageTest -->
       <class name="snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks">
         <methods>
           <include name="membersLocations"/>
@@ -76,14 +76,6 @@
           <include name="afterTest"/>
         </methods>
       </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens -->
-      <class name="snipp.test.bav.testcases.UAT_HomePageTest">
-        <methods>
-          <include name="launchBrowser"/>
-          <include name="tearDownTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- snipp.test.bav.testcases.UAT_HomePageTest -->
       <class name="snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM">
         <methods>
           <include name="launchBrowser"/>
@@ -100,6 +92,14 @@
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts -->
+      <class name="snipp.test.bav.testcases.UAT_HomePageTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="tearDownTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_HomePageTest -->
       <class name="snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks">
         <methods>
           <include name="launchBrowser"/>
@@ -118,7 +118,7 @@
       </class> <!-- snipp.test.bav.testcases.UAT_RegisterPageTestCanada -->
     </classes>
   </test> <!-- UAT_BavarianInnLoginCheckScreens(failed) -->
-  <test name="UAT_BavarianInnLoginUploadReciepts(failed)">
+  <test name="UAT_BavarianInnLoginUploadReciepts_Broken(failed)">
     <classes>
       <class name="snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens">
         <methods>
@@ -130,14 +130,6 @@
           <include name="afterTest"/>
         </methods>
       </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens -->
-      <class name="snipp.test.bav.testcases.UAT_HomePageTest">
-        <methods>
-          <include name="launchBrowser"/>
-          <include name="tearDownTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- snipp.test.bav.testcases.UAT_HomePageTest -->
       <class name="snipp.test.bav.testcases.UAT_ExcelDataProviderFull_POM">
         <methods>
           <include name="launchBrowser"/>
@@ -160,6 +152,14 @@
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnLoginUploadReciepts -->
+      <class name="snipp.test.bav.testcases.UAT_HomePageTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="tearDownTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- snipp.test.bav.testcases.UAT_HomePageTest -->
       <class name="snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks">
         <methods>
           <include name="launchBrowser"/>
@@ -177,5 +177,5 @@
         </methods>
       </class> <!-- snipp.test.bav.testcases.UAT_RegisterPageTestCanada -->
     </classes>
-  </test> <!-- UAT_BavarianInnLoginUploadReciepts(failed) -->
+  </test> <!-- UAT_BavarianInnLoginUploadReciepts_Broken(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

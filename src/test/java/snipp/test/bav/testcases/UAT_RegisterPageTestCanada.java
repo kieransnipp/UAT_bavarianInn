@@ -300,7 +300,7 @@ public class UAT_RegisterPageTestCanada {
 		test.log(Status.INFO, "Rego completed");
 		
 		//To do
-				Assert.fail("This dont work yet");
+		test.fail("This part needs to be fixed before the test completed assertion can be completed");
 	}
 
 	@AfterTest

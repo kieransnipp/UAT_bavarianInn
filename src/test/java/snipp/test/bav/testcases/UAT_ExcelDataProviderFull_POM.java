@@ -245,7 +245,7 @@ public class UAT_ExcelDataProviderFull_POM {
 
 		
 		//To do
-		Assert.fail("This dont work yet");
+				test.fail("This part needs to be fixed before the test completed assertion can be completed");
 
 	} // End method
 

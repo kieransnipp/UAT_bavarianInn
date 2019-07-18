@@ -244,7 +244,8 @@ public class OLD_UATBavarianInnCreateUser {
 
 		// Select Register
 		driver.findElement(By.xpath("//*[@type='submit']")).click();
-		test.pass("All the users details entered");
+		//To do
+				test.fail("This part needs to be fixed before the test completed assertion can be completed");
 
 	}
 	

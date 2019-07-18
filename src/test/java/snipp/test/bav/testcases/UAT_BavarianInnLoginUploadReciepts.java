@@ -221,11 +221,11 @@ public class UAT_BavarianInnLoginUploadReciepts {
 				.contains("Please allow up to 48 hours for processing and verification.");
 		System.out.println("Document upload successful = " + uploadSuccessful);
 
-		
-			Assert.fail("This dont work yet");
-		
-		//AssertJUnit
-				//.assertTrue(confirmationPage.contains("Please allow up to 48 hours for processing and verification."));
+		Assert.fail("This dont work yet");
+
+		// AssertJUnit
+		// .assertTrue(confirmationPage.contains("Please allow up to 48 hours for
+		// processing and verification."));
 
 	}
 
@@ -291,8 +291,10 @@ public class UAT_BavarianInnLoginUploadReciepts {
 		// once it gets processed"));
 		// Thread.sleep(1000);
 		// System.out.println("Reciept upload confirmed");
+		
+		// To do
+		test.fail("This part needs to be fixed before the test completed assertion can be completed");
 		Assert.fail("Failed viewReciept does not work????");
-
 	} // End viewReciept
 
 	@Test(priority = 10)
@@ -311,7 +313,6 @@ public class UAT_BavarianInnLoginUploadReciepts {
 		System.out.println("Test completed successfully");
 	}
 
-	
 	@AfterSuite // Exent 5
 	public void tearDown() {
 		extent.flush();

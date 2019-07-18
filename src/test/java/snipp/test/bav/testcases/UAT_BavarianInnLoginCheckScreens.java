@@ -234,6 +234,7 @@ public class UAT_BavarianInnLoginCheckScreens {
 		System.out.println("After Test bit");
 		System.out.println("Close browser");
 		driver.close();
+		driver.quit();
 
 	}
 
