@@ -23,8 +23,30 @@
     <class name="demo.TestNG_Demo"/>
     </classes>
     </test>
+
+    <test name="Demoa">
+    <classes>
+    <class name="demo.TestNG_Demoa"/>
+    </classes>
+    </test>
   
+  <test name="Demoa2">
+    <classes>
+    <class name="demo.TestNG_Demoa2"/>
+    </classes>
+    </test>
  
+ <test name="Demo3">
+    <classes>
+    <class name="demo.TestNG_Demoa3"/>
+    </classes>
+    </test>
+
+    <test name="Demo4">
+    <classes>
+    <class name="demo.TestNG_Demoa4"/>
+    </classes>
+    </test>
  <!--  <test name="UAT_BavarianInnLoginCheckScreens"> 
     <classes>
       <class name="uat.bavarian_inn.UAT_BavarianInnLoginCheckScreens"/>
