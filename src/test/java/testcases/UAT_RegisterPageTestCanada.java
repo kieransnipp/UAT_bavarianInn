@@ -160,7 +160,7 @@ public class UAT_RegisterPageTestCanada {
 		String title = driver.getTitle();
 		System.out.println("Title of the page is " + title);
 
-		Assert.assertEquals(title, "Details");
+		Assert.assertEquals("Home", title);
 
 		test.pass("Passed");
 	}
