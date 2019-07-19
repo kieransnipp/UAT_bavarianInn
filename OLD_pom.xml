@@ -31,42 +31,21 @@
   </repositories>
 
 
+
   <dependencies>
 
- <!-- 
-  <dependency>
+ 
+ <!--  <dependency>
     <groupId>org.apache.logging.log4j</groupId>
     <artifactId>log4j-api</artifactId>
-    <version>2.12</version>
-  </dependency>-->
+    <version>2.11.2</version>
+  </dependency>
   
   <dependency>
     <groupId>org.apache.logging.log4j</groupId>
     <artifactId>log4j-core</artifactId>
     <version>2.11.2</version>
-  </dependency>
-  <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
-<dependency>
-    <groupId>org.apache.logging.log4j</groupId>
-    <artifactId>log4j-slf4j-impl</artifactId>
-    <version>2.12.0</version>
-</dependency>
-
-<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-jcl -->
-<dependency>
-    <groupId>org.apache.logging.log4j</groupId>
-    <artifactId>log4j-jcl</artifactId>
-    <version>2.12.0</version>
-</dependency>
-
-<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j18-impl -->
-<dependency>
-    <groupId>org.apache.logging.log4j</groupId>
-    <artifactId>log4j-slf4j18-impl</artifactId>
-    <version>2.12.0</version>
-    <scope>test</scope>
-</dependency>
-
+  </dependency> -->
 
   <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 <dependency>
@@ -79,7 +58,7 @@
 <dependency>
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
-    <version>4.0.8</version>
+    <version>4.0.9</version>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
@@ -208,15 +187,12 @@
     <artifactId>maven-assembly-plugin</artifactId>
     <version>3.1.1</version>
 </dependency>
-<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-shade-plugin -->
-<dependency>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-shade-plugin</artifactId>
-    <version>3.2.1</version>
-</dependency>
 
 
   </dependencies>
+
+
+
 
   <build>
 
@@ -225,7 +201,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.0</version>
+        <version>3.1</version>
         <executions>
               <execution>
                 <id>log4j-plugin-processor</id>
@@ -235,20 +211,19 @@
                 <phase>process-classes</phase>
                 <configuration>
                   <proc>only</proc>
-                  <source>1.8</source>
-                <target>1.8</target>
-                 
+                  <annotationProcessors>
+                     <annotationProcessor>org.apache.logging.log4j.core.config.plugins.processor.PluginProcessor</annotationProcessor> 
+                  </annotationProcessors>
                 </configuration>
               </execution>
       </executions>
         <configuration>
-          <fork>true</fork>
+          <!-- <fork>true</fork> -->
           <executable>C:\Program Files\Java\jdk-12.0.1\bin\javac.exe</executable>
 
           <!--<source>1.8</source> <target>1.8</target> -->
         </configuration>
       </plugin>
-    
 
       <!--<plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-surefire-plugin</artifactId> 
         <version>3.0.0-M3</version> <configuration> <testFailureIgnore>true</testFailureIgnore> 
@@ -273,10 +248,12 @@
             <!--Local path-->
             <!--<suiteXmlFile>testng_arn.xml</suiteXmlFile>-->
 
-            <!--Test location Full path  -->
-            <suiteXmlFile>src/suiteFile/uat/uat_testng_bav.xml</suiteXmlFile>
 
+            <!--Full path 
             
+            <suiteXmlFile>src\suiteFile\prod\prod_testng_arn.xml</suiteXmlFile>
+            -->
+            <suiteXmlFile>src/suiteFile/uat/uat_testng_bav.xml</suiteXmlFile>
             
           </suiteXmlFiles>
         </configuration>
@@ -284,13 +261,14 @@
 
 
     </plugins>
-            <resources>
-            <resource>
-            <directory>src</directory>
-            <includes>
-            <include>**/*.java</include>
-            </includes>
-            </resource>
+
+    <resources>
+    <resource>
+    <directory>src</directory>
+    <includes>
+    <include>**/*.java</include>
+    </includes>
+    </resource>
 </resources>
   </build>
 
