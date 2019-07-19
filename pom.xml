@@ -239,39 +239,33 @@
         </configuration>
       </plugin>
 
-     <!--  <plugin>
+    <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version>
-        <executions>
-              <execution>
-                <id>log4j-plugin-processor</id>
-                <goals>
-                  <goal>compile</goal>
-                </goals>
-                <phase>process-classes</phase>
-                <configuration>
-                  <source>1.8</source>
-                <target>1.8</target>
-                  <proc>only</proc>
-                  <annotationProcessors>
-                     <annotationProcessor>org.apache.logging.log4j.core.config.plugins.processor.PluginProcessor</annotationProcessor> 
-                  </annotationProcessors>
-                </configuration>
-              </execution>
-      </executions>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M3</version>
         <configuration>
-         <fork>true</fork>
-          <executable>C:\Program Files\Java\jdk-12.0.1\bin\javac.exe</executable>
+          <systemPropertyVariables>
+            <!--<userName>${DuserName}</userName> <password>${Dpassword}</password> 
+              <implicitWait>${DimplicitWait}</implicitWait> <explicitWait>${DexplicitWait}</explicitWait> -->
+          </systemPropertyVariables>
+          <!-- Old design where we can hard code TestNG suite in pom.xml -->
+          <!-- <suiteXmlFiles> <suiteXmlFile>src/main/resources/testSuite/regression.xml</suiteXmlFile> 
+            <suiteXmlFile>testNG.xml</suiteXmlFile> </suiteXmlFiles> -->
+          <suiteXmlFiles>
+            <!--<suiteXmlFile>src\suiteFile\live_arnotts.xml</suiteXmlFile>   Two ways here -->
+            
+            <!--Local path-->
+            <!--<suiteXmlFile>testng_arn.xml</suiteXmlFile>-->
 
-          <source>1.8</source> <target>1.8</target> 
+
+            <!--Full path -->
+            
+            <!-- <suiteXmlFile>src\suiteFile\prod\prod_testng_arn.xml</suiteXmlFile> -->
+             <suiteXmlFile>src/suiteFile/uat/demo.xml</suiteXmlFile>
+            
+          </suiteXmlFiles>
         </configuration>
-      </plugin> -->
-
-      <!--<plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-surefire-plugin</artifactId> 
-        <version>3.0.0-M3</version> <configuration> <testFailureIgnore>true</testFailureIgnore> 
-        <suiteXmlFiles> <suiteXmlFile>testng.xml</suiteXmlFile> </suiteXmlFiles> 
-        </configuration> </plugin> -->
+      </plugin>
 
     
 

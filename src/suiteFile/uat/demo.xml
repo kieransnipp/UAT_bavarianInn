@@ -1,0 +1,47 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Proof of concept of TestNG">
+
+<parameter name="userName" value="Michael.Ledwith@snipp.com" />
+<parameter name="passWord" value="Snipp123!"/>
+<parameter name="uat_URL" value="http://bavarianinn.snipp.ie/home/"/>
+
+<parameter name="browser" value="chrome"/>
+
+
+   <!-- This is how you run tests in paralell -->
+   <!--<test name="Test-class test" >
+    <classes>
+      <class name="com.howtodoinjava.parallelism.ParallelClassesTestOne" />
+      <class name="com.howtodoinjava.parallelism.ParallelClassesTestTwo" />
+    </classes>
+  </test>-->
+  
+   
+   <test name="Demo1">
+    <classes>
+    <class name="demo.TestNG_Demo"/>
+    </classes>
+    </test>
+  
+ 
+ <!--  <test name="UAT_BavarianInnLoginCheckScreens"> 
+    <classes>
+      <class name="uat.bavarian_inn.UAT_BavarianInnLoginCheckScreens"/>
+    </classes>
+    </test>
+    
+    
+     <test name="UAT_BavarianInnLoginUploadReciepts">
+    <classes>
+    <class name="uat.bavarian_inn.UAT_BavarianInnLoginUploadReciepts"/>
+    </classes>
+    </test>
+    
+    <test name="UATBavarianInnBrokenLinks">
+    <classes>
+     <class name="uat.bavarian_inn.UATBavarianInnBrokenLinks"/>
+    </classes>
+    </test> -->
+
+</suite> 
