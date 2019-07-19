@@ -88,7 +88,7 @@ public class TestNG_Demo {
 	@AfterSuite
 	public void tearDown() {
 		driver.close();
-		driver.quit();
+		//driver.quit();
 		System.out.println("Test has run successfully");
 		try {
 			PropertiesFile.setProperties();
