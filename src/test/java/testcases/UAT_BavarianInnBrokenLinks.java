@@ -163,7 +163,7 @@ public class UAT_BavarianInnBrokenLinks {
 	public void titleTest() throws InterruptedException {
 		ExtentTest test = extent.createTest("Check links - Title test", "Check links");
 		System.out.println("");
-		System.out.println("**************** Start of testing ****************");
+		System.out.println("**************** Home page Start of testing ****************");
 
 		String title = driver.getTitle();
 		System.out.println("Title displayed is " + title);
@@ -171,7 +171,7 @@ public class UAT_BavarianInnBrokenLinks {
 		
 		System.out.println("Title is "+title);
 		
-		Assert.assertEquals(title, "Details");
+		Assert.assertEquals(title, "Home");
 		System.out.println(" ***  Check links for Page =" + title);
 
 		Boolean checkedOk = checkLinks();
