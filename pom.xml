@@ -16,6 +16,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+
+  
+
   <repositories>
     <repository>
       <id>jcenter</id>
@@ -261,6 +264,7 @@
 
     </plugins>
 
+
    <!--  <resources>
     <resource>
     <directory>src</directory>
@@ -270,5 +274,18 @@
     </resource> -->
 <!-- </resources> -->
   </build>
+  <scm>
+     <connection>scm:git:https://github.com/kieransnipp/UAT_bavarianInn.git</connection>
+  </scm>
+<distributionManagement>
+        <repository>
+            <id>ec2-arti</id>
+            <url>https://github.com/kieransnipp/UAT_bavarianInn.git</url>
+        </repository>
+        <snapshotRepository>
+            <id>ec2-arti</id>
+            <url>https://github.com/kieransnipp/UAT_bavarianInn.git</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
