@@ -201,7 +201,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version>
+        <version>3.1</version>
         <executions>
               <execution>
                 <id>log4j-plugin-processor</id>
@@ -212,13 +212,13 @@
                 <configuration>
                   <proc>only</proc>
                   <annotationProcessors>
-                  <!--   <annotationProcessor>org.apache.logging.log4j.core.config.plugins.processor.PluginProcessor</annotationProcessor> -->
+                     <annotationProcessor>org.apache.logging.log4j.core.config.plugins.processor.PluginProcessor</annotationProcessor> 
                   </annotationProcessors>
                 </configuration>
               </execution>
       </executions>
         <configuration>
-          <fork>true</fork>
+          <!-- <fork>true</fork> -->
           <executable>C:\Program Files\Java\jdk-12.0.1\bin\javac.exe</executable>
 
           <!--<source>1.8</source> <target>1.8</target> -->
