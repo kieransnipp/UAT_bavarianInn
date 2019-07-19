@@ -23,7 +23,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 //import org.testng.AssertJUnit;
 import org.testng.annotations.AfterClass;
@@ -202,7 +204,11 @@ public class UAT_BavarianInnBrokenLinks {
 		ExtentTest test = extent.createTest("Welcome Message", "Check links");
 		String pageTitle = driver.getTitle();
 		System.out.println("Check welcome message");
+       
+		Assert.assertEquals(pageTitle, "Details");
 		String Hi = driver.findElement(By.xpath("//*[contains(text(), 'Hi Michael')]")).toString();
+		
+		 
 		System.out.println(Hi + " is displayed");
 
 		System.out.println("Hi Michael should be = "+Hi);
@@ -247,8 +253,14 @@ public class UAT_BavarianInnBrokenLinks {
 
 	@Test(priority = 8)
 	public void membersOffers() {
+		System.out.println("Members Offers check links ");
 		ExtentTest test = extent.createTest("membersOffers", "Check links");
+		
+		WebDriverWait wait = new WebDriverWait(driver, 5);// 5 secs 
+		
 		driver.findElement(By.xpath("//*[contains(text(), 'Member Offers')]")).click();
+	
+		
 		String title = driver.getTitle();
 		//AssertJUnit.assertEquals(title, "Offers");
 		Assert.assertEquals(title, "Offers");

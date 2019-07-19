@@ -26,6 +26,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -156,7 +157,7 @@ public class UAT_BavarianInnLoginCheckScreens {
 		String title = driver.getTitle();
 		System.out.println("Title displayed is " + title);
 		Thread.sleep(3000);
-
+		WebDriverWait wait = new WebDriverWait(driver, 5);// 5 secs 
 		Assert.assertEquals(title, "Details");
 
 		System.out.println("Title is correct and this line is printed");
