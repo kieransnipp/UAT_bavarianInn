@@ -10,11 +10,11 @@
     
      <test name="UAT_BavarianInnBrokenLinks">
         <classes>
-            <class name="snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks"/>
+            <class name="testcases.UAT_BavarianInnBrokenLinks"/>
         </classes>
          </test> 
          
-          <test name="UAT_BavarianInnLoginCheckScreens">
+        <!--   <test name="UAT_BavarianInnLoginCheckScreens">
         <classes>
             <class name="snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens"/>   
         </classes>
@@ -42,7 +42,7 @@
         <classes>
             <class name="snipp.test.bav.testcases.UAT_RegisterPageTestCanada"/>   
         </classes>
-         </test>
+         </test> -->
 
          
 </suite>

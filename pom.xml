@@ -239,33 +239,7 @@
         </configuration>
       </plugin>
 
-    <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M3</version>
-        <configuration>
-          <systemPropertyVariables>
-            <!--<userName>${DuserName}</userName> <password>${Dpassword}</password> 
-              <implicitWait>${DimplicitWait}</implicitWait> <explicitWait>${DexplicitWait}</explicitWait> -->
-          </systemPropertyVariables>
-          <!-- Old design where we can hard code TestNG suite in pom.xml -->
-          <!-- <suiteXmlFiles> <suiteXmlFile>src/main/resources/testSuite/regression.xml</suiteXmlFile> 
-            <suiteXmlFile>testNG.xml</suiteXmlFile> </suiteXmlFiles> -->
-          <suiteXmlFiles>
-            <!--<suiteXmlFile>src\suiteFile\live_arnotts.xml</suiteXmlFile>   Two ways here -->
-            
-            <!--Local path-->
-            <!--<suiteXmlFile>testng_arn.xml</suiteXmlFile>-->
-
-
-            <!--Full path -->
-            
-            <!-- <suiteXmlFile>src\suiteFile\prod\prod_testng_arn.xml</suiteXmlFile> -->
-             <suiteXmlFile>src/suiteFile/uat/demo.xml</suiteXmlFile>
-            
-          </suiteXmlFiles>
-        </configuration>
-      </plugin>
+   
 
     
 

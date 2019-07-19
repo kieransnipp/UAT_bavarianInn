@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [BavarianInnTests]">
+  <parameter name="passWord" value="Snipp123!"/>
+  <parameter name="uat_URL" value="http://bavarianinn.snipp.ie/home/"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="userName" value="Michael.Ledwith@snipp.com"/>
+  <test name="UAT_BavarianInnBrokenLinks(failed)">
     <classes>
-      <class name="demo.TestNG_Demo">
+      <class name="testcases.UAT_BavarianInnBrokenLinks">
         <methods>
-          <include name="googleSearch"/>
-          <include name="setUpTest"/>
+          <include name="membersOffers"/>
+          <include name="beforeTest"/>
+          <include name="WelcomeMessage"/>
+          <include name="membersSocial"/>
+          <include name="login"/>
           <include name="tearDown"/>
+          <include name="membersLocations"/>
+          <include name="titleTest"/>
+          <include name="launchBrowser"/>
         </methods>
-      </class> <!-- demo.TestNG_Demo -->
+      </class> <!-- testcases.UAT_BavarianInnBrokenLinks -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- UAT_BavarianInnBrokenLinks(failed) -->
+</suite> <!-- Failed suite [BavarianInnTests] -->
