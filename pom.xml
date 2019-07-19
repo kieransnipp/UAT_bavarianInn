@@ -15,10 +15,7 @@
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
-
-  
-
+ 
   <repositories>
     <repository>
       <id>jcenter</id>
@@ -255,9 +252,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
         <version>2.5.3</version>
-        <configuration>
-          <tagBase>scm:git:https://github.com/kieransnipp/UAT_bavarianInn.git</tagBase>
-        </configuration>
+     
       </plugin>
 
     
@@ -284,7 +279,7 @@
         </repository>
         <snapshotRepository>
             <id>ec2-arti</id>
-            <url>https://github.com/kieransnipp/UAT_bavarianInn.git</url>
+            <url>http://github.com/kieransnipp/UAT_bavarianInn.git</url>
         </snapshotRepository>
     </distributionManagement>
 
