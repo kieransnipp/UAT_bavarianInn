@@ -2,75 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Proof of concept of TestNG" duration-ms="10828" started-at="2019-07-19T09:53:51Z" finished-at="2019-07-19T09:54:02Z">
+  <suite name="Default suite" duration-ms="9490" started-at="2019-07-19T10:17:57Z" finished-at="2019-07-19T10:18:06Z">
     <groups>
     </groups>
-    <test name="Demo1" duration-ms="10828" started-at="2019-07-19T09:53:51Z" finished-at="2019-07-19T09:54:02Z">
-      <class name="demo.TestNG_Demo">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:demo.TestNG_Demo@3ffcd140]" name="setUpTest" is-config="true" duration-ms="5170" started-at="2019-07-19T10:53:51Z" finished-at="2019-07-19T10:53:56Z">
+    <test name="Default test" duration-ms="9490" started-at="2019-07-19T10:17:57Z" finished-at="2019-07-19T10:18:06Z">
+      <class name="demo.TestNG_Demoa4">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:demo.TestNG_Demoa4@31206beb]" name="setUpTest" is-config="true" duration-ms="3740" started-at="2019-07-19T11:17:57Z" finished-at="2019-07-19T11:18:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="googleSearch()[pri:0, instance:demo.TestNG_Demo@3ffcd140]" name="googleSearch" duration-ms="5636" started-at="2019-07-19T10:53:56Z" finished-at="2019-07-19T10:54:02Z">
+        <test-method status="PASS" signature="googleSearch()[pri:0, instance:demo.TestNG_Demoa4@31206beb]" name="googleSearch" duration-ms="5723" started-at="2019-07-19T11:18:01Z" finished-at="2019-07-19T11:18:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleSearch -->
-        <test-method status="FAIL" signature="tearDown()[pri:0, instance:demo.TestNG_Demo@3ffcd140]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-07-19T10:54:02Z" finished-at="2019-07-19T10:54:02Z">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 24444, moz:profile: C:\Users\Kieran\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1db938aa-bc64-431f-8ad4-6947b08b568f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 24444, moz:profile: C:\Users\Kieran\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1db938aa-bc64-431f-8ad4-6947b08b568f
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
-	at demo.TestNG_Demo.tearDown(TestNG_Demo.java:91)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:demo.TestNG_Demoa4@31206beb]" name="tearDown" is-config="true" duration-ms="2710" started-at="2019-07-19T11:18:06Z" finished-at="2019-07-19T11:18:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- demo.TestNG_Demo -->
-    </test> <!-- Demo1 -->
-  </suite> <!-- Proof of concept of TestNG -->
+      </class> <!-- demo.TestNG_Demoa4 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
