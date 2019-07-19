@@ -66,7 +66,7 @@ public class UAT_BavarianInnBrokenLinks {
 
 	// homePage = prop.getProperty("url");
 
-	String homePage = null;  //"http://bavarianinn.snipp.ie/home/"; // Changed
+	String homePage = null; // "http://bavarianinn.snipp.ie/home/"; // Changed
 
 	String url = "";
 	HttpURLConnection huc = null;
@@ -115,10 +115,10 @@ public class UAT_BavarianInnBrokenLinks {
 
 		}
 		System.out.println("Maximize window, delete cookies");
-		
-		//driver.manage().window().maximize();
-		Dimension d = new Dimension(1382,744);     
-		driver.manage().window().setSize(d); 
+
+		// driver.manage().window().maximize();
+		Dimension d = new Dimension(1382, 744);
+		driver.manage().window().setSize(d);
 		driver.manage().deleteAllCookies();
 
 		System.out.println("Before url");
@@ -140,13 +140,13 @@ public class UAT_BavarianInnBrokenLinks {
 		System.out.println("Title of the page is " + pageTitle);
 		String title = driver.getTitle();
 		Assert.assertEquals(title, "Home");
-		
+
 		System.out.println("Login to site");
 		$(By.xpath("//*[@id=\"loginContainer\"]/*/*/input")).setValue("Michael.Ledwith@snipp.com");
 		$(By.xpath("//*[@id=\"loginContainer\"]/form/div[2]/input")).setValue("Snipp123!");
 		$(By.name("loginButton")).click();
 		String LoginpageTitle = driver.getTitle();
-		
+
 		htmlReporter = new ExtentHtmlReporter("UAT_BavarianInnBrokenLinks.html");
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
@@ -174,9 +174,9 @@ public class UAT_BavarianInnBrokenLinks {
 		String title = driver.getTitle();
 		System.out.println("Title displayed is " + title);
 		Thread.sleep(3000);
-		
-		System.out.println("Title is "+title);
-		
+
+		System.out.println("Title is " + title);
+
 		Assert.assertEquals(title, "Home");
 		System.out.println(" ***  Check links for Page =" + title);
 
@@ -192,27 +192,32 @@ public class UAT_BavarianInnBrokenLinks {
 		System.out.println("Verify the title of the login page");
 		String pageTitle = driver.getTitle();
 		System.out.println("Title of the page is " + pageTitle);
-		System.out.println(" ***  Check links for Page =" + pageTitle);
+		System.out.println(" ***  Check links for Page =" + pageTitle); // Home page
 
 		Boolean checkedOk = checkLinks();
 		assertTrue(checkedOk);
 		test.pass("Check links - Passed");
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 3)
 	public void WelcomeMessage() {
 		ExtentTest test = extent.createTest("Welcome Message", "Check links");
 		String pageTitle = driver.getTitle();
-		System.out.println("Check welcome message");
-       
+		System.out.println("Check welcome message for " + pageTitle); // Details page
+
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		Assert.assertEquals(pageTitle, "Details");
 		String Hi = driver.findElement(By.xpath("//*[contains(text(), 'Hi Michael')]")).toString();
-		
-		 
+
 		System.out.println(Hi + " is displayed");
 
-		System.out.println("Hi Michael should be = "+Hi);
-		//AssertJUnit.assertTrue(Hi.contains("Hi Michael"));
+		System.out.println("Hi Michael should be = " + Hi);
+		// AssertJUnit.assertTrue(Hi.contains("Hi Michael"));
 		assertTrue(Hi.contains("Hi Michael"));
 		System.out.println("Welcome message is displayed correctly");
 		System.out.println(" ***  Check links for Page =" + pageTitle);
@@ -222,47 +227,56 @@ public class UAT_BavarianInnBrokenLinks {
 		test.pass("Check links - Passed");
 	}
 
-	// @Test(priority = 5)
-	// public void uploadReciept() {
-	// System.out.println("Receipt Up load page");
-	// driver.findElement(By.xpath("//*[contains(text(), 'Upload
-	// Receipt')]")).click();
-	// String title = driver.getTitle();
-	// Assert.assertEquals(title, "Upload Receipt");
-	// }
+//	@Test(priority = 5)
+//	public void uploadReciept() {
+//		System.out.println("Receipt Up load page");
+//		driver.findElement(By.xpath("//*[contains(text(), 'Upload Receipt')]")).click();
+//		String title = driver.getTitle();
+//		Assert.assertEquals(title, "Upload Receipt");
+//		
+//		Boolean checkedOk = checkLinks();
+//		assertTrue(checkedOk);
+//		test.pass("Check links uploadReciept - Passed");
+//	}
+
 	//
-	// @Test(priority = 6)
-	// public void perksClubCardSorryCheck() {
-	// System.out.println("Perks Club Card Sorry Check");
-	//
-	// String sorry = driver.findElement(By.xpath("//*[contains(text(),
-	// 'Sorry!')]")).toString();
-	// assertTrue(sorry.contains("Sorry!"));
-	// // Assert.assertEquals(sorry, "Sorry!");
-	// }
-	//
-	// @Test(priority = 7)
-	// public void profileDisplayed() {
-	// driver.findElement(By.xpath("//*[contains(text(), 'My Profile') and @class
-	// ='alert-link']")).click();
-	// System.out.println("Profile displayed");
-	// String title = driver.getTitle();
-	// Assert.assertEquals(title, "Profile");
-	//
-	// }
+//	@Test(priority = 6)
+//	public void perksClubCardSorryCheck() {
+//		System.out.println("Perks Club Card Sorry Check");
+//
+//		String sorry = driver.findElement(By.xpath("//*[contains(text(),'Sorry!')]")).toString();
+//		assertTrue(sorry.contains("Sorry!"));
+//		Assert.assertEquals(sorry, "Sorry!");
+//		
+//		Boolean checkedOk = checkLinks();
+//		assertTrue(checkedOk);
+//		test.pass("Check links perksClubCardSorryCheck - Passed");
+//	}
+//
+//	@Test(priority = 7)
+//	public void profileDisplayed() {
+//		driver.findElement(By.xpath("//*[contains(text(), 'My Profile') and @class='alert-link']")).click();
+//		System.out.println("Profile displayed");
+//		String title = driver.getTitle();
+//		Assert.assertEquals(title, "Profile");
+//		
+//		Boolean checkedOk = checkLinks();
+//		assertTrue(checkedOk);
+//		test.pass("Check links profileDisplayed - Passed");
+//
+//	}
 
 	@Test(priority = 8)
 	public void membersOffers() {
 		System.out.println("Members Offers check links ");
 		ExtentTest test = extent.createTest("membersOffers", "Check links");
-		
-		WebDriverWait wait = new WebDriverWait(driver, 5);// 5 secs 
-		
+
+		WebDriverWait wait = new WebDriverWait(driver, 5);// 5 secs
+
 		driver.findElement(By.xpath("//*[contains(text(), 'Member Offers')]")).click();
-	
-		
+
 		String title = driver.getTitle();
-		//AssertJUnit.assertEquals(title, "Offers");
+		// AssertJUnit.assertEquals(title, "Offers");
 		Assert.assertEquals(title, "Offers");
 		System.out.println(" ***  Check links for Page =" + title);
 
@@ -275,9 +289,10 @@ public class UAT_BavarianInnBrokenLinks {
 	public void membersLocations() {
 		ExtentTest test = extent.createTest("membersLocations", "Check links");
 		driver.findElement(By.xpath("//*[contains(text(), 'Locations')]")).click();
+		WebDriverWait wait = new WebDriverWait(driver, 5);// 5 secs
 		String title = driver.getTitle();
 		Assert.assertEquals(title, "Stores");
-		//AssertJUnit.assertEquals(title, "Stores");
+		// AssertJUnit.assertEquals(title, "Stores");
 		System.out.println(" ***  Check links for Page =" + title);
 
 		Boolean checkedOk = checkLinks();
@@ -289,9 +304,10 @@ public class UAT_BavarianInnBrokenLinks {
 	public void membersSocial() {
 		ExtentTest test = extent.createTest("membersSocial", "Check links");
 		driver.findElement(By.xpath("//*[contains(text(), 'Social')]")).click();
+		WebDriverWait wait = new WebDriverWait(driver, 5);// 5 secs
 		String title = driver.getTitle();
 		Assert.assertEquals(title, "Earn Points");
-		//AssertJUnit.assertEquals(title, "Earn Points");
+		// AssertJUnit.assertEquals(title, "Earn Points");
 		System.out.println(" ***  Check links for Page =" + title);
 		Boolean checkedOk = checkLinks();
 		assertTrue(checkedOk);
@@ -304,14 +320,7 @@ public class UAT_BavarianInnBrokenLinks {
 		// Force logout Log out
 		open("http://bavarianinn.snipp.ie/umbraco/Surface/LoginSurface/Logout");
 
-		// String title = driver.getTitle();
-		// Assert.assertEquals(title, "Home");
-		// System.out.println("Assert works ");
-		Thread.sleep(3000);
-
-		// driver.findElement(By.cssSelector("dropdown-toggle")).click();
-		// driver.findElement(By.cssSelector("dropdown-menu > li:nth-child(4)
-		// >a")).click();
+		Thread.sleep(1000);
 
 	}
 
@@ -320,7 +329,7 @@ public class UAT_BavarianInnBrokenLinks {
 
 		driver.manage().window().maximize();
 		// driver.get(homePage);
-		homePage = prop.getProperty("url");  //Updated
+		homePage = prop.getProperty("url"); // Updated
 		List<WebElement> links = driver.findElements(By.tagName("a"));
 		Iterator<WebElement> it = links.iterator();
 		while (it.hasNext()) {
@@ -369,12 +378,6 @@ public class UAT_BavarianInnBrokenLinks {
 
 		return true;
 	}
-
-//	@AfterMethod
-//	public void afterTest() {
-//		System.out.println("This is the after method bit");
-//	}
-
 
 	@AfterSuite // Exent 5
 	public void tearDown() {

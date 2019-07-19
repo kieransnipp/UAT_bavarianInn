@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Kieran\AppData\Local\Temp\testng-eclipse--2003022930\testng-customsuite.xml</span>
+                    <span>C:\Users\Kieran\AppData\Local\Temp\testng-eclipse-1772854038\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                    <span class="method-stats">10 methods, 3 failed,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,17 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testcases.UAT_BavarianInnBrokenLinks" hash-for-method="titleTest">titleTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testcases.UAT_BavarianInnBrokenLinks" hash-for-method="perksClubCardSorryCheck">perksClubCardSorryCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testcases.UAT_BavarianInnBrokenLinks" hash-for-method="profileDisplayed">profileDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testcases.UAT_BavarianInnBrokenLinks" hash-for-method="uploadReciept">uploadReciept</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -144,6 +154,11 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testcases.UAT_BavarianInnBrokenLinks" hash-for-method="membersSocial">membersSocial</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testcases.UAT_BavarianInnBrokenLinks" hash-for-method="titleTest">titleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
@@ -164,17 +179,127 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="titleTest">
-                  </a> <!-- titleTest -->
-                  <span class="method-name">titleTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Details] but found [Home]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at testcases.UAT_BavarianInnBrokenLinks.titleTest(UAT_BavarianInnBrokenLinks.java:174)
+                  <a name="perksClubCardSorryCheck">
+                  </a> <!-- perksClubCardSorryCheck -->
+                  <span class="method-name">perksClubCardSorryCheck</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),&apos;Sorry!&apos;)]&quot;}
+  (Session info: chrome=75.0.3770.142)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-1UNN7PP&apos;, ip: &apos;10.242.2.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_192&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62022}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fbd3a5f866ef944392d461a8cd00e24e
+*** Element info: {Using=xpath, value=//*[contains(text(),&apos;Sorry!&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at testcases.UAT_BavarianInnBrokenLinks.perksClubCardSorryCheck(UAT_BavarianInnBrokenLinks.java:247)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="profileDisplayed">
+                  </a> <!-- profileDisplayed -->
+                  <span class="method-name">profileDisplayed</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(), &apos;My Profile&apos;) and @class=&apos;alert-link&apos;]&quot;}
+  (Session info: chrome=75.0.3770.142)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-1UNN7PP&apos;, ip: &apos;10.242.2.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_192&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62022}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fbd3a5f866ef944392d461a8cd00e24e
+*** Element info: {Using=xpath, value=//*[contains(text(), &apos;My Profile&apos;) and @class=&apos;alert-link&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at testcases.UAT_BavarianInnBrokenLinks.profileDisplayed(UAT_BavarianInnBrokenLinks.java:258)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadReciept">
+                  </a> <!-- uploadReciept -->
+                  <span class="method-name">uploadReciept</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at testcases.UAT_BavarianInnBrokenLinks.uploadReciept(UAT_BavarianInnBrokenLinks.java:239)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -254,12 +379,19 @@
                   <span class="method-name">membersSocial</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="titleTest">
+                  </a> <!-- titleTest -->
+                  <span class="method-name">titleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Kieran\AppData\Local\Temp\testng-eclipse--2003022930\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Kieran\AppData\Local\Temp\testng-eclipse-1772854038\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -308,40 +440,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'membersLocations')
+data.setCell(0, 1, 'membersOffers')
 data.setCell(0, 2, 'testcases.UAT_BavarianInnBrokenLinks')
-data.setCell(0, 3, 201151);
+data.setCell(0, 3, 100420);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'membersOffers')
+data.setCell(1, 1, 'membersLocations')
 data.setCell(1, 2, 'testcases.UAT_BavarianInnBrokenLinks')
-data.setCell(1, 3, 115202);
+data.setCell(1, 3, 57841);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginToSite')
+data.setCell(2, 1, 'WelcomeMessage')
 data.setCell(2, 2, 'testcases.UAT_BavarianInnBrokenLinks')
-data.setCell(2, 3, 65779);
+data.setCell(2, 3, 53148);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'WelcomeMessage')
+data.setCell(3, 1, 'loginToSite')
 data.setCell(3, 2, 'testcases.UAT_BavarianInnBrokenLinks')
-data.setCell(3, 3, 61810);
+data.setCell(3, 3, 48040);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'membersSocial')
+data.setCell(4, 1, 'titleTest')
 data.setCell(4, 2, 'testcases.UAT_BavarianInnBrokenLinks')
-data.setCell(4, 3, 33409);
+data.setCell(4, 3, 45211);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'logOutOfSite')
+data.setCell(5, 1, 'uploadReciept')
 data.setCell(5, 2, 'testcases.UAT_BavarianInnBrokenLinks')
-data.setCell(5, 3, 7797);
+data.setCell(5, 3, 36044);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'titleTest')
+data.setCell(6, 1, 'membersSocial')
 data.setCell(6, 2, 'testcases.UAT_BavarianInnBrokenLinks')
-data.setCell(6, 3, 3019);
+data.setCell(6, 3, 26712);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'logOutOfSite')
+data.setCell(7, 2, 'testcases.UAT_BavarianInnBrokenLinks')
+data.setCell(7, 3, 6875);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'perksClubCardSorryCheck')
+data.setCell(8, 2, 'testcases.UAT_BavarianInnBrokenLinks')
+data.setCell(8, 3, 47);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'profileDisplayed')
+data.setCell(9, 2, 'testcases.UAT_BavarianInnBrokenLinks')
+data.setCell(9, 3, 20);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -374,45 +518,61 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">29499 ms</span>
+                <span class="method-start">26978 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">login</span>
-                <span class="method-start">29506 ms</span>
+                <span class="method-start">26985 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">titleTest</span>
-                <span class="method-start">30852 ms</span>
+                <span class="method-start">28136 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginToSite</span>
-                <span class="method-start">33878 ms</span>
+                <span class="method-start">73357 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">WelcomeMessage</span>
-                <span class="method-start">99658 ms</span>
+                <span class="method-start">121397 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">uploadReciept</span>
+                <span class="method-start">174546 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">perksClubCardSorryCheck</span>
+                <span class="method-start">210590 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">profileDisplayed</span>
+                <span class="method-start">210637 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">membersOffers</span>
-                <span class="method-start">161470 ms</span>
+                <span class="method-start">210657 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">membersLocations</span>
-                <span class="method-start">276674 ms</span>
+                <span class="method-start">311077 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">membersSocial</span>
-                <span class="method-start">477827 ms</span>
+                <span class="method-start">368918 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logOutOfSite</span>
-                <span class="method-start">511237 ms</span>
+                <span class="method-start">395637 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">519094 ms</span>
+                <span class="method-start">402598 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
