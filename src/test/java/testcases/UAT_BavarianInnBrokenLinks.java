@@ -16,6 +16,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -112,7 +113,10 @@ public class UAT_BavarianInnBrokenLinks {
 
 		}
 		System.out.println("Maximize window, delete cookies");
-		driver.manage().window().maximize();
+		
+		//driver.manage().window().maximize();
+		Dimension d = new Dimension(1382,744);     
+		driver.manage().window().setSize(d); 
 		driver.manage().deleteAllCookies();
 
 		System.out.println("Before url");
