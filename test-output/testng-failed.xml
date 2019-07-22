@@ -5,9 +5,9 @@
     <classes>
       <class name="testcases.UAT_BavarianInnBrokenLinks">
         <methods>
+          <include name="profileMyTransactions"/>
           <include name="login"/>
           <include name="tearDown"/>
-          <include name="titleTest"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- testcases.UAT_BavarianInnBrokenLinks -->
