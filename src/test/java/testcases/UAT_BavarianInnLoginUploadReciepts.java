@@ -6,12 +6,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.Assert;
-//import org.testng.AssertJUnit;
 
 import org.testng.annotations.*;
 
 import org.testng.asserts.Assertion;
-
 import static com.codeborne.selenide.Selenide.*;
 import static org.testng.Assert.assertTrue;
 
@@ -47,14 +45,17 @@ public class UAT_BavarianInnLoginUploadReciepts {
 	ExtentReports extent = new ExtentReports();
 	ExtentTest test;
 	Exception exception = null;
+	String userDir = System.getProperty("user.dir");
+	String timeStamp = "";
 
 	private static WebDriver driver = null;
 
 	public UAT_BavarianInnLoginUploadReciepts() {
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(
-					System.getProperty("user.dir") + "/src/main/java/com/bav/config/config.properties");
+			FileInputStream ip = new FileInputStream(userDir + "/src/main/java/com/bav/config/config.properties");
+			// System.getProperty("user.dir") +
+			// "/src/main/java/com/bav/config/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -184,11 +185,6 @@ public class UAT_BavarianInnLoginUploadReciepts {
 		System.out.println("Receipt Up load page");
 		// driver.findElement(By.linkText("Upload Receipt")).click();
 		driver.findElement(By.xpath("//*[contains(text(), 'Upload Receipt')]")).click();
-		// driver.findElement(By.xpath("//button[@class='btn btn-default btn-bavaria'
-		// and @text() ='UPLOAD')]")).click();
-		// driver.findElement(By.xpath("//*[contains(text(), 'Upload Receipt' and
-		// @class='main-navigation-list']")).click();
-		// driver.findElement(By.xpath("//*[contains(text(), 'Upload')]")).click();
 		String title = driver.getTitle();
 		System.out.println("Title displayed is " + title);
 
@@ -197,28 +193,24 @@ public class UAT_BavarianInnLoginUploadReciepts {
 	}
 
 	@Test(priority = 6)
-	public void uploadButtomSelection() throws InterruptedException {
+	public void uploadButtonSelection() throws InterruptedException {
 		ExtentTest test = extent.createTest("uploadButtomSelection ", "Upload reciept");
 		Thread.sleep(2000);
 		System.out.println("Select the Choose files button");
 
 		WebElement uploadElement = driver.findElement(By.xpath("//input[@type='file']"));
 
-		uploadElement.sendKeys("src/testfiles/demo.jpg");
+		uploadElement.sendKeys(userDir + "/src/testfiles/demo.jpg");
 		// uploadElement.sendKeys("C:\\01SelenideWorkSpace\\CatalystLogin\\src\\files\\REST-101.pdf");
 		driver.findElement(By.xpath("//*[contains(text(), 'Submit')]")).click();
 
-		// Confirm upload
-		String confirmationPage = driver.getPageSource();
-		Boolean uploadSuccessful = confirmationPage
-				.contains("Please allow up to 48 hours for processing and verification.");
-		System.out.println("Document upload successful = " + uploadSuccessful);
-
-		Assert.fail("This dont work yet");
-
-		// AssertJUnit
-		// .assertTrue(confirmationPage.contains("Please allow up to 48 hours for
-		// processing and verification."));
+//		String confirmationPage = driver.getPageSource();
+//		Boolean uploadSuccessful = confirmationPage
+//				.contains("Please allow up to 48 hours for processing and verification.");
+//		System.out.println("Document upload successful = " + uploadSuccessful);
+//		Assert.fail("This dont work yet");
+//
+//		 Assert.assertTrue(confirmationPage.contains("Please allow up to 48 hours for processing and verification."));
 
 	}
 
@@ -227,7 +219,7 @@ public class UAT_BavarianInnLoginUploadReciepts {
 	public void verifyUploadWorked() throws InterruptedException {
 		ExtentTest test = extent.createTest("verifyUploadWorked ", "Upload reciept");
 		Thread.sleep(10000);
-		String timeStamp = new SimpleDateFormat("MM/dd/yyyy").format(Calendar.getInstance().getTime());
+		timeStamp = new SimpleDateFormat("MM/dd/yyyy").format(Calendar.getInstance().getTime());
 		System.out.println("The date is " + timeStamp);
 		System.out.println("Refresh page here ");
 		driver.navigate().refresh();
@@ -237,10 +229,10 @@ public class UAT_BavarianInnLoginUploadReciepts {
 				.findElement(By.xpath(
 						"//*[@id=\"receiptPage\"]/div/div/div[4]/div/div/div/div/div/div/table/tbody/tr[1]/td[1]/span"))
 				.getText();
-		Assert.assertTrue(timeUploaded.contains(timeStamp));
 
-		System.out.println("Upload is working today");
-		Assert.fail("Fail");
+		Assert.assertTrue(timeUploaded.contains(timeStamp));
+		System.out.println("Upload is working today " + timeUploaded);
+
 	}
 
 	@Test(priority = 8)
@@ -252,7 +244,7 @@ public class UAT_BavarianInnLoginUploadReciepts {
 				.getText();
 		Assert.assertTrue(timeUploaded.contentEquals("QUEUED"));
 
-		System.out.println("Upload is QUEUED");
+		System.out.println("Upload is QUEUED for todays date = " + timeStamp);
 		test.pass("QUEUED is displayed");
 
 	}
@@ -275,19 +267,17 @@ public class UAT_BavarianInnLoginUploadReciepts {
 
 		String pageSourcePopUp = driver.getPageSource();
 		System.out.println("Pop up source is = " + pageSourcePopUp);
+
 		// driver.close();
 
 		// Switch back to original browser (first window)
-		// driver.switchTo().window(winHandleBefore);
-		// assertTrue(pageSourcePopUp
-		// .contains("Your receipt is queued for processing, this area will be updated
-		// once it gets processed"));
-		// Thread.sleep(1000);
-		// System.out.println("Reciept upload confirmed");
+		driver.switchTo().window(winHandleBefore);
+		assertTrue(pageSourcePopUp
+				.contains("Your receipt is queued for processing, this area will be updated once it gets processed"));
+		Thread.sleep(1000);
+		System.out.println("Reciept upload confirmed");
+		test.pass("File uploaded and confirmed");
 
-		// To do
-		test.fail("This part needs to be fixed before the test completed assertion can be completed");
-		Assert.fail("Failed viewReciept does not work????");
 	} // End viewReciept
 
 	@Test(priority = 10)
@@ -301,8 +291,8 @@ public class UAT_BavarianInnLoginUploadReciepts {
 
 	@AfterTest
 	public void tearDownTest() {
-		driver.close();
-		driver.quit();
+		// driver.close();
+		// driver.quit();
 		System.out.println("Test completed successfully");
 	}
 
