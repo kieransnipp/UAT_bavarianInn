@@ -5,12 +5,9 @@
     <classes>
       <class name="testcases.UAT_BavarianInnBrokenLinks">
         <methods>
-          <include name="perksClubCardSorryCheck"/>
-          <include name="beforeTest"/>
           <include name="login"/>
           <include name="tearDown"/>
-          <include name="profileDisplayed"/>
-          <include name="uploadReciept"/>
+          <include name="titleTest"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- testcases.UAT_BavarianInnBrokenLinks -->

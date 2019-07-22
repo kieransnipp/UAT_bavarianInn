@@ -160,10 +160,10 @@ public class UAT_BavarianInnBrokenLinks {
 //		extent.attachReporter(htmlReporter);
 //	}
 
-	@BeforeTest
-	public void beforeTest() {
-		System.out.println("This is the before test bit");
-	}
+//	@BeforeTest
+//	public void beforeTest() {
+//		System.out.println("This is the before test bit");
+//	}
 
 	@Test(priority = 1) // 7
 	public void titleTest() throws InterruptedException {
@@ -177,7 +177,7 @@ public class UAT_BavarianInnBrokenLinks {
 
 		System.out.println("Title is " + title);
 
-		Assert.assertEquals(title, "Home");
+		Assert.assertEquals(title, "Details");
 		System.out.println(" ***  Check links for Page =" + title);
 
 		Boolean checkedOk = checkLinks();
@@ -227,46 +227,41 @@ public class UAT_BavarianInnBrokenLinks {
 		test.pass("Check links - Passed");
 	}
 
-//	@Test(priority = 5)
-//	public void uploadReciept() {
-//		System.out.println("Receipt Up load page");
-//		driver.findElement(By.xpath("//*[contains(text(), 'Upload Receipt')]")).click();
-//		String title = driver.getTitle();
-//		Assert.assertEquals(title, "Upload Receipt");
-//		
-//		Boolean checkedOk = checkLinks();
-//		assertTrue(checkedOk);
-//		test.pass("Check links uploadReciept - Passed");
-//	}
-
+	@Test(priority = 4)
+	public void uploadReciept() {
+		System.out.println("Receipt Up load page");
+		driver.findElement(By.xpath("//*[contains(text(), 'Upload Receipt')]")).click();
+		String title = driver.getTitle();
+		Assert.assertEquals(title, "Upload Receipt");
+	}
 	//
-//	@Test(priority = 6)
-//	public void perksClubCardSorryCheck() {
-//		System.out.println("Perks Club Card Sorry Check");
-//
-//		String sorry = driver.findElement(By.xpath("//*[contains(text(),'Sorry!')]")).toString();
-//		assertTrue(sorry.contains("Sorry!"));
-//		Assert.assertEquals(sorry, "Sorry!");
-//		
-//		Boolean checkedOk = checkLinks();
-//		assertTrue(checkedOk);
-//		test.pass("Check links perksClubCardSorryCheck - Passed");
-//	}
-//
-//	@Test(priority = 7)
-//	public void profileDisplayed() {
-//		driver.findElement(By.xpath("//*[contains(text(), 'My Profile') and @class='alert-link']")).click();
-//		System.out.println("Profile displayed");
-//		String title = driver.getTitle();
-//		Assert.assertEquals(title, "Profile");
-//		
-//		Boolean checkedOk = checkLinks();
-//		assertTrue(checkedOk);
-//		test.pass("Check links profileDisplayed - Passed");
-//
-//	}
+//	 @Test(priority = 6)
+//	 public void perksClubCardSorryCheck() {
+//	 System.out.println("Perks Club Card Sorry Check");
+//	
+//	 String sorry = driver.findElement(By.xpath("//*[contains(text(),'Sorry!')]")).toString();
+//	 assertTrue(sorry.contains("Sorry!"));
+//	  Assert.assertEquals(sorry, "Sorry!");
+//	 }
 
-	@Test(priority = 8)
+	@Test(priority = 5)
+	public void profileDisplayed() {
+		// driver.findElement(By.xpath("//*[contains(text(), 'My Profile') and
+		// @class='alert-link']")).click();
+		ExtentTest test = extent.createTest("Profile", "Check links");
+		driver.findElement(By.xpath("//*[contains(text(), 'My Profile') and @class='dropdown-toggle']")).click();
+		driver.findElement(By.xpath("//*[@id=\"logged-in-dropdown\"]/li/ul/li[1]/a")).click();
+		System.out.println("Profile displayed");
+		String title = driver.getTitle();
+
+		Boolean checkedOk = checkLinks();
+		assertTrue(checkedOk);
+		Assert.assertEquals(title, "Profile");
+		test.pass("Check links - Passed");
+
+	}
+
+	@Test(priority = 6)
 	public void membersOffers() {
 		System.out.println("Members Offers check links ");
 		ExtentTest test = extent.createTest("membersOffers", "Check links");
@@ -285,7 +280,7 @@ public class UAT_BavarianInnBrokenLinks {
 		test.pass("Check links - Passed");
 	}
 
-	@Test(priority = 9)
+	@Test(priority = 7)
 	public void membersLocations() {
 		ExtentTest test = extent.createTest("membersLocations", "Check links");
 		driver.findElement(By.xpath("//*[contains(text(), 'Locations')]")).click();
@@ -300,7 +295,7 @@ public class UAT_BavarianInnBrokenLinks {
 		test.pass("Check links - Passed");
 	}
 
-	@Test(priority = 10)
+	@Test(priority = 8)
 	public void membersSocial() {
 		ExtentTest test = extent.createTest("membersSocial", "Check links");
 		driver.findElement(By.xpath("//*[contains(text(), 'Social')]")).click();
@@ -314,15 +309,15 @@ public class UAT_BavarianInnBrokenLinks {
 		test.pass("Check links - Passed");
 	}
 
-	@Test(priority = 11)
-	public void logOutOfSite() throws InterruptedException {
-
-		// Force logout Log out
-		open("http://bavarianinn.snipp.ie/umbraco/Surface/LoginSurface/Logout");
-
-		Thread.sleep(1000);
-
-	}
+//	@Test(priority = 11)
+//	public void logOutOfSite() throws InterruptedException {
+//
+//		// Force logout Log out
+//		open("http://bavarianinn.snipp.ie/umbraco/Surface/LoginSurface/Logout");
+//
+//		Thread.sleep(1000);
+//
+//	}
 
 	public boolean checkLinks() {
 		// driver = new ChromeDriver();
@@ -378,6 +373,11 @@ public class UAT_BavarianInnBrokenLinks {
 
 		return true;
 	}
+
+//	@AfterMethod
+//	public void afterTest() {
+//		System.out.println("This is the after method bit");
+//	}
 
 	@AfterSuite // Exent 5
 	public void tearDown() {

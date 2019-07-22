@@ -1,227 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="10" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="375541" started-at="2019-07-19T14:51:56Z" finished-at="2019-07-19T14:58:11Z">
+  <suite name="Default suite" duration-ms="89338" started-at="2019-07-22T10:26:45Z" finished-at="2019-07-22T10:28:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="375541" started-at="2019-07-19T14:51:56Z" finished-at="2019-07-19T14:58:11Z">
+    <test name="Default test" duration-ms="89338" started-at="2019-07-22T10:26:45Z" finished-at="2019-07-22T10:28:14Z">
       <class name="testcases.UAT_BavarianInnBrokenLinks">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="launchBrowser" is-config="true" duration-ms="26976" started-at="2019-07-19T15:51:29Z" finished-at="2019-07-19T15:51:56Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="launchBrowser" is-config="true" duration-ms="8389" started-at="2019-07-22T11:26:36Z" finished-at="2019-07-22T11:26:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="beforeTest" is-config="true" duration-ms="1" started-at="2019-07-19T15:51:56Z" finished-at="2019-07-19T15:51:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="login" is-config="true" duration-ms="1137" started-at="2019-07-19T15:51:56Z" finished-at="2019-07-19T15:51:57Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="login" is-config="true" duration-ms="1809" started-at="2019-07-22T11:26:45Z" finished-at="2019-07-22T11:26:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="titleTest()[pri:1, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="titleTest" duration-ms="45211" started-at="2019-07-19T15:51:57Z" finished-at="2019-07-19T15:52:42Z">
+        <test-method status="PASS" signature="titleTest()[pri:1, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="titleTest" duration-ms="10433" started-at="2019-07-22T11:26:46Z" finished-at="2019-07-22T11:26:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleTest -->
-        <test-method status="PASS" signature="loginToSite()[pri:2, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="loginToSite" duration-ms="48040" started-at="2019-07-19T15:52:42Z" finished-at="2019-07-19T15:53:30Z">
+        <test-method status="PASS" signature="loginToSite()[pri:2, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="loginToSite" duration-ms="5538" started-at="2019-07-22T11:26:57Z" finished-at="2019-07-22T11:27:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToSite -->
-        <test-method status="PASS" signature="WelcomeMessage()[pri:3, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="WelcomeMessage" duration-ms="53148" started-at="2019-07-19T15:53:30Z" finished-at="2019-07-19T15:54:23Z">
+        <test-method status="PASS" signature="WelcomeMessage()[pri:3, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="WelcomeMessage" duration-ms="8892" started-at="2019-07-22T11:27:02Z" finished-at="2019-07-22T11:27:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WelcomeMessage -->
-        <test-method status="FAIL" signature="uploadReciept()[pri:5, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="uploadReciept" duration-ms="36044" started-at="2019-07-19T15:54:23Z" finished-at="2019-07-19T15:55:00Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at testcases.UAT_BavarianInnBrokenLinks.uploadReciept(UAT_BavarianInnBrokenLinks.java:239)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="uploadReciept()[pri:4, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="uploadReciept" duration-ms="1251" started-at="2019-07-22T11:27:11Z" finished-at="2019-07-22T11:27:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadReciept -->
-        <test-method status="FAIL" signature="perksClubCardSorryCheck()[pri:6, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="perksClubCardSorryCheck" duration-ms="47" started-at="2019-07-19T15:55:00Z" finished-at="2019-07-19T15:55:00Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Sorry!')]"}
-  (Session info: chrome=75.0.3770.142)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62022}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fbd3a5f866ef944392d461a8cd00e24e
-*** Element info: {Using=xpath, value=//*[contains(text(),'Sorry!')]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Sorry!')]"}
-  (Session info: chrome=75.0.3770.142)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62022}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fbd3a5f866ef944392d461a8cd00e24e
-*** Element info: {Using=xpath, value=//*[contains(text(),'Sorry!')]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at testcases.UAT_BavarianInnBrokenLinks.perksClubCardSorryCheck(UAT_BavarianInnBrokenLinks.java:247)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- perksClubCardSorryCheck -->
-        <test-method status="FAIL" signature="profileDisplayed()[pri:7, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="profileDisplayed" duration-ms="20" started-at="2019-07-19T15:55:00Z" finished-at="2019-07-19T15:55:00Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'My Profile') and @class='alert-link']"}
-  (Session info: chrome=75.0.3770.142)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62022}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fbd3a5f866ef944392d461a8cd00e24e
-*** Element info: {Using=xpath, value=//*[contains(text(), 'My Profile') and @class='alert-link']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'My Profile') and @class='alert-link']"}
-  (Session info: chrome=75.0.3770.142)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-1UNN7PP', ip: '10.242.2.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Kieran\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62022}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fbd3a5f866ef944392d461a8cd00e24e
-*** Element info: {Using=xpath, value=//*[contains(text(), 'My Profile') and @class='alert-link']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at testcases.UAT_BavarianInnBrokenLinks.profileDisplayed(UAT_BavarianInnBrokenLinks.java:258)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="profileDisplayed()[pri:5, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="profileDisplayed" duration-ms="6696" started-at="2019-07-22T11:27:13Z" finished-at="2019-07-22T11:27:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- profileDisplayed -->
-        <test-method status="PASS" signature="membersOffers()[pri:8, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="membersOffers" duration-ms="100420" started-at="2019-07-19T15:55:00Z" finished-at="2019-07-19T15:56:40Z">
+        <test-method status="PASS" signature="membersOffers()[pri:6, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="membersOffers" duration-ms="26326" started-at="2019-07-22T11:27:19Z" finished-at="2019-07-22T11:27:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- membersOffers -->
-        <test-method status="PASS" signature="membersLocations()[pri:9, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="membersLocations" duration-ms="57841" started-at="2019-07-19T15:56:40Z" finished-at="2019-07-19T15:57:38Z">
+        <test-method status="PASS" signature="membersLocations()[pri:7, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="membersLocations" duration-ms="22039" started-at="2019-07-22T11:27:46Z" finished-at="2019-07-22T11:28:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- membersLocations -->
-        <test-method status="PASS" signature="membersSocial()[pri:10, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="membersSocial" duration-ms="26712" started-at="2019-07-19T15:57:38Z" finished-at="2019-07-19T15:58:05Z">
+        <test-method status="PASS" signature="membersSocial()[pri:8, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="membersSocial" duration-ms="6308" started-at="2019-07-22T11:28:08Z" finished-at="2019-07-22T11:28:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- membersSocial -->
-        <test-method status="PASS" signature="logOutOfSite()[pri:11, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="logOutOfSite" duration-ms="6875" started-at="2019-07-19T15:58:05Z" finished-at="2019-07-19T15:58:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutOfSite -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="tearDown" is-config="true" duration-ms="1589" started-at="2019-07-19T15:58:12Z" finished-at="2019-07-19T15:58:13Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="tearDown" is-config="true" duration-ms="1384" started-at="2019-07-22T11:28:14Z" finished-at="2019-07-22T11:28:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
