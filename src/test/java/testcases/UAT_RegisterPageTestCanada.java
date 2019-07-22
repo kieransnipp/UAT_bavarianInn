@@ -239,11 +239,11 @@ public class UAT_RegisterPageTestCanada {
 		RegisterPage.dateOfBirth(driver).sendKeys(randomDate);
 
 		// Mobile number
-		driver.findElement(By.xpath("//*[@placeholder='Mobile phone *']")).sendKeys("01214545");
+		driver.findElement(By.xpath("//*[@placeholder='Mobile phone *']")).sendKeys("5802496");
 
 		// Ligne automatisée, tél. : 418 641‑6500
 		// Phone number
-		driver.findElement(By.xpath("//*[@name='Phone']")).sendKeys("4186416500");
+		driver.findElement(By.xpath("//*[@name='Phone']")).sendKeys("5802496");
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e1) {
@@ -301,14 +301,15 @@ public class UAT_RegisterPageTestCanada {
 
 		// To do
 		test.fail("This part needs to be fixed before the test completed assertion can be completed");
+		Assert.fail();
 	}
 
 	@AfterTest // 12
 	public void afterTest() {
 		System.out.println("After Test bit");
 		System.out.println("Close browser");
-		driver.close();
-		driver.quit();
+		//driver.close();
+		//driver.quit();
 
 	}
 
