@@ -232,6 +232,9 @@ public class UAT_BavarianInnBrokenLinks {
 		System.out.println("Receipt Up load page");
 		driver.findElement(By.xpath("//*[contains(text(), 'Upload Receipt')]")).click();
 		String title = driver.getTitle();
+		
+		Boolean checkedOk = checkLinks();
+		assertTrue(checkedOk);
 		Assert.assertEquals(title, "Upload Receipt");
 	}
 	//
