@@ -1,135 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="8" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="226630" started-at="2019-07-22T14:50:59Z" finished-at="2019-07-22T14:54:45Z">
+  <suite name="Default suite" duration-ms="74547" started-at="2019-07-22T15:16:09Z" finished-at="2019-07-22T15:17:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="226630" started-at="2019-07-22T14:50:59Z" finished-at="2019-07-22T14:54:45Z">
+    <test name="Default test" duration-ms="74547" started-at="2019-07-22T15:16:09Z" finished-at="2019-07-22T15:17:24Z">
       <class name="testcases.UAT_BavarianInnBrokenLinks">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@1dac5ef]" name="launchBrowser" is-config="true" duration-ms="8749" started-at="2019-07-22T15:50:50Z" finished-at="2019-07-22T15:50:59Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@2e3fc542]" name="launchBrowser" is-config="true" duration-ms="9682" started-at="2019-07-22T16:15:59Z" finished-at="2019-07-22T16:16:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@1dac5ef]" name="login" is-config="true" duration-ms="1637" started-at="2019-07-22T15:50:59Z" finished-at="2019-07-22T15:51:00Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@2e3fc542]" name="login" is-config="true" duration-ms="1477" started-at="2019-07-22T16:16:09Z" finished-at="2019-07-22T16:16:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="FAIL" signature="titleTest()[pri:1, instance:testcases.UAT_BavarianInnBrokenLinks@1dac5ef]" name="titleTest" duration-ms="4061" started-at="2019-07-22T15:51:00Z" finished-at="2019-07-22T15:51:04Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Home] but found [Details]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Home] but found [Details]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at testcases.UAT_BavarianInnBrokenLinks.titleTest(UAT_BavarianInnBrokenLinks.java:180)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- titleTest -->
-        <test-method status="PASS" signature="loginToSite()[pri:2, instance:testcases.UAT_BavarianInnBrokenLinks@1dac5ef]" name="loginToSite" duration-ms="11601" started-at="2019-07-22T15:51:04Z" finished-at="2019-07-22T15:51:16Z">
+        <test-method status="PASS" signature="loginToSite()[pri:2, instance:testcases.UAT_BavarianInnBrokenLinks@2e3fc542]" name="loginToSite" duration-ms="7012" started-at="2019-07-22T16:16:10Z" finished-at="2019-07-22T16:16:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToSite -->
-        <test-method status="FAIL" signature="WelcomeMessage()[pri:3, instance:testcases.UAT_BavarianInnBrokenLinks@1dac5ef]" name="WelcomeMessage" duration-ms="2007" started-at="2019-07-22T15:51:16Z" finished-at="2019-07-22T15:51:18Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Home] but found [Details]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Home] but found [Details]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at testcases.UAT_BavarianInnBrokenLinks.WelcomeMessage(UAT_BavarianInnBrokenLinks.java:214)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="WelcomeMessage()[pri:3, instance:testcases.UAT_BavarianInnBrokenLinks@2e3fc542]" name="WelcomeMessage" duration-ms="7469" started-at="2019-07-22T16:16:18Z" finished-at="2019-07-22T16:16:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WelcomeMessage -->
-        <test-method status="PASS" signature="uploadReciept()[pri:4, instance:testcases.UAT_BavarianInnBrokenLinks@1dac5ef]" name="uploadReciept" duration-ms="8532" started-at="2019-07-22T15:51:18Z" finished-at="2019-07-22T15:51:27Z">
+        <test-method status="PASS" signature="uploadReciept()[pri:4, instance:testcases.UAT_BavarianInnBrokenLinks@2e3fc542]" name="uploadReciept" duration-ms="4807" started-at="2019-07-22T16:16:25Z" finished-at="2019-07-22T16:16:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadReciept -->
-        <test-method status="PASS" signature="profileDisplayed()[pri:5, instance:testcases.UAT_BavarianInnBrokenLinks@1dac5ef]" name="profileDisplayed" duration-ms="6448" started-at="2019-07-22T15:51:27Z" finished-at="2019-07-22T15:51:33Z">
+        <test-method status="PASS" signature="profileDisplayed()[pri:5, instance:testcases.UAT_BavarianInnBrokenLinks@2e3fc542]" name="profileDisplayed" duration-ms="4381" started-at="2019-07-22T16:16:30Z" finished-at="2019-07-22T16:16:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- profileDisplayed -->
-        <test-method status="PASS" signature="membersOffers()[pri:6, instance:testcases.UAT_BavarianInnBrokenLinks@1dac5ef]" name="membersOffers" duration-ms="20851" started-at="2019-07-22T15:51:33Z" finished-at="2019-07-22T15:51:54Z">
+        <test-method status="PASS" signature="membersOffers()[pri:6, instance:testcases.UAT_BavarianInnBrokenLinks@2e3fc542]" name="membersOffers" duration-ms="20624" started-at="2019-07-22T16:16:34Z" finished-at="2019-07-22T16:16:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- membersOffers -->
-        <test-method status="PASS" signature="membersLocations()[pri:7, instance:testcases.UAT_BavarianInnBrokenLinks@1dac5ef]" name="membersLocations" duration-ms="163076" started-at="2019-07-22T15:51:54Z" finished-at="2019-07-22T15:54:37Z">
+        <test-method status="PASS" signature="membersLocations()[pri:7, instance:testcases.UAT_BavarianInnBrokenLinks@2e3fc542]" name="membersLocations" duration-ms="21688" started-at="2019-07-22T16:16:55Z" finished-at="2019-07-22T16:17:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- membersLocations -->
-        <test-method status="PASS" signature="membersSocial()[pri:8, instance:testcases.UAT_BavarianInnBrokenLinks@1dac5ef]" name="membersSocial" duration-ms="8335" started-at="2019-07-22T15:54:37Z" finished-at="2019-07-22T15:54:45Z">
+        <test-method status="PASS" signature="membersSocial()[pri:8, instance:testcases.UAT_BavarianInnBrokenLinks@2e3fc542]" name="membersSocial" duration-ms="7054" started-at="2019-07-22T16:17:16Z" finished-at="2019-07-22T16:17:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- membersSocial -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@1dac5ef]" name="tearDown" is-config="true" duration-ms="1354" started-at="2019-07-22T15:54:45Z" finished-at="2019-07-22T15:54:47Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@2e3fc542]" name="tearDown" is-config="true" duration-ms="1466" started-at="2019-07-22T16:17:24Z" finished-at="2019-07-22T16:17:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

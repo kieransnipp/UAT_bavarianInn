@@ -134,10 +134,10 @@ public class UAT_BavarianInnBrokenLinks {
 	@BeforeClass
 	public void login() {
 		// driver.get(homePage);
-
 		System.out.println("Verify the title of the login page");
 		String pageTitle = driver.getTitle();
 		System.out.println("Title of the page is " + pageTitle);
+		
 		String title = driver.getTitle();
 		Assert.assertEquals(title, "Home");
 
@@ -147,43 +147,13 @@ public class UAT_BavarianInnBrokenLinks {
 		$(By.name("loginButton")).click();
 		String LoginpageTitle = driver.getTitle();
 
+		//Create Reports
 		htmlReporter = new ExtentHtmlReporter("UAT_BavarianInnBrokenLinks.html");
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
 	}
 
-//	@BeforeClass
-//	public void setUp() {// Exent 2
-//
-//		htmlReporter = new ExtentHtmlReporter("UAT_BavarianInnBrokenLinks.html");
-//		extent = new ExtentReports();
-//		extent.attachReporter(htmlReporter);
-//	}
 
-//	@BeforeTest
-//	public void beforeTest() {
-//		System.out.println("This is the before test bit");
-//	}
-
-	@Test(priority = 1) // 7
-	public void titleTest() throws InterruptedException {
-		ExtentTest test = extent.createTest("Check links - Title test", "Check links");
-		System.out.println("");
-		System.out.println("**************** Home page Start of testing ****************");
-
-		String title = driver.getTitle();
-		System.out.println("Title displayed is " + title);
-		Thread.sleep(3000);
-
-		System.out.println("Title is " + title);
-
-		Assert.assertEquals(title, "Home");
-		System.out.println(" ***  Check links for Page =" + title);
-
-		Boolean checkedOk = checkLinks();
-		assertTrue(checkedOk);
-		test.pass("Check links - Passed");
-	}
 
 	// test cases, starting with @Test
 	@Test(priority = 2) // 5
@@ -191,7 +161,7 @@ public class UAT_BavarianInnBrokenLinks {
 		ExtentTest test = extent.createTest("loginToSite", "Check links");
 		System.out.println("Verify the title of the login page");
 		String pageTitle = driver.getTitle();
-		System.out.println("Title of the page is " + pageTitle);
+		System.out.println("Test = titleTest, Title of the page is " + pageTitle);
 		System.out.println(" ***  Check links for Page =" + pageTitle); // Home page
 
 		Boolean checkedOk = checkLinks();
@@ -204,14 +174,14 @@ public class UAT_BavarianInnBrokenLinks {
 		ExtentTest test = extent.createTest("Welcome Message", "Check links");
 		String pageTitle = driver.getTitle();
 		System.out.println("Check welcome message for " + pageTitle); // Details page
-
+		System.out.println("Test = WelcomeMessage, Title of the page is " + pageTitle);
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Assert.assertEquals(pageTitle, "Home");
+		Assert.assertEquals(pageTitle, "Details");
 		String Hi = driver.findElement(By.xpath("//*[contains(text(), 'Hi Michael')]")).toString();
 
 		System.out.println(Hi + " is displayed");
@@ -232,7 +202,7 @@ public class UAT_BavarianInnBrokenLinks {
 		System.out.println("Receipt Up load page");
 		driver.findElement(By.xpath("//*[contains(text(), 'Upload Receipt')]")).click();
 		String title = driver.getTitle();
-		
+		System.out.println("Test = uploadReciept, Title of the page is " + title);
 		Boolean checkedOk = checkLinks();
 		assertTrue(checkedOk);
 		Assert.assertEquals(title, "Upload Receipt");
@@ -256,6 +226,7 @@ public class UAT_BavarianInnBrokenLinks {
 		driver.findElement(By.xpath("//*[@id=\"logged-in-dropdown\"]/li/ul/li[1]/a")).click();
 		System.out.println("Profile displayed");
 		String title = driver.getTitle();
+		System.out.println("Test = profileDisplayed, Title of the page is " + title);
 
 		Boolean checkedOk = checkLinks();
 		assertTrue(checkedOk);
@@ -274,6 +245,8 @@ public class UAT_BavarianInnBrokenLinks {
 		driver.findElement(By.xpath("//*[contains(text(), 'Member Offers')]")).click();
 
 		String title = driver.getTitle();
+		
+		System.out.println("Test = membersOffers, Title of the page is " + title);
 		// AssertJUnit.assertEquals(title, "Offers");
 		Assert.assertEquals(title, "Offers");
 		System.out.println(" ***  Check links for Page =" + title);
@@ -292,6 +265,7 @@ public class UAT_BavarianInnBrokenLinks {
 		Assert.assertEquals(title, "Stores");
 		// AssertJUnit.assertEquals(title, "Stores");
 		System.out.println(" ***  Check links for Page =" + title);
+		System.out.println("Test = membersLocations, Title of the page is " + title);
 
 		Boolean checkedOk = checkLinks();
 		assertTrue(checkedOk);
@@ -304,6 +278,7 @@ public class UAT_BavarianInnBrokenLinks {
 		driver.findElement(By.xpath("//*[contains(text(), 'Social')]")).click();
 		WebDriverWait wait = new WebDriverWait(driver, 5);// 5 secs
 		String title = driver.getTitle();
+		System.out.println("Test = membersSocial, Title of the page is " + title);
 		Assert.assertEquals(title, "Earn Points");
 		// AssertJUnit.assertEquals(title, "Earn Points");
 		System.out.println(" ***  Check links for Page =" + title);

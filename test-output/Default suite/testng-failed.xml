@@ -5,7 +5,6 @@
     <classes>
       <class name="testcases.UAT_BavarianInnBrokenLinks">
         <methods>
-          <include name="WelcomeMessage"/>
           <include name="login"/>
           <include name="tearDown"/>
           <include name="titleTest"/>
