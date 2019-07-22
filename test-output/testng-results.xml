@@ -2,56 +2,60 @@
 <testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="89338" started-at="2019-07-22T10:26:45Z" finished-at="2019-07-22T10:28:14Z">
+  <suite name="Default suite" duration-ms="33289" started-at="2019-07-22T10:40:26Z" finished-at="2019-07-22T10:41:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="89338" started-at="2019-07-22T10:26:45Z" finished-at="2019-07-22T10:28:14Z">
-      <class name="testcases.UAT_BavarianInnBrokenLinks">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="launchBrowser" is-config="true" duration-ms="8389" started-at="2019-07-22T11:26:36Z" finished-at="2019-07-22T11:26:45Z">
+    <test name="Default test" duration-ms="33289" started-at="2019-07-22T10:40:26Z" finished-at="2019-07-22T10:41:00Z">
+      <class name="testcases.UAT_HomePageTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testcases.UAT_HomePageTest@4524411f]" name="launchBrowser" is-config="true" duration-ms="16690" started-at="2019-07-22T11:40:10Z" finished-at="2019-07-22T11:40:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="login" is-config="true" duration-ms="1809" started-at="2019-07-22T11:26:45Z" finished-at="2019-07-22T11:26:46Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.UAT_HomePageTest@4524411f]" name="setUp" is-config="true" duration-ms="239" started-at="2019-07-22T11:40:26Z" finished-at="2019-07-22T11:40:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="titleTest()[pri:1, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="titleTest" duration-ms="10433" started-at="2019-07-22T11:26:46Z" finished-at="2019-07-22T11:26:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- titleTest -->
-        <test-method status="PASS" signature="loginToSite()[pri:2, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="loginToSite" duration-ms="5538" started-at="2019-07-22T11:26:57Z" finished-at="2019-07-22T11:27:02Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginToSite()[pri:1, instance:testcases.UAT_HomePageTest@4524411f]" name="loginToSite" duration-ms="25" started-at="2019-07-22T11:40:26Z" finished-at="2019-07-22T11:40:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToSite -->
-        <test-method status="PASS" signature="WelcomeMessage()[pri:3, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="WelcomeMessage" duration-ms="8892" started-at="2019-07-22T11:27:02Z" finished-at="2019-07-22T11:27:11Z">
+        <test-method status="PASS" signature="howItWorks()[pri:2, instance:testcases.UAT_HomePageTest@4524411f]" name="howItWorks" duration-ms="1691" started-at="2019-07-22T11:40:27Z" finished-at="2019-07-22T11:40:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- WelcomeMessage -->
-        <test-method status="PASS" signature="uploadReciept()[pri:4, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="uploadReciept" duration-ms="1251" started-at="2019-07-22T11:27:11Z" finished-at="2019-07-22T11:27:13Z">
+        </test-method> <!-- howItWorks -->
+        <test-method status="PASS" signature="register()[pri:3, instance:testcases.UAT_HomePageTest@4524411f]" name="register" duration-ms="1446" started-at="2019-07-22T11:40:28Z" finished-at="2019-07-22T11:40:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- uploadReciept -->
-        <test-method status="PASS" signature="profileDisplayed()[pri:5, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="profileDisplayed" duration-ms="6696" started-at="2019-07-22T11:27:13Z" finished-at="2019-07-22T11:27:19Z">
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="faq()[pri:4, instance:testcases.UAT_HomePageTest@4524411f]" name="faq" duration-ms="1543" started-at="2019-07-22T11:40:30Z" finished-at="2019-07-22T11:40:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- profileDisplayed -->
-        <test-method status="PASS" signature="membersOffers()[pri:6, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="membersOffers" duration-ms="26326" started-at="2019-07-22T11:27:19Z" finished-at="2019-07-22T11:27:46Z">
+        </test-method> <!-- faq -->
+        <test-method status="PASS" signature="checkFacebook()[pri:5, instance:testcases.UAT_HomePageTest@4524411f]" name="checkFacebook" duration-ms="8817" started-at="2019-07-22T11:40:31Z" finished-at="2019-07-22T11:40:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- membersOffers -->
-        <test-method status="PASS" signature="membersLocations()[pri:7, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="membersLocations" duration-ms="22039" started-at="2019-07-22T11:27:46Z" finished-at="2019-07-22T11:28:08Z">
+        </test-method> <!-- checkFacebook -->
+        <test-method status="PASS" signature="checkYoutube()[pri:6, instance:testcases.UAT_HomePageTest@4524411f]" name="checkYoutube" duration-ms="5254" started-at="2019-07-22T11:40:40Z" finished-at="2019-07-22T11:40:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- membersLocations -->
-        <test-method status="PASS" signature="membersSocial()[pri:8, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="membersSocial" duration-ms="6308" started-at="2019-07-22T11:28:08Z" finished-at="2019-07-22T11:28:14Z">
+        </test-method> <!-- checkYoutube -->
+        <test-method status="PASS" signature="checkYelp()[pri:7, instance:testcases.UAT_HomePageTest@4524411f]" name="checkYelp" duration-ms="6774" started-at="2019-07-22T11:40:45Z" finished-at="2019-07-22T11:40:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- membersSocial -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@150c158]" name="tearDown" is-config="true" duration-ms="1384" started-at="2019-07-22T11:28:14Z" finished-at="2019-07-22T11:28:15Z">
+        </test-method> <!-- checkYelp -->
+        <test-method status="PASS" signature="checkTwitter()[pri:8, instance:testcases.UAT_HomePageTest@4524411f]" name="checkTwitter" duration-ms="6295" started-at="2019-07-22T11:40:52Z" finished-at="2019-07-22T11:40:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTwitter -->
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:testcases.UAT_HomePageTest@4524411f]" name="tearDownTest" is-config="true" duration-ms="1168" started-at="2019-07-22T11:40:58Z" finished-at="2019-07-22T11:41:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.UAT_HomePageTest@4524411f]" name="tearDown" is-config="true" duration-ms="586" started-at="2019-07-22T11:41:00Z" finished-at="2019-07-22T11:41:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.UAT_BavarianInnBrokenLinks -->
+      </class> <!-- testcases.UAT_HomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

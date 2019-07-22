@@ -168,6 +168,8 @@ public class UAT_HomePageTest {
 		test.pass("Passed");
 
 	}
+	
+	
 
 	@Test(priority = 4)
 	public void faq() {
@@ -222,9 +224,10 @@ public class UAT_HomePageTest {
 		System.out.println("Checking Twitter");
 		// checkTwitter
 		driver.findElement(By.xpath("//a[contains(text(),'Twitter')]")).click();
-
 		String title = driver.getTitle();
-		Assert.assertEquals(title, "Bavarian Inn (@Bavarian_Inn) | Twitter");
+		//Assert.assertEquals(title, "Bavarian Inn (@Bavarian_Inn) | Twitter");
+		
+		Assert.assertEquals(title, "Bavarian Inn (@Bavarian_Inn) on Twitter");
 
 		driver.navigate().back();
 
