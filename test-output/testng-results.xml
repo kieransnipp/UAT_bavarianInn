@@ -2,68 +2,68 @@
 <testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20379" started-at="2019-07-22T20:07:00Z" finished-at="2019-07-22T20:07:21Z">
+  <suite name="Default suite" duration-ms="20394" started-at="2019-07-22T21:03:41Z" finished-at="2019-07-22T21:04:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20379" started-at="2019-07-22T20:07:00Z" finished-at="2019-07-22T20:07:21Z">
+    <test name="Default test" duration-ms="20394" started-at="2019-07-22T21:03:41Z" finished-at="2019-07-22T21:04:01Z">
       <class name="testcases.UAT_BavarianInnLoginUploadReciepts">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="launchBrowser" is-config="true" duration-ms="5589" started-at="2019-07-22T21:06:55Z" finished-at="2019-07-22T21:07:00Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="launchBrowser" is-config="true" duration-ms="7385" started-at="2019-07-22T22:03:34Z" finished-at="2019-07-22T22:03:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-07-22T21:07:00Z" finished-at="2019-07-22T21:07:00Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-07-22T22:03:41Z" finished-at="2019-07-22T22:03:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="setUp" is-config="true" duration-ms="156" started-at="2019-07-22T21:07:01Z" finished-at="2019-07-22T21:07:01Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="setUp" is-config="true" duration-ms="153" started-at="2019-07-22T22:03:41Z" finished-at="2019-07-22T22:03:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginToSite()[pri:1, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="loginToSite" duration-ms="20" started-at="2019-07-22T21:07:01Z" finished-at="2019-07-22T21:07:01Z">
+        <test-method status="PASS" signature="loginToSite()[pri:1, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="loginToSite" duration-ms="19" started-at="2019-07-22T22:03:41Z" finished-at="2019-07-22T22:03:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToSite -->
-        <test-method status="PASS" signature="enterDetails()[pri:2, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="enterDetails" duration-ms="587" started-at="2019-07-22T21:07:01Z" finished-at="2019-07-22T21:07:01Z">
+        <test-method status="PASS" signature="enterDetails()[pri:2, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="enterDetails" duration-ms="556" started-at="2019-07-22T22:03:41Z" finished-at="2019-07-22T22:03:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterDetails -->
-        <test-method status="PASS" signature="loginTitleTest()[pri:3, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="loginTitleTest" duration-ms="3006" started-at="2019-07-22T21:07:01Z" finished-at="2019-07-22T21:07:04Z">
+        <test-method status="PASS" signature="loginTitleTest()[pri:3, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="loginTitleTest" duration-ms="3007" started-at="2019-07-22T22:03:42Z" finished-at="2019-07-22T22:03:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTitleTest -->
-        <test-method status="PASS" signature="WelcomeMessage()[pri:4, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="WelcomeMessage" duration-ms="37" started-at="2019-07-22T21:07:04Z" finished-at="2019-07-22T21:07:04Z">
+        <test-method status="PASS" signature="WelcomeMessage()[pri:4, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="WelcomeMessage" duration-ms="44" started-at="2019-07-22T22:03:45Z" finished-at="2019-07-22T22:03:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WelcomeMessage -->
-        <test-method status="PASS" signature="uploadReciept()[pri:5, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="uploadReciept" duration-ms="2412" started-at="2019-07-22T21:07:04Z" finished-at="2019-07-22T21:07:07Z">
+        <test-method status="PASS" signature="uploadReciept()[pri:5, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="uploadReciept" duration-ms="2418" started-at="2019-07-22T22:03:45Z" finished-at="2019-07-22T22:03:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadReciept -->
-        <test-method status="PASS" signature="uploadButtonSelection()[pri:6, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="uploadButtonSelection" duration-ms="2220" started-at="2019-07-22T21:07:07Z" finished-at="2019-07-22T21:07:09Z">
+        <test-method status="PASS" signature="uploadButtonSelection()[pri:6, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="uploadButtonSelection" duration-ms="2238" started-at="2019-07-22T22:03:47Z" finished-at="2019-07-22T22:03:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadButtonSelection -->
-        <test-method status="PASS" signature="verifyUploadWorked()[pri:7, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="verifyUploadWorked" duration-ms="10380" started-at="2019-07-22T21:07:09Z" finished-at="2019-07-22T21:07:19Z">
+        <test-method status="PASS" signature="verifyUploadWorked()[pri:7, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="verifyUploadWorked" duration-ms="10369" started-at="2019-07-22T22:03:49Z" finished-at="2019-07-22T22:04:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUploadWorked -->
-        <test-method status="PASS" signature="verifyUploadQUEUEDStatus()[pri:8, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="verifyUploadQUEUEDStatus" duration-ms="31" started-at="2019-07-22T21:07:19Z" finished-at="2019-07-22T21:07:19Z">
+        <test-method status="PASS" signature="verifyUploadQUEUEDStatus()[pri:8, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="verifyUploadQUEUEDStatus" duration-ms="31" started-at="2019-07-22T22:04:00Z" finished-at="2019-07-22T22:04:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUploadQUEUEDStatus -->
-        <test-method status="PASS" signature="viewReciept()[pri:9, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="viewReciept" duration-ms="1041" started-at="2019-07-22T21:07:19Z" finished-at="2019-07-22T21:07:20Z">
+        <test-method status="PASS" signature="viewReciept()[pri:9, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="viewReciept" duration-ms="1047" started-at="2019-07-22T22:04:00Z" finished-at="2019-07-22T22:04:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewReciept -->
-        <test-method status="PASS" signature="logOutOfSite()[pri:10, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="logOutOfSite" duration-ms="459" started-at="2019-07-22T21:07:20Z" finished-at="2019-07-22T21:07:21Z">
+        <test-method status="PASS" signature="logOutOfSite()[pri:10, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="logOutOfSite" duration-ms="481" started-at="2019-07-22T22:04:01Z" finished-at="2019-07-22T22:04:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutOfSite -->
-        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="tearDownTest" is-config="true" duration-ms="0" started-at="2019-07-22T21:07:21Z" finished-at="2019-07-22T21:07:21Z">
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="tearDownTest" is-config="true" duration-ms="0" started-at="2019-07-22T22:04:01Z" finished-at="2019-07-22T22:04:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="tearDown" is-config="true" duration-ms="340" started-at="2019-07-22T21:07:21Z" finished-at="2019-07-22T21:07:21Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.UAT_BavarianInnLoginUploadReciepts@401e7803]" name="tearDown" is-config="true" duration-ms="369" started-at="2019-07-22T22:04:01Z" finished-at="2019-07-22T22:04:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

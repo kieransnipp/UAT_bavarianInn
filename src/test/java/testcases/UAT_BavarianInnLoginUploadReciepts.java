@@ -201,16 +201,14 @@ public class UAT_BavarianInnLoginUploadReciepts {
 		WebElement uploadElement = driver.findElement(By.xpath("//input[@type='file']"));
 
 		uploadElement.sendKeys(userDir + "/src/testfiles/demo.jpg");
-		// uploadElement.sendKeys("C:\\01SelenideWorkSpace\\CatalystLogin\\src\\files\\REST-101.pdf");
+		
+		String pageSource = driver.getPageSource();
+		System.out.println("pageSource is"+pageSource);
+		//Assert.assertTrue(pageSource.contains("demo.jpg"));
 		driver.findElement(By.xpath("//*[contains(text(), 'Submit')]")).click();
-
-//		String confirmationPage = driver.getPageSource();
-//		Boolean uploadSuccessful = confirmationPage
-//				.contains("Please allow up to 48 hours for processing and verification.");
-//		System.out.println("Document upload successful = " + uploadSuccessful);
-//		Assert.fail("This dont work yet");
-//
-//		 Assert.assertTrue(confirmationPage.contains("Please allow up to 48 hours for processing and verification."));
+		
+		System.out.println("File is submitted");
+		test.pass("uploadButtonSelection - File is submitted");
 
 	}
 
@@ -232,6 +230,7 @@ public class UAT_BavarianInnLoginUploadReciepts {
 
 		Assert.assertTrue(timeUploaded.contains(timeStamp));
 		System.out.println("Upload is working today " + timeUploaded);
+		test.pass("verifyUploadWorked method completed");
 
 	}
 
@@ -249,7 +248,6 @@ public class UAT_BavarianInnLoginUploadReciepts {
 
 	}
 
-	// To be completed
 	@Test(priority = 9)
 	// @Test(dependsOnMethods = "verifyUploadStatus")
 	public void viewReciept() throws InterruptedException {
@@ -259,7 +257,6 @@ public class UAT_BavarianInnLoginUploadReciepts {
 		String winHandleBefore = driver.getWindowHandle();
 
 		// Perform the click operation that opens new window
-
 		// Switch to new window opened
 		for (String winHandle : driver.getWindowHandles()) {
 			driver.switchTo().window(winHandle);
@@ -267,8 +264,6 @@ public class UAT_BavarianInnLoginUploadReciepts {
 
 		String pageSourcePopUp = driver.getPageSource();
 		System.out.println("Pop up source is = " + pageSourcePopUp);
-
-		// driver.close();
 
 		// Switch back to original browser (first window)
 		driver.switchTo().window(winHandleBefore);
@@ -282,9 +277,7 @@ public class UAT_BavarianInnLoginUploadReciepts {
 
 	@Test(priority = 10)
 	public void logOutOfSite() throws InterruptedException {
-		// Select myProfile = new Select (driver.findElement(By.xpath("//a[text()='My
-		// Profile']")));
-		// Force logout Log out
+		
 		open("http://bavarianinn.snipp.ie/umbraco/Surface/LoginSurface/Logout");
 
 	}
@@ -298,6 +291,7 @@ public class UAT_BavarianInnLoginUploadReciepts {
 
 	@AfterSuite // Exent 5
 	public void tearDown() {
+		System.out.println("Generate report");
 		extent.flush();
 
 	}

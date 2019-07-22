@@ -7,7 +7,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="viewReciept"/>
+          <include name="uploadButtonSelection"/>
           <include name="beforeTest"/>
           <include name="tearDownTest"/>
           <include name="launchBrowser"/>
