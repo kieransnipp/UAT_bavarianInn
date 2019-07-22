@@ -30,7 +30,7 @@ public class TestNG_Demoa3 {
 
 	@BeforeTest
 	public void setUpTest() {
-		System.out.println("Second test running");
+		System.out.println("Forth test running");
 		String projectPath = System.getProperty("user.dir");
 		PropertiesFile.getProperties();  //Sets the browserName for this class
 		

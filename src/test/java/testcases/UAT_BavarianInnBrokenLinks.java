@@ -177,7 +177,7 @@ public class UAT_BavarianInnBrokenLinks {
 
 		System.out.println("Title is " + title);
 
-		Assert.assertEquals(title, "Details");
+		Assert.assertEquals(title, "Home");
 		System.out.println(" ***  Check links for Page =" + title);
 
 		Boolean checkedOk = checkLinks();
@@ -211,7 +211,7 @@ public class UAT_BavarianInnBrokenLinks {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Assert.assertEquals(pageTitle, "Details");
+		Assert.assertEquals(pageTitle, "Home");
 		String Hi = driver.findElement(By.xpath("//*[contains(text(), 'Hi Michael')]")).toString();
 
 		System.out.println(Hi + " is displayed");

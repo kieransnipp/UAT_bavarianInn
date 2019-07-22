@@ -3,31 +3,32 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks">
+      <class name="demo.TestNG_Demoa3">
         <methods>
-          <include name="membersLocations"/>
-          <include name="launchBrowser"/>
-          <include name="membersSocial"/>
-          <include name="membersOffers"/>
-          <include name="beforeTest"/>
-          <include name="titleTest"/>
-          <include name="WelcomeMessage"/>
-          <include name="login"/>
-          <include name="tearDown"/>
+          <include name="googleSearch"/>
         </methods>
-      </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnBrokenLinks -->
-      <class name="snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens">
+      </class> <!-- demo.TestNG_Demoa3 -->
+      <class name="demo.TestNG_Demoa2">
         <methods>
-          <include name="enterDetails"/>
-          <include name="beforeMethod"/>
-          <include name="launchBrowser"/>
-          <include name="loginToSite"/>
-          <include name="setUp"/>
-          <include name="afterMethod"/>
-          <include name="generateTestNG"/>
-          <include name="afterTest"/>
+          <include name="googleSearch"/>
         </methods>
-      </class> <!-- snipp.test.bav.testcases.UAT_BavarianInnLoginCheckScreens -->
+      </class> <!-- demo.TestNG_Demoa2 -->
+      <class name="demo.TestNG_Demo">
+        <methods>
+          <include name="googleSearch"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- demo.TestNG_Demo -->
+      <class name="demo.TestNG_Demoa4">
+        <methods>
+          <include name="googleSearch"/>
+        </methods>
+      </class> <!-- demo.TestNG_Demoa4 -->
+      <class name="demo.TestNG_Demoa">
+        <methods>
+          <include name="googleSearch"/>
+        </methods>
+      </class> <!-- demo.TestNG_Demoa -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
