@@ -137,7 +137,7 @@ public class UAT_BavarianInnBrokenLinks {
 		System.out.println("Verify the title of the login page");
 		String pageTitle = driver.getTitle();
 		System.out.println("Title of the page is " + pageTitle);
-		
+
 		String title = driver.getTitle();
 		Assert.assertEquals(title, "Home");
 
@@ -147,13 +147,11 @@ public class UAT_BavarianInnBrokenLinks {
 		$(By.name("loginButton")).click();
 		String LoginpageTitle = driver.getTitle();
 
-		//Create Reports
+		// Create Reports
 		htmlReporter = new ExtentHtmlReporter("UAT_BavarianInnBrokenLinks.html");
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
 	}
-
-
 
 	// test cases, starting with @Test
 	@Test(priority = 1) // 5
@@ -209,7 +207,6 @@ public class UAT_BavarianInnBrokenLinks {
 	}
 	//
 
-
 	@Test(priority = 4)
 	public void profileDisplayed() {
 		ExtentTest test = extent.createTest("Profile", "Check links");
@@ -225,7 +222,7 @@ public class UAT_BavarianInnBrokenLinks {
 		test.pass("Check links - Passed");
 
 	}
-	
+
 	@Test(priority = 5)
 	public void profileCheckBalance() {
 		ExtentTest test = extent.createTest("Profile", "Check links");
@@ -241,7 +238,7 @@ public class UAT_BavarianInnBrokenLinks {
 		test.pass("Check links - Passed");
 
 	}
-	
+
 	@Test(priority = 6)
 	public void profileMyTransactions() {
 		ExtentTest test = extent.createTest("Profile", "Check links");
@@ -258,8 +255,6 @@ public class UAT_BavarianInnBrokenLinks {
 
 	}
 	//
-	
-	
 
 	@Test(priority = 7)
 	public void membersOffers() {
@@ -271,7 +266,7 @@ public class UAT_BavarianInnBrokenLinks {
 		driver.findElement(By.xpath("//*[contains(text(), 'Member Offers')]")).click();
 
 		String title = driver.getTitle();
-		
+
 		System.out.println("Test = membersOffers, Title of the page is " + title);
 		// AssertJUnit.assertEquals(title, "Offers");
 		Assert.assertEquals(title, "Offers");
@@ -313,15 +308,63 @@ public class UAT_BavarianInnBrokenLinks {
 		test.pass("Check links - Passed");
 	}
 
-//	@Test(priority = 11)
-//	public void logOutOfSite() throws InterruptedException {
-//
-//		// Force logout Log out
-//		open("http://bavarianinn.snipp.ie/umbraco/Surface/LoginSurface/Logout");
-//
-//		Thread.sleep(1000);
-//
-//	}
+// from here log out
+	@Test(priority = 10)
+	public void logOutOfSite() throws InterruptedException {
+
+		open("http://bavarianinn.snipp.ie/umbraco/Surface/LoginSurface/Logout");
+
+	}
+
+	@Test(priority = 11)
+	public void AfterLogoutHome() throws IOException {
+		ExtentTest test = extent.createTest("After Logout Home", "Logout Tab");
+		System.out.println("After Logout Home");
+
+		driver.findElement(By.xpath("//a[contains(text(),'How it Works')]")).click();
+		String title = driver.getTitle();
+		Assert.assertEquals(title, "Home");
+		System.out.println(" ***  Check links for Page =" + title);
+		Boolean checkedOk = checkLinks();
+		assertTrue(checkedOk);
+		test.pass("Check links - Passed");
+	}
+
+	@Test(priority = 12)
+	public void AfterLogoutRegister() throws IOException {
+		ExtentTest test = extent.createTest("After Logout Register", "Register Tab");
+		System.out.println("After Logout Home");
+
+		driver.findElement(By.xpath("//a[contains(text(),'Register')]")).click();
+		String title = driver.getTitle();
+		Assert.assertEquals(title, "Register");
+
+		System.out.println(" ***  Check links for Page =" + title);
+		Boolean checkedOk = checkLinks();
+		assertTrue(checkedOk);
+		test.pass("Check links - Passed");
+	}
+
+	@Test(priority = 13)
+	public void AfterLogoutFAQ() throws IOException {
+		ExtentTest test = extent.createTest("After Logout FAQ", "FAQ Tab");
+		System.out.println("After Logout Home");
+
+		driver.findElement(By.xpath("//a[contains(text(),'FAQs')]")).click();
+		String title = driver.getTitle();
+		Assert.assertEquals(title, "FAQ");
+		System.out.println(" ***  Check links for Page =" + title);
+		Boolean checkedOk = checkLinks();
+		assertTrue(checkedOk);
+		test.pass("Check links - Passed");
+	}
+
+	@AfterTest
+	public void tearDownTest() {
+		// driver.close();
+		driver.quit();
+		System.out.println("Test completed successfully");
+	}
 
 	public boolean checkLinks() {
 		// driver = new ChromeDriver();
