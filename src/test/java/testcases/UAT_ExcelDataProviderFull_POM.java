@@ -244,7 +244,12 @@ public class UAT_ExcelDataProviderFull_POM {
 
 		// To do
 		test.fail("This part needs to be fixed before the test completed assertion can be completed");
-
+		
+//		String pageTitle = driver.getTitle();
+//		System.out.println("Page title is "+pageTitle);
+//		Assert.assertEquals(pageTitle, "Transactons");
+//		test.pass("Transactions displayed, passed?? ");
+		
 	} // End method
 
 	@DataProvider(name = "test1data")
@@ -287,8 +292,8 @@ public class UAT_ExcelDataProviderFull_POM {
 	public void afterTest() {
 		System.out.println("After Test bit");
 		System.out.println("Close browser");
-		driver.close();
-		driver.quit();
+		//driver.close();
+		//driver.quit();
 
 	}
 

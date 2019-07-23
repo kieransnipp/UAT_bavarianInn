@@ -362,7 +362,7 @@ public class UAT_BavarianInnBrokenLinks {
 	@AfterTest
 	public void tearDownTest() {
 		// driver.close();
-		driver.quit();
+		//driver.quit();
 		System.out.println("Test completed successfully");
 	}
 

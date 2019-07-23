@@ -80,7 +80,7 @@ public class UAT_RegisterPageTestCanada {
 	Address address = person.getAddress();
 	String addressLine1 = address.getAddressLine1();
 	String addressLine2 = address.getAddressLine2();
-	Person adultMale = canadaFairy.person(PersonProperties.male(), PersonProperties.minAge(21));
+	Person adultMale = canadaFairy.person(PersonProperties.male(), PersonProperties.minAge(21), PersonProperties.maxAge(60));
 
 	String referralLocation = address.getCity();
 	String postCode = address.getPostalCode();
