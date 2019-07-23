@@ -51,6 +51,7 @@ import java.util.Properties;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.bav.pages.TitleBarNav;
 import com.codeborne.selenide.WebDriverRunner;
 
 public class UAT_BavarianInnBrokenLinks {
@@ -179,17 +180,18 @@ public class UAT_BavarianInnBrokenLinks {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Assert.assertEquals(pageTitle, "Details");
+		
 		String Hi = driver.findElement(By.xpath("//*[contains(text(), 'Hi Michael')]")).toString();
 
 		System.out.println(Hi + " is displayed");
-
 		System.out.println("Hi Michael should be = " + Hi);
-		// AssertJUnit.assertTrue(Hi.contains("Hi Michael"));
+		
 		assertTrue(Hi.contains("Hi Michael"));
 		System.out.println("Welcome message is displayed correctly");
 		System.out.println(" ***  Check links for Page =" + pageTitle);
-
+		
+		Assert.assertEquals(pageTitle, "Details");
+		
 		Boolean checkedOk = checkLinks();
 		assertTrue(checkedOk);
 		test.pass("Check links - Passed");
@@ -198,7 +200,12 @@ public class UAT_BavarianInnBrokenLinks {
 	@Test(priority = 3)
 	public void uploadReciept() {
 		System.out.println("Receipt Up load page");
-		driver.findElement(By.xpath("//*[contains(text(), 'Upload Receipt')]")).click();
+		//driver.findElement(By.xpath("//*[contains(text(), 'Upload Receipt')]")).click();  //Doesnt work in Jenkins
+		driver.findElement(By.xpath("//ul[@id='main-navigation-list']/li/a")).click();  //Test1 works locally
+		//xpath=//ul[@id='main-navigation-list']/li/a                                    //Test2 
+		//xpath=//a[contains(@href, '/en-us/member/details/upload-receipt/')]            //Test3
+		//xpath=//ul[2]/li/a                                                             //Test4
+		
 		String title = driver.getTitle();
 		System.out.println("Test = uploadReciept, Title of the page is " + title);
 		Boolean checkedOk = checkLinks();

@@ -138,14 +138,11 @@ public class UAT_BavarianInnLoginCheckScreens {
 		$(By.xpath("//*[@id=\"loginContainer\"]/*/*/input")).setValue("Michael.Ledwith@snipp.com");
 		$(By.xpath("//*[@id=\"loginContainer\"]/form/div[2]/input")).setValue("Snipp123!");
 		$(By.name("loginButton")).click();
-		String title = driver.getTitle();
-		System.out.println("Title is " + title);
 		Thread.sleep(2000);
-
+		
 		test.log(Status.INFO, "Passed before");
 
-		Assert.assertEquals(title, "Home");
-		test.pass("Passed login after assert");
+		
 	}
 
 	@Test(priority = 3) // 7
