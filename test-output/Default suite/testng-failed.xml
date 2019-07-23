@@ -8,7 +8,6 @@
           <include name="login"/>
           <include name="tearDown"/>
           <include name="tearDownTest"/>
-          <include name="profileDisplayed"/>
           <include name="uploadReciept"/>
           <include name="launchBrowser"/>
         </methods>

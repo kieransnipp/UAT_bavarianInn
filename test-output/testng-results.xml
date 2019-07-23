@@ -2,76 +2,76 @@
 <testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34237" started-at="2019-07-23T09:23:38Z" finished-at="2019-07-23T09:24:13Z">
+  <suite name="Default suite" duration-ms="31216" started-at="2019-07-23T09:31:54Z" finished-at="2019-07-23T09:32:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34237" started-at="2019-07-23T09:23:38Z" finished-at="2019-07-23T09:24:13Z">
+    <test name="Default test" duration-ms="31216" started-at="2019-07-23T09:31:54Z" finished-at="2019-07-23T09:32:25Z">
       <class name="testcases.UAT_BavarianInnBrokenLinks">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="launchBrowser" is-config="true" duration-ms="6018" started-at="2019-07-23T10:23:32Z" finished-at="2019-07-23T10:23:38Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="launchBrowser" is-config="true" duration-ms="5696" started-at="2019-07-23T10:31:48Z" finished-at="2019-07-23T10:31:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="login" is-config="true" duration-ms="776" started-at="2019-07-23T10:23:38Z" finished-at="2019-07-23T10:23:39Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="login" is-config="true" duration-ms="806" started-at="2019-07-23T10:31:54Z" finished-at="2019-07-23T10:31:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="loginToSite()[pri:1, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="loginToSite" duration-ms="3098" started-at="2019-07-23T10:23:39Z" finished-at="2019-07-23T10:23:42Z">
+        <test-method status="PASS" signature="loginToSite()[pri:1, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="loginToSite" duration-ms="2891" started-at="2019-07-23T10:31:55Z" finished-at="2019-07-23T10:31:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToSite -->
-        <test-method status="PASS" signature="WelcomeMessage()[pri:2, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="WelcomeMessage" duration-ms="4160" started-at="2019-07-23T10:23:42Z" finished-at="2019-07-23T10:23:46Z">
+        <test-method status="PASS" signature="WelcomeMessage()[pri:2, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="WelcomeMessage" duration-ms="4057" started-at="2019-07-23T10:31:58Z" finished-at="2019-07-23T10:32:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WelcomeMessage -->
-        <test-method status="PASS" signature="uploadReciept()[pri:3, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="uploadReciept" duration-ms="1699" started-at="2019-07-23T10:23:46Z" finished-at="2019-07-23T10:23:48Z">
+        <test-method status="PASS" signature="uploadReciept()[pri:3, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="uploadReciept" duration-ms="1700" started-at="2019-07-23T10:32:02Z" finished-at="2019-07-23T10:32:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadReciept -->
-        <test-method status="PASS" signature="profileDisplayed()[pri:4, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="profileDisplayed" duration-ms="1765" started-at="2019-07-23T10:23:48Z" finished-at="2019-07-23T10:23:50Z">
+        <test-method status="PASS" signature="profileDisplayed()[pri:4, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="profileDisplayed" duration-ms="1832" started-at="2019-07-23T10:32:04Z" finished-at="2019-07-23T10:32:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- profileDisplayed -->
-        <test-method status="PASS" signature="profileCheckBalance()[pri:5, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="profileCheckBalance" duration-ms="3503" started-at="2019-07-23T10:23:50Z" finished-at="2019-07-23T10:23:53Z">
+        <test-method status="PASS" signature="profileCheckBalance()[pri:5, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="profileCheckBalance" duration-ms="3505" started-at="2019-07-23T10:32:05Z" finished-at="2019-07-23T10:32:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- profileCheckBalance -->
-        <test-method status="PASS" signature="profileMyTransactions()[pri:6, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="profileMyTransactions" duration-ms="2194" started-at="2019-07-23T10:23:53Z" finished-at="2019-07-23T10:23:56Z">
+        <test-method status="PASS" signature="profileMyTransactions()[pri:6, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="profileMyTransactions" duration-ms="1988" started-at="2019-07-23T10:32:09Z" finished-at="2019-07-23T10:32:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- profileMyTransactions -->
-        <test-method status="PASS" signature="membersOffers()[pri:7, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="membersOffers" duration-ms="5069" started-at="2019-07-23T10:23:56Z" finished-at="2019-07-23T10:24:01Z">
+        <test-method status="PASS" signature="membersOffers()[pri:7, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="membersOffers" duration-ms="4457" started-at="2019-07-23T10:32:11Z" finished-at="2019-07-23T10:32:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- membersOffers -->
-        <test-method status="PASS" signature="membersLocations()[pri:8, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="membersLocations" duration-ms="4042" started-at="2019-07-23T10:24:01Z" finished-at="2019-07-23T10:24:05Z">
+        <test-method status="PASS" signature="membersLocations()[pri:8, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="membersLocations" duration-ms="3089" started-at="2019-07-23T10:32:15Z" finished-at="2019-07-23T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- membersLocations -->
-        <test-method status="PASS" signature="membersSocial()[pri:9, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="membersSocial" duration-ms="3581" started-at="2019-07-23T10:24:05Z" finished-at="2019-07-23T10:24:08Z">
+        <test-method status="PASS" signature="membersSocial()[pri:9, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="membersSocial" duration-ms="2602" started-at="2019-07-23T10:32:18Z" finished-at="2019-07-23T10:32:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- membersSocial -->
-        <test-method status="PASS" signature="logOutOfSite()[pri:10, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="logOutOfSite" duration-ms="446" started-at="2019-07-23T10:24:08Z" finished-at="2019-07-23T10:24:09Z">
+        <test-method status="PASS" signature="logOutOfSite()[pri:10, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="logOutOfSite" duration-ms="496" started-at="2019-07-23T10:32:21Z" finished-at="2019-07-23T10:32:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutOfSite -->
-        <test-method status="PASS" signature="AfterLogoutHome()[pri:11, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="AfterLogoutHome" duration-ms="1120" started-at="2019-07-23T10:24:09Z" finished-at="2019-07-23T10:24:10Z">
+        <test-method status="PASS" signature="AfterLogoutHome()[pri:11, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="AfterLogoutHome" duration-ms="1094" started-at="2019-07-23T10:32:22Z" finished-at="2019-07-23T10:32:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterLogoutHome -->
-        <test-method status="PASS" signature="AfterLogoutRegister()[pri:12, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="AfterLogoutRegister" duration-ms="666" started-at="2019-07-23T10:24:10Z" finished-at="2019-07-23T10:24:11Z">
+        <test-method status="PASS" signature="AfterLogoutRegister()[pri:12, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="AfterLogoutRegister" duration-ms="650" started-at="2019-07-23T10:32:23Z" finished-at="2019-07-23T10:32:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterLogoutRegister -->
-        <test-method status="PASS" signature="AfterLogoutFAQ()[pri:13, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="AfterLogoutFAQ" duration-ms="2085" started-at="2019-07-23T10:24:11Z" finished-at="2019-07-23T10:24:13Z">
+        <test-method status="PASS" signature="AfterLogoutFAQ()[pri:13, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="AfterLogoutFAQ" duration-ms="2012" started-at="2019-07-23T10:32:23Z" finished-at="2019-07-23T10:32:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterLogoutFAQ -->
-        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="tearDownTest" is-config="true" duration-ms="1" started-at="2019-07-23T10:24:13Z" finished-at="2019-07-23T10:24:13Z">
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="tearDownTest" is-config="true" duration-ms="0" started-at="2019-07-23T10:32:25Z" finished-at="2019-07-23T10:32:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="tearDown" is-config="true" duration-ms="996" started-at="2019-07-23T10:24:13Z" finished-at="2019-07-23T10:24:14Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.UAT_BavarianInnBrokenLinks@4524411f]" name="tearDown" is-config="true" duration-ms="1040" started-at="2019-07-23T10:32:25Z" finished-at="2019-07-23T10:32:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -200,13 +200,13 @@ public class UAT_BavarianInnBrokenLinks {
 	@Test(priority = 3)
 	public void uploadReciept() {
 		System.out.println("Receipt Up load page");
-		//driver.findElement(By.xpath("//*[contains(text(), 'Upload Receipt')]")).click();  //Doesnt work in Jenkins
-		//driver.findElement(By.xpath("//ul[@id='main-navigation-list']/li/a")).click();  //Test1 works locally
+		//driver.findElement(By.xpath("//*[contains(text(), 'Upload Receipt')]")).click();  //works locally, not jenkins
+		//driver.findElement(By.xpath("//ul[@id='main-navigation-list']/li/a")).click();  //Test1 works locally, not jenkins
 		
-		driver.findElement(By.xpath("//ul[@id='main-navigation-list']/li/a")).click();
-		//xpath=//ul[@id='main-navigation-list']/li/a                                    //Test2 
-		//xpath=//a[contains(@href, '/en-us/member/details/upload-receipt/')]            //Test3
-		//xpath=//ul[2]/li/a                                                             //Test4
+		//driver.findElement(By.xpath("//ul[@id='main-navigation-list']/li/a")).click(); //Test2 works locally, not jenkins
+		driver.findElement(By.xpath("//ul[@id='main-navigation-list']/li/a")).click();    //Test2 b   
+		//driver.findElement(By.xpath("//a[contains(@href, '/en-us/member/details/upload-receipt/')])).click();   //Test3
+		//driver.findElement(By.xpath("//ul[2]/li/a)).click();                                                    //Test4
 		
 		String title = driver.getTitle();
 		System.out.println("Test = uploadReciept, Title of the page is " + title);
