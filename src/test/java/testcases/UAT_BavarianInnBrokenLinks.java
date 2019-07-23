@@ -206,7 +206,9 @@ public class UAT_BavarianInnBrokenLinks {
 		//driver.findElement(By.xpath("//ul[@id='main-navigation-list']/li/a")).click(); //Test2 works locally, not jenkins
 		//driver.findElement(By.xpath("//ul[@id='main-navigation-list']/li/a")).click();    //Test2 b works locally, not jenkins 
 		//driver.findElement(By.xpath("//a[contains(@href, '/en-us/member/details/upload-receipt/')]")).click();  //Test3
-		driver.findElement(By.xpath("//ul[2]/li/a")).click();                                                    //Test4
+		//driver.findElement(By.xpath("//ul[2]/li/a")).click();      //Test4   works locally, not jenkins
+		//Page factory
+		TitleBarNav.uploadReceipt(driver).click();
 		
 		String title = driver.getTitle();
 		System.out.println("Test = uploadReciept, Title of the page is " + title);
