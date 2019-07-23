@@ -201,7 +201,9 @@ public class UAT_BavarianInnBrokenLinks {
 	public void uploadReciept() {
 		System.out.println("Receipt Up load page");
 		//driver.findElement(By.xpath("//*[contains(text(), 'Upload Receipt')]")).click();  //Doesnt work in Jenkins
-		driver.findElement(By.xpath("//ul[@id='main-navigation-list']/li/a")).click();  //Test1 works locally
+		//driver.findElement(By.xpath("//ul[@id='main-navigation-list']/li/a")).click();  //Test1 works locally
+		
+		driver.findElement(By.xpath("//ul[@id='main-navigation-list']/li/a")).click();
 		//xpath=//ul[@id='main-navigation-list']/li/a                                    //Test2 
 		//xpath=//a[contains(@href, '/en-us/member/details/upload-receipt/')]            //Test3
 		//xpath=//ul[2]/li/a                                                             //Test4
