@@ -3,15 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testcases.UAT_BavarianInnBrokenLinks">
+      <class name="testcases.UAT_RegisterPageTestCanada">
         <methods>
-          <include name="login"/>
+          <include name="enterForm"/>
+          <include name="setUp"/>
+          <include name="afterTest"/>
           <include name="tearDown"/>
-          <include name="tearDownTest"/>
-          <include name="uploadReciept"/>
+          <include name="enterDetails"/>
           <include name="launchBrowser"/>
         </methods>
-      </class> <!-- testcases.UAT_BavarianInnBrokenLinks -->
+      </class> <!-- testcases.UAT_RegisterPageTestCanada -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

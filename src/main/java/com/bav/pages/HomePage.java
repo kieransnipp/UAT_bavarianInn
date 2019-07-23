@@ -4,7 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class HomePage {
+
+import com.crm.qa.base.TestBase;
+
+public class HomePage extends TestBase{
 
 	WebDriver driver;
 	private static WebElement element = null;

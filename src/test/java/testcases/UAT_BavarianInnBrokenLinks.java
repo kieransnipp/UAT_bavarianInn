@@ -200,6 +200,7 @@ public class UAT_BavarianInnBrokenLinks {
 	@Test(priority = 3)
 	public void uploadReciept() {
 		System.out.println("Receipt Up load page");
+	
 		//driver.findElement(By.xpath("//*[contains(text(), 'Upload Receipt')]")).click();  //works locally, not jenkins
 		//driver.findElement(By.xpath("//ul[@id='main-navigation-list']/li/a")).click();  //Test1 works locally, not jenkins
 		
@@ -208,6 +209,7 @@ public class UAT_BavarianInnBrokenLinks {
 		//driver.findElement(By.xpath("//a[contains(@href, '/en-us/member/details/upload-receipt/')]")).click();  //Test3
 		//driver.findElement(By.xpath("//ul[2]/li/a")).click();      //Test4   works locally, not jenkins
 		//Page factory
+		
 		TitleBarNav.uploadReceipt(driver).click();
 		
 		String title = driver.getTitle();
@@ -369,6 +371,8 @@ public class UAT_BavarianInnBrokenLinks {
 		assertTrue(checkedOk);
 		test.pass("Check links - Passed");
 	}
+	
+
 
 	@AfterTest
 	public void tearDownTest() {

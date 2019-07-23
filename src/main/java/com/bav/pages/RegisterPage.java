@@ -5,7 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-public class RegisterPage {
+import com.crm.qa.base.TestBase;
+
+public class RegisterPage extends TestBase{
 
 	WebDriver driver;
 	private static WebElement element = null;

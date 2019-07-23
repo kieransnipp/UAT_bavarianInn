@@ -6,8 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import com.codeborne.selenide.WebDriverRunner;
+import com.crm.qa.base.TestBase;
 
-public class TitleBarNav {
+public class TitleBarNav extends TestBase{
 	WebDriver driver;
 	private static WebElement element = null;
 	
