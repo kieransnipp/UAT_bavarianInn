@@ -1,41 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8088" started-at="2019-07-22T21:22:04Z" finished-at="2019-07-22T21:22:13Z">
+  <suite name="Default suite" duration-ms="17720" started-at="2019-07-23T07:14:23Z" finished-at="2019-07-23T07:14:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8088" started-at="2019-07-22T21:22:04Z" finished-at="2019-07-22T21:22:13Z">
-      <class name="testcases.UAT_RegisterPageTestCanada">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testcases.UAT_RegisterPageTestCanada@2c7db926]" name="launchBrowser" is-config="true" duration-ms="5548" started-at="2019-07-22T22:21:59Z" finished-at="2019-07-22T22:22:04Z">
+    <test name="Default test" duration-ms="17720" started-at="2019-07-23T07:14:23Z" finished-at="2019-07-23T07:14:41Z">
+      <class name="testcases.UAT_HomePageTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testcases.UAT_HomePageTest@4524411f]" name="launchBrowser" is-config="true" duration-ms="6071" started-at="2019-07-23T08:14:17Z" finished-at="2019-07-23T08:14:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.UAT_RegisterPageTestCanada@2c7db926]" name="setUp" is-config="true" duration-ms="86" started-at="2019-07-22T22:22:04Z" finished-at="2019-07-22T22:22:05Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.UAT_HomePageTest@4524411f]" name="setUp" is-config="true" duration-ms="203" started-at="2019-07-23T08:14:23Z" finished-at="2019-07-23T08:14:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginToSite()[pri:1, instance:testcases.UAT_RegisterPageTestCanada@2c7db926]" name="loginToSite" duration-ms="20" started-at="2019-07-22T22:22:05Z" finished-at="2019-07-22T22:22:05Z">
+        <test-method status="PASS" signature="loginToSite()[pri:1, instance:testcases.UAT_HomePageTest@4524411f]" name="loginToSite" duration-ms="29" started-at="2019-07-23T08:14:23Z" finished-at="2019-07-23T08:14:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToSite -->
-        <test-method status="PASS" signature="enterDetails()[pri:2, instance:testcases.UAT_RegisterPageTestCanada@2c7db926]" name="enterDetails" duration-ms="537" started-at="2019-07-22T22:22:05Z" finished-at="2019-07-22T22:22:05Z">
+        <test-method status="PASS" signature="howItWorks()[pri:2, instance:testcases.UAT_HomePageTest@4524411f]" name="howItWorks" duration-ms="562" started-at="2019-07-23T08:14:23Z" finished-at="2019-07-23T08:14:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterDetails -->
-        <test-method status="PASS" signature="enterForm()[pri:0, instance:testcases.UAT_RegisterPageTestCanada@2c7db926]" name="enterForm" duration-ms="7426" started-at="2019-07-22T22:22:05Z" depends-on-methods="testcases.UAT_RegisterPageTestCanada.enterDetails" finished-at="2019-07-22T22:22:13Z">
+        </test-method> <!-- howItWorks -->
+        <test-method status="PASS" signature="register()[pri:3, instance:testcases.UAT_HomePageTest@4524411f]" name="register" duration-ms="706" started-at="2019-07-23T08:14:24Z" finished-at="2019-07-23T08:14:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterForm -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases.UAT_RegisterPageTestCanada@2c7db926]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-07-22T22:22:13Z" finished-at="2019-07-22T22:22:13Z">
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="faq()[pri:4, instance:testcases.UAT_HomePageTest@4524411f]" name="faq" duration-ms="543" started-at="2019-07-23T08:14:25Z" finished-at="2019-07-23T08:14:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.UAT_RegisterPageTestCanada@2c7db926]" name="tearDown" is-config="true" duration-ms="360" started-at="2019-07-22T22:22:13Z" finished-at="2019-07-22T22:22:13Z">
+        </test-method> <!-- faq -->
+        <test-method status="PASS" signature="checkFacebook()[pri:5, instance:testcases.UAT_HomePageTest@4524411f]" name="checkFacebook" duration-ms="3823" started-at="2019-07-23T08:14:25Z" finished-at="2019-07-23T08:14:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFacebook -->
+        <test-method status="PASS" signature="checkYoutube()[pri:6, instance:testcases.UAT_HomePageTest@4524411f]" name="checkYoutube" duration-ms="2298" started-at="2019-07-23T08:14:29Z" finished-at="2019-07-23T08:14:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkYoutube -->
+        <test-method status="PASS" signature="checkYelp()[pri:7, instance:testcases.UAT_HomePageTest@4524411f]" name="checkYelp" duration-ms="4021" started-at="2019-07-23T08:14:31Z" finished-at="2019-07-23T08:14:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkYelp -->
+        <test-method status="PASS" signature="checkTwitter()[pri:8, instance:testcases.UAT_HomePageTest@4524411f]" name="checkTwitter" duration-ms="2154" started-at="2019-07-23T08:14:35Z" finished-at="2019-07-23T08:14:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTwitter -->
+        <test-method status="PASS" signature="logOutOfSite()[pri:9, instance:testcases.UAT_HomePageTest@4524411f]" name="logOutOfSite" duration-ms="425" started-at="2019-07-23T08:14:38Z" finished-at="2019-07-23T08:14:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutOfSite -->
+        <test-method status="PASS" signature="AfterLogoutHome()[pri:10, instance:testcases.UAT_HomePageTest@4524411f]" name="AfterLogoutHome" duration-ms="604" started-at="2019-07-23T08:14:38Z" finished-at="2019-07-23T08:14:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterLogoutHome -->
+        <test-method status="PASS" signature="AfterLogoutRegister()[pri:11, instance:testcases.UAT_HomePageTest@4524411f]" name="AfterLogoutRegister" duration-ms="716" started-at="2019-07-23T08:14:39Z" finished-at="2019-07-23T08:14:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterLogoutRegister -->
+        <test-method status="PASS" signature="AfterLogoutFAQ()[pri:12, instance:testcases.UAT_HomePageTest@4524411f]" name="AfterLogoutFAQ" duration-ms="789" started-at="2019-07-23T08:14:39Z" finished-at="2019-07-23T08:14:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterLogoutFAQ -->
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:testcases.UAT_HomePageTest@4524411f]" name="tearDownTest" is-config="true" duration-ms="811" started-at="2019-07-23T08:14:40Z" finished-at="2019-07-23T08:14:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.UAT_HomePageTest@4524411f]" name="tearDown" is-config="true" duration-ms="339" started-at="2019-07-23T08:14:41Z" finished-at="2019-07-23T08:14:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.UAT_RegisterPageTestCanada -->
+      </class> <!-- testcases.UAT_HomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

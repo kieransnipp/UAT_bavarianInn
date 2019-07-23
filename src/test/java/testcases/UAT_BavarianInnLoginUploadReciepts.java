@@ -284,8 +284,8 @@ public class UAT_BavarianInnLoginUploadReciepts {
 
 	@AfterTest
 	public void tearDownTest() {
-		// driver.close();
-		// driver.quit();
+		 driver.close();
+		 driver.quit();
 		System.out.println("Test completed successfully");
 	}
 

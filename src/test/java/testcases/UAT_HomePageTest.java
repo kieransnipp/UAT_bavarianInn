@@ -227,12 +227,58 @@ public class UAT_HomePageTest {
 		String title = driver.getTitle();
 		//Assert.assertEquals(title, "Bavarian Inn (@Bavarian_Inn) | Twitter");
 		
-		Assert.assertEquals(title, "Bavarian Inn (@Bavarian_Inn) on Twitter");
+		Assert.assertEquals(title, "Bavarian Inn (@Bavarian_Inn) | Twitter");
 
 		driver.navigate().back();
 
 		String homeTitle = driver.getTitle();
 		Assert.assertEquals(homeTitle, "Home");
+		test.pass("Passed");
+	}
+	
+	@Test(priority = 9)
+	public void logOutOfSite() throws InterruptedException {
+		
+		open("http://bavarianinn.snipp.ie/umbraco/Surface/LoginSurface/Logout");
+
+	}
+	
+	@Test(priority = 10)
+	public void AfterLogoutHome() throws IOException {
+		ExtentTest test = extent.createTest("After Logout Home", "Logout Tab");
+		System.out.println("After Logout Home");
+
+		driver.findElement(By.xpath("//a[contains(text(),'How it Works')]")).click();
+		String title = driver.getTitle();
+		Assert.assertEquals(title, "Home");
+		driver.navigate().back();
+
+		test.pass("Passed");
+	}
+	
+	@Test(priority = 11)
+	public void AfterLogoutRegister() throws IOException {
+		ExtentTest test = extent.createTest("After Logout Register", "Register Tab");
+		System.out.println("After Logout Home");
+
+		driver.findElement(By.xpath("//a[contains(text(),'Register')]")).click();
+		String title = driver.getTitle();
+		Assert.assertEquals(title, "Register");
+		driver.navigate().back();
+
+		test.pass("Passed");
+	}
+	
+	@Test(priority = 12)
+	public void AfterLogoutFAQ() throws IOException {
+		ExtentTest test = extent.createTest("After Logout FAQ", "FAQ Tab");
+		System.out.println("After Logout Home");
+
+		driver.findElement(By.xpath("//a[contains(text(),'FAQs')]")).click();
+		String title = driver.getTitle();
+		Assert.assertEquals(title, "FAQ");
+		driver.navigate().back();
+
 		test.pass("Passed");
 	}
 
